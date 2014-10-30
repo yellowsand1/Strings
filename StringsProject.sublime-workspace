@@ -1,0 +1,312 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bo",
+				"botton"
+			],
+			[
+				"ti",
+				"title"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<html>\n<head>\n<meta name=\"Author\" content=\"Yellow\"/meta>\n<title>简易注册登录</title>\n</head>\n<body>\n\n<script type=\"text/javascript\">\nFunction myFunction(){\n	alert(\"no try no die why you try ?\");\n}\ndocument.write(\"<h1>Login</h1>\");\ndocument.getElementById(\"\");\n\n</script>\n<center>\n<form>\n<strong id=\"name\">username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>\n<strong id=\"pass\">password</strong>\n<input type=\"text\" name=\"password\"/>\n<br/>\n\n</form>\n<button onclick=\"myFunction()\">submit</button>\n</center>\n</body>\n</html>\n",
+			"file": "/E/.git/Strings/first try.html",
+			"file_size": 558,
+			"file_write_time": 130591036558969229,
+			"settings":
+			{
+				"buffer_size": 523,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/E/wamp/www/注册实例.html",
+			"settings":
+			{
+				"buffer_size": 5679,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/wamp/www/E-mail验证.html",
+			"settings":
+			{
+				"buffer_size": 615,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/wamp/www/表单验证.html",
+			"settings":
+			{
+				"buffer_size": 584,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: #include <…>"
+			],
+			[
+				"",
+				"Bookmarks: Select Next"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Strings/firstt try.html",
+		"/E/wamp/www/注册实例.html",
+		"/E/wamp/www/practice.html",
+		"/E/wamp/www/黄英伦.php",
+		"/C/js/黄英伦.php",
+		"/E/wamp/scripts/switchApacheMod.php",
+		"/E/wamp/www/index.php",
+		"/E/wamp/www/testmysql.php",
+		"/C/Users/Administrator/Desktop/HTML/test.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/E/.git/Strings/first try.html",
+					"settings":
+					{
+						"buffer_size": 523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								523
+							]
+						],
+						"settings":
+						{
+							"force_encoding": "GBK",
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"revert_to_scratch": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/E/wamp/www/注册实例.html",
+					"settings":
+					{
+						"buffer_size": 5679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								778,
+								778
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/E/wamp/www/E-mail验证.html",
+					"settings":
+					{
+						"buffer_size": 615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/E/wamp/www/表单验证.html",
+					"settings":
+					{
+						"buffer_size": 584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
