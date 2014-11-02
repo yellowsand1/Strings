@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"input	Tag"
+			],
+			[
 				"ge",
 				"getElementsByName"
 			],
@@ -20,13 +24,13 @@
 	"buffers":
 	[
 		{
-			"contents": "<html>\n<head>\n<title>简易注册登录</title>\n</head>\n<body>\n<center>\n<script> \nfunction myFunction(){\n	alert(\"您选择登录，确定吗？\");\n}\nfunction loginup(){\n	alert(\"您选择注册，确定吗？\")\n}\ndocument.write(\"<h1>Login</h1>\");\ndocument.getElementsByName(\"first name\");\ndocument.getElementsByName(\"password\");\n	\n\n</script>\n\n<form>	\n<strong id=\"name\">username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>\n<strong id=\"pass\">password</strong>\n<input type=\"text\" name=\"password\"/>\n<br/>\n\n</form>\n<form action=\"first name\"onsubmit=\"return first name_form(this);\" method=\"post\">\n<button onclick=\"myFunction()\">submit</button>\n<button onclick=\"loginup()\">Login up</button>\n</center>\n</body>\n</html>\n",
+			"contents": "<html>\n<head>\n<title>简易注册登录</title>\n</head>\n<body>\n<center>\n<script> \nfunction myFunction(){\n	alert(\"您选择登录，确定吗？\");\n}\nfunction loginup(){\n	alert(\"您选择注册，确定吗？\")\n}\ndocument.write(\"<h1>Login</h1>\");\ndocument.getElementsByName(\"first name\");\ndocument.getElementsByName(\"password\");\n	\n\n</script>\n\n<form>	\n<strong id=\"name\">username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>\n<strong id=\"pass\">password</strong>\n<input type=\"text\" name=\"password\"/>\n<br/>\n\n</form>\n<form action=\"first name\"onsubmit=\"return first name_form(this);\" method=\"post\">\n<form action=\"password\"onsubmit=\"return password_form(this);\" method=\"post\">\n\n<button onclick=\"myFunction()\">submit</button>\n<button onclick=\"loginup()\">Login up</button>\n</center>\n</body>\n</html>\n",
 			"file": "登录.html",
-			"file_size": 728,
-			"file_write_time": 130593862669993636,
+			"file_size": 808,
+			"file_write_time": 130593867021459843,
 			"settings":
 			{
-				"buffer_size": 667,
+				"buffer_size": 745,
 				"line_ending": "Windows",
 				"scratch": true
 			}
@@ -60,7 +64,10 @@
 			}
 		},
 		{
+			"contents": "<html>\n<head>\n<script type=\"text/javascript\">\n\nfunction validate_required(field,alerttxt)\n{\nwith (field)\n  {\n  if (value==null||value==\"\")\n    {alert(alerttxt);return false}\n  else {return true}\n  }\n}\n\nfunction validate_form(thisform)\n{\nwith (thisform)\n  {\n  if (validate_required(email,\"Email must be filled out!\")==false)\n    {email.focus();return false}\n  }\n}\n</script>\n</head>\n\n<body>\n<form action=\"submitpage.htm\" onsubmit=\"return validate_form(this)\" method=\"post\">\nEmail: <input type=\"text\" name=\"email\" size=\"30\">\n<input type=\"submit\" value=\"Submit\"> \n</form>\n</body>\n\n</html>",
 			"file": "/E/wamp/www/表单验证.html",
+			"file_size": 616,
+			"file_write_time": 130589855683334559,
 			"settings":
 			{
 				"buffer_size": 584,
@@ -143,7 +150,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -151,15 +158,15 @@
 					"file": "登录.html",
 					"settings":
 					{
-						"buffer_size": 667,
+						"buffer_size": 745,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								524,
-								524
+								718,
+								718
 							]
 						],
 						"settings":
