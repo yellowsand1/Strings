@@ -24,27 +24,25 @@
 	"buffers":
 	[
 		{
-			"contents": "<html>\n<head>\n<title>简易注册登录</title>\n</head>\n<body>\n<center>\n<script> \nfunction myFunction(){\n	alert(\"您选择登录，确定吗？\");\n}\nfunction loginup(){\n	alert(\"您选择注册，确定吗？\")\n}\ndocument.write(\"<h1>Login</h1>\");\ndocument.getElementsByName(\"first name\");\ndocument.getElementsByName(\"password\");\n	\n\n</script>\n\n<form>	\n<strong id=\"name\">username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>\n<strong id=\"pass\">password</strong>\n<input type=\"text\" name=\"password\"/>\n<br/>\n\n</form>\n<form action=\"first name\"onsubmit=\"return first name_form(this);\" method=\"post\">\n<form action=\"password\"onsubmit=\"return password_form(this);\" method=\"post\">\n\n<button onclick=\"myFunction()\">submit</button>\n<button onclick=\"loginup()\">Login up</button>\n</center>\n</body>\n</html>\n",
+			"contents": "<html>\n<head>\n<title>简易注册登录</title>\n</head>\n<body>\n<center>\n<script> \nfunction myFunction(){\n	alert(\"您选择登录，确定吗？\");\n}\nfunction loginup(){\n	alert(\"您选择注册，确定吗？\")\n}\ndocument.write(\"<h1>Login</h1>\");\ndocument.getElementsById(\"first name\");\ndocument.getElementsById(\"pass\");\n	\n\n</script>\n\n<form>	\n<strong id=\"name\">Username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>\n<strong id=\"pass\">Password</strong>\n<input type=\"text\" name=\"password\"/>\n<br/>\n\n</form>\n<form action=\"first name\"onsubmit=\"return first name_form(this);\" method=\"post\">\n<form action=\"password\"onsubmit=\"return password_form(this);\" method=\"post\">\n\n<button onclick=\"myFunction()\">submit</button>\n<button onclick=\"loginup()\">Login up</button>\n</center>\n</body>\n</html>\n",
 			"file": "登录.html",
-			"file_size": 808,
-			"file_write_time": 130593867021459843,
+			"file_size": 800,
+			"file_write_time": 130593973546839988,
 			"settings":
 			{
-				"buffer_size": 745,
-				"line_ending": "Windows",
-				"scratch": true
+				"buffer_size": 737,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<html>\n<head>\n<title>简易注册登录</title>	\n</head>\n<body>\n<center>\n<script>\ndocument.write(\"<h1>Register</h1>\") \n	\n</script>\n<form>\n	<strong id=\"name\">username</strong>\n	<input type=\"text\" name=\"first name\"/>\n<br/>\n	<strong id=\"pass\">password</strong>\n	<input type=\"text\" name=\"password\"/>\n<br/>\n  	<strong id=\"email\">E-mail__<strong>\n	<input type=\"text\" name=\"email\"/>\n<br/>\n	\n</form>\n\n\n\n\n\n</center>\n</body>	\n\n\n\n\n\n\n\n\n</html>\n",
+			"contents": "<html>\n<head>\n<title>简易注册登录</title>	\n</head>\n<body>\n<center>\n<script>\ndocument.write(\"<h1>Register</h1>\") \n	\n</script>\n<form>\n	<strong id=\"name\">username</strong>\n	<input type=\"text\" name=\"first name\"/>\n<br/>\n	<strong id=\"pass\">password</strong>\n	<input type=\"text\" name=\"password\"/>\n<br/>\n  	<strong id=\"email\">E-mail&nbsp;&nbsp;<strong>\n	<input type=\"text\" name=\"email\"/>\n<br/>\n	\n</form>\n\n\n\n\n\n</center>\n</body>	\n\n\n\n\n\n\n\n\n</html>\n",
 			"file": "注册.html",
-			"file_size": 464,
-			"file_write_time": 130593848937860288,
+			"file_size": 475,
+			"file_write_time": 130593977474510770,
 			"settings":
 			{
-				"buffer_size": 420,
-				"line_ending": "Windows",
-				"scratch": true
+				"buffer_size": 430,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -150,7 +148,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -158,15 +156,15 @@
 					"file": "登录.html",
 					"settings":
 					{
-						"buffer_size": 745,
+						"buffer_size": 737,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								718,
-								718
+								267,
+								267
 							]
 						],
 						"settings":
@@ -189,15 +187,15 @@
 					"file": "注册.html",
 					"settings":
 					{
-						"buffer_size": 420,
+						"buffer_size": 430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								419,
-								419
+								118,
+								118
 							]
 						],
 						"settings":
@@ -226,8 +224,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								2596,
+								2596
 							]
 						],
 						"settings":
@@ -238,7 +236,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1703.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
