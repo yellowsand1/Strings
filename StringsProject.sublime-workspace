@@ -24,25 +24,23 @@
 	"buffers":
 	[
 		{
-			"contents": "<html>\n<head>\n<title>简易注册登录</title>\n</head>\n<body>\n<center>\n<script> \nfunction myFunction(){\n	alert(\"您选择登录，确定吗？\");\n}\nfunction loginup(){\n	alert(\"您选择注册，确定吗？\")\n}\ndocument.write(\"<h1>Login</h1>\");\ndocument.getElementsById(\"first name\");\ndocument.getElementsById(\"pass\");\n	\n\n</script>\n\n<form>	\n<strong id=\"name\">Username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>\n<strong id=\"pass\">Password</strong>\n<input type=\"text\" name=\"password\"/>\n<br/>\n\n</form>\n<form action=\"first name\"onsubmit=\"return first name_form(this);\" method=\"post\">\n<form action=\"password\"onsubmit=\"return password_form(this);\" method=\"post\">\n\n<button onclick=\"myFunction()\">submit</button>\n<button onclick=\"loginup()\">Login up</button>\n</center>\n</body>\n</html>\n",
 			"file": "登录.html",
-			"file_size": 800,
-			"file_write_time": 130593973546839988,
 			"settings":
 			{
-				"buffer_size": 737,
+				"buffer_size": 704,
 				"line_ending": "Windows"
 			}
 		},
 		{
 			"contents": "<html>\n<head>\n<title>简易注册登录</title>	\n</head>\n<body>\n<center>\n<script>\ndocument.write(\"<h1>Register</h1>\") \n	\n</script>\n<form>\n	<strong id=\"name\">username</strong>\n	<input type=\"text\" name=\"first name\"/>\n<br/>\n	<strong id=\"pass\">password</strong>\n	<input type=\"text\" name=\"password\"/>\n<br/>\n  	<strong id=\"email\">E-mail&nbsp;&nbsp;<strong>\n	<input type=\"text\" name=\"email\"/>\n<br/>\n	\n</form>\n\n\n\n\n\n</center>\n</body>	\n\n\n\n\n\n\n\n\n</html>\n",
 			"file": "注册.html",
-			"file_size": 475,
-			"file_write_time": 130593977474510770,
+			"file_size": 474,
+			"file_write_time": 130595896414593425,
 			"settings":
 			{
 				"buffer_size": 430,
-				"line_ending": "Windows"
+				"line_ending": "Windows",
+				"scratch": true
 			}
 		},
 		{
@@ -62,14 +60,23 @@
 			}
 		},
 		{
-			"contents": "<html>\n<head>\n<script type=\"text/javascript\">\n\nfunction validate_required(field,alerttxt)\n{\nwith (field)\n  {\n  if (value==null||value==\"\")\n    {alert(alerttxt);return false}\n  else {return true}\n  }\n}\n\nfunction validate_form(thisform)\n{\nwith (thisform)\n  {\n  if (validate_required(email,\"Email must be filled out!\")==false)\n    {email.focus();return false}\n  }\n}\n</script>\n</head>\n\n<body>\n<form action=\"submitpage.htm\" onsubmit=\"return validate_form(this)\" method=\"post\">\nEmail: <input type=\"text\" name=\"email\" size=\"30\">\n<input type=\"submit\" value=\"Submit\"> \n</form>\n</body>\n\n</html>",
 			"file": "/E/wamp/www/表单验证.html",
-			"file_size": 616,
-			"file_write_time": 130589855683334559,
 			"settings":
 			{
 				"buffer_size": 584,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<html>\n<head>\n<title>Welcome to Strings!</title>\n</head>\n<body>\n<!--LOGO在最左上方-->\n<a href=\"登录.html\" style=\"float:right\">登录</a>\n</br>\n<a href=\"注册.html\" style=\"float:right\">注册</a>\n</br>\n\n\n</body>\n</html>\n",
+			"file": "框架.html",
+			"file_size": 228,
+			"file_write_time": 130595896347082940,
+			"settings":
+			{
+				"buffer_size": 201,
+				"line_ending": "Windows",
+				"scratch": true
 			}
 		}
 	],
@@ -148,7 +155,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -156,22 +163,22 @@
 					"file": "登录.html",
 					"settings":
 					{
-						"buffer_size": 737,
+						"buffer_size": 704,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								370,
-								370
+								7,
+								7
 							]
 						],
 						"settings":
 						{
-							"force_encoding": "GBK",
+							"force_encoding": "UTF-8",
 							"in_converting": true,
-							"origin_encoding": "GBK",
+							"origin_encoding": "UTF-8",
 							"revert_to_scratch": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -194,14 +201,15 @@
 						"selection":
 						[
 							[
-								118,
-								118
+								162,
+								162
 							]
 						],
 						"settings":
 						{
+							"force_encoding": "GBK",
 							"in_converting": true,
-							"origin_encoding": "GBK",
+							"origin_encoding": "UTF-8",
 							"revert_to_scratch": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -236,7 +244,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1703.0,
+						"translation.y": 2603.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -253,8 +261,8 @@
 						"selection":
 						[
 							[
-								412,
-								412
+								184,
+								184
 							]
 						],
 						"settings":
@@ -288,6 +296,37 @@
 						{
 							"origin_encoding": "ASCII",
 							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "框架.html",
+					"settings":
+					{
+						"buffer_size": 201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								201,
+								201
+							]
+						],
+						"settings":
+						{
+							"force_encoding": "GBK",
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"revert_to_scratch": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
