@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"flo",
+				"float_right"
+			],
+			[
 				"in",
 				"input	Tag"
 			],
@@ -24,11 +36,15 @@
 	"buffers":
 	[
 		{
+			"contents": "<html> \n<head>\n<title>简易注册登录</title>\n</head>\n<body>\n<center>\n<script> \nfunction myFunction(){\n	alert(\"您选择登录，确定吗？\");\n}\nfunction loginup(){\n	alert(\"您选择注册，确定吗？\")\n}\ndocument.write(\"<h1>Login</h1>\");\ndocument.getElementsById(\"first name\");\ndocument.getElementsById(\"pass\");\n	\n\n</script>\n\n<form>	\n<strong id=\"name\">Username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>\n<strong id=\"pass\">Password</strong>\n<input type=\"password\" name=\"password\"/>\n<br/>\n\n</form>\n<form action=\".php\"onsubmit=\";\" method=\"post\">\n<form action=\".php\"onsubmit=\";\" method=\"post\">\n\n<button onclick=\"myFunction()\">submit</button>\n<button onclick=\"loginup()\">Login up</button>\n</center>\n</body>\n</html>\n",
 			"file": "登录.html",
+			"file_size": 741,
+			"file_write_time": 130596680784633803,
 			"settings":
 			{
-				"buffer_size": 704,
-				"line_ending": "Windows"
+				"buffer_size": 678,
+				"line_ending": "Windows",
+				"scratch": true
 			}
 		},
 		{
@@ -68,15 +84,11 @@
 			}
 		},
 		{
-			"contents": "<html>\n<head>\n<title>Welcome to Strings!</title>\n</head>\n<body>\n<!--LOGO在最左上方-->\n<a href=\"登录.html\" style=\"float:right\">登录</a>\n</br>\n<a href=\"注册.html\" style=\"float:right\">注册</a>\n</br>\n\n\n</body>\n</html>\n",
 			"file": "框架.html",
-			"file_size": 228,
-			"file_write_time": 130595896347082940,
 			"settings":
 			{
-				"buffer_size": 201,
-				"line_ending": "Windows",
-				"scratch": true
+				"buffer_size": 310,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -155,7 +167,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -163,22 +175,22 @@
 					"file": "登录.html",
 					"settings":
 					{
-						"buffer_size": 704,
+						"buffer_size": 678,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7,
-								7
+								282,
+								282
 							]
 						],
 						"settings":
 						{
-							"force_encoding": "UTF-8",
+							"force_encoding": "GBK",
 							"in_converting": true,
-							"origin_encoding": "UTF-8",
+							"origin_encoding": "GBK",
 							"revert_to_scratch": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -232,8 +244,8 @@
 						"selection":
 						[
 							[
-								2596,
-								2596
+								3309,
+								3309
 							]
 						],
 						"settings":
@@ -244,7 +256,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2603.0,
+						"translation.y": 2484.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -308,15 +320,15 @@
 					"file": "框架.html",
 					"settings":
 					{
-						"buffer_size": 201,
+						"buffer_size": 310,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								201,
-								201
+								209,
+								209
 							]
 						],
 						"settings":
@@ -324,6 +336,7 @@
 							"force_encoding": "GBK",
 							"in_converting": true,
 							"origin_encoding": "GBK",
+							"prevent_detect": true,
 							"revert_to_scratch": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
