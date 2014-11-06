@@ -5,11 +5,15 @@
 		[
 			[
 				"fon",
-				"font-weight"
+				"font-size"
 			],
 			[
 				"fo",
-				"font-size"
+				"font-family"
+			],
+			[
+				"sty",
+				"style2"
 			],
 			[
 				"flo",
@@ -84,11 +88,15 @@
 			}
 		},
 		{
+			"contents": "<html>\n<head>\n<title>Welcome to Strings!</title>\n</head>\n<body>\n<!--LOGO在最左上方-->\n<div class=style1>\n<a href=\"登录.html\" style=\"float:right\">登录</a>\n</br>\n<a href=\"注册.html\" style=\"float:right\">注册</a>\n</br>\n</div>\n<div class=style2>\n<h2>\nSay things as you like .\n</h2>\n</div>\n\n<style type=\"text/css\">\n.style1{\n	font-size: large;\n	font-weight: bold;\n}\n.style2{\n	font-weight: bold;\n	float: center;\n	font-size: x-large;\n}\n</style>\n\n</body>\n</html>\n",
 			"file": "框架.html",
+			"file_size": 485,
+			"file_write_time": 130597376313797826,
 			"settings":
 			{
-				"buffer_size": 310,
-				"line_ending": "Windows"
+				"buffer_size": 440,
+				"line_ending": "Windows",
+				"scratch": true
 			}
 		}
 	],
@@ -244,8 +252,8 @@
 						"selection":
 						[
 							[
-								3309,
-								3309
+								4345,
+								4345
 							]
 						],
 						"settings":
@@ -256,7 +264,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2484.0,
+						"translation.y": 2639.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -320,15 +328,15 @@
 					"file": "框架.html",
 					"settings":
 					{
-						"buffer_size": 310,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								209,
-								209
+								411,
+								411
 							]
 						],
 						"settings":
@@ -336,7 +344,6 @@
 							"force_encoding": "GBK",
 							"in_converting": true,
 							"origin_encoding": "GBK",
-							"prevent_detect": true,
 							"revert_to_scratch": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
