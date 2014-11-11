@@ -1,37 +1,59 @@
 <html> 
 <head>
-<title>¼òÒ××¢²áµÇÂ¼</title>
+<title>login-- Strings!</title>
 </head>
 <body>
-<center>
 <script> 
-function myFunction(){
+function login(){
 	alert("ÄúÑ¡ÔñµÇÂ¼£¬È·¶¨Âð£¿");
 }
 function loginup(){
 	alert("ÄúÑ¡Ôñ×¢²á£¬È·¶¨Âð£¿")
 }
-document.write("<h1>Login</h1>");
 document.getElementsById("first name");
 document.getElementsById("pass");
 	
 
 </script>
-
+<div class= all>
+<div id="login">
+<h1>Login</h1>
+<div>
 <form>	
 <strong id="name">Username</strong>
 <input type="text" name="first name"/>
-<br/>
-<strong id="pass">Password</strong>
+<br/>	
+<strong id="password">Password</strong>
 <input type="password" name="password"/>
 <br/>
-
+</div>
 </form>
-<form action=".php"onsubmit=";" method="post">
-<form action=".php"onsubmit=";" method="post">
-
-<button onclick="myFunction()">submit</button>
+<form action="username.php"onsubmit=";" method="post">
+<form action="password.php"onsubmit=";" method="post">
+<div class= button>
+<button onclick="login()">submit</button>
 <button onclick="loginup()">Login up</button>
-</center>
+</div>
+</div>
+<style type="text/css">
+#name,#password{
+	font-family: "Times New Roman",Georgia,Serif;
+	font-size: large;
+	font-weight: bold;
+	text-decoration: none;}
+#login{
+	font-family: "Times New Roman",Georgia,Serif;
+	font-size: xx-large;
+}
+.button{
+	font-size: 10%;
+	font-family: "Times New Roman",Georgia,Serif;
+}
+.all{
+	border-style: groove;
+	background-color: #6495ED;	
+	text-align: center;
+}
+</style>
 </body>
 </html>

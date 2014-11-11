@@ -4,8 +4,36 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"text-align"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"f",
+				"frame"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
 				"fon",
-				"font-size"
+				"font-family"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"tex",
+				"text-decoration"
 			],
 			[
 				"fo",
@@ -40,27 +68,38 @@
 	"buffers":
 	[
 		{
-			"contents": "<html> \n<head>\n<title>简易注册登录</title>\n</head>\n<body>\n<center>\n<script> \nfunction myFunction(){\n	alert(\"您选择登录，确定吗？\");\n}\nfunction loginup(){\n	alert(\"您选择注册，确定吗？\")\n}\ndocument.write(\"<h1>Login</h1>\");\ndocument.getElementsById(\"first name\");\ndocument.getElementsById(\"pass\");\n	\n\n</script>\n\n<form>	\n<strong id=\"name\">Username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>\n<strong id=\"pass\">Password</strong>\n<input type=\"password\" name=\"password\"/>\n<br/>\n\n</form>\n<form action=\".php\"onsubmit=\";\" method=\"post\">\n<form action=\".php\"onsubmit=\";\" method=\"post\">\n\n<button onclick=\"myFunction()\">submit</button>\n<button onclick=\"loginup()\">Login up</button>\n</center>\n</body>\n</html>\n",
+			"contents": "<html> \n<head>\n<title>login-- Strings!</title>\n</head>\n<body>\n<script> \nfunction login(){\n	alert(\"您选择登录，确定吗？\");\n}\nfunction loginup(){\n	alert(\"您选择注册，确定吗？\")\n}\ndocument.getElementsById(\"first name\");\ndocument.getElementsById(\"pass\");\n	\n\n</script>\n<div class= all>\n<div id=\"login\">\n<h1>Login</h1>\n<div>\n<form>	\n<strong id=\"name\">Username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>	\n<strong id=\"password\">Password</strong>\n<input type=\"password\" name=\"password\"/>\n<br/>\n</div>\n</form>\n<form action=\"username.php\"onsubmit=\";\" method=\"post\">\n<form action=\"password.php\"onsubmit=\";\" method=\"post\">\n<div class= button>\n<button onclick=\"login()\">submit</button>\n<button onclick=\"loginup()\">Login up</button>\n</div>\n</div>\n<style type=\"text/css\">\n#name,#password{\n	font-family: \"Times New Roman\",Georgia,Serif;\n	font-size: large;\n	font-weight: bold;\n	text-decoration: none;}\n#login{\n	font-family: \"Times New Roman\",Georgia,Serif;\n	font-size: xx-large;\n}\n.button{\n	font-size: 10%;\n	font-family: \"Times New Roman\",Georgia,Serif;\n}\n.all{\n	border-style: groove;\n	background-color: #6495ED;	\n	text-align: center;\n}\n</style>\n</body>\n</html>\n",
 			"file": "登录.html",
-			"file_size": 741,
-			"file_write_time": 130596680784633803,
+			"file_size": 1214,
+			"file_write_time": 130601973209586130,
 			"settings":
 			{
-				"buffer_size": 678,
+				"buffer_size": 1135,
 				"line_ending": "Windows",
 				"scratch": true
 			}
 		},
 		{
-			"contents": "<html>\n<head>\n<title>简易注册登录</title>	\n</head>\n<body>\n<center>\n<script>\ndocument.write(\"<h1>Register</h1>\") \n	\n</script>\n<form>\n	<strong id=\"name\">username</strong>\n	<input type=\"text\" name=\"first name\"/>\n<br/>\n	<strong id=\"pass\">password</strong>\n	<input type=\"text\" name=\"password\"/>\n<br/>\n  	<strong id=\"email\">E-mail&nbsp;&nbsp;<strong>\n	<input type=\"text\" name=\"email\"/>\n<br/>\n	\n</form>\n\n\n\n\n\n</center>\n</body>	\n\n\n\n\n\n\n\n\n</html>\n",
-			"file": "注册.html",
-			"file_size": 474,
-			"file_write_time": 130595896414593425,
+			"contents": "<html>\n<head>\n<title>Welcome to Strings!</title>\n</head>\n<body>\n<!--LOGO在最左上方-->\n<div class= frame>\n<div class=button>\n<a href=\"登录.html\" style=\"float:right\">登录</a>\n</br>\n<a href=\"注册.html\" style=\"float:right\">注册</a>\n</div>\n</br>\n<div class=words>\n<h2>\nTell your story .\n</h2>\n</div>\n<hr/>\n</div>\n\n\n\n<style type=\"text/css\">\n.button{\n	font-size: large;\n	font-weight: bold;\n	text-decoration: none;\n	color: #DC143C;\n}\n.words{\n	font-weight: bold;\n	font-size: xx-small;\n	font-family: \"Times New Roman\",Georgia,Serif;\n	text-decoration: none;\n}\n.frame{\n	background-color: #6495ED;\n	background-attachment: fixed;\n\n}\n</style>\n\n</body>\n</html>",
+			"file": "框架.html",
+			"file_size": 688,
+			"file_write_time": 130601979475863533,
 			"settings":
 			{
-				"buffer_size": 430,
+				"buffer_size": 631,
 				"line_ending": "Windows",
 				"scratch": true
+			}
+		},
+		{
+			"contents": "<html>\n<head>\n<title>Tell your story . --Strings</title>	\n</head>	\n<body>\n	\n</body>\n</html>",
+			"file": "main.html",
+			"file_size": 78,
+			"file_write_time": 130601975584501344,
+			"settings":
+			{
+				"buffer_size": 91,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -88,13 +127,13 @@
 			}
 		},
 		{
-			"contents": "<html>\n<head>\n<title>Welcome to Strings!</title>\n</head>\n<body>\n<!--LOGO在最左上方-->\n<div class=style1>\n<a href=\"登录.html\" style=\"float:right\">登录</a>\n</br>\n<a href=\"注册.html\" style=\"float:right\">注册</a>\n</br>\n</div>\n<div class=style2>\n<h2>\nSay things as you like .\n</h2>\n</div>\n\n<style type=\"text/css\">\n.style1{\n	font-size: large;\n	font-weight: bold;\n}\n.style2{\n	font-weight: bold;\n	float: center;\n	font-size: x-large;\n}\n</style>\n\n</body>\n</html>\n",
-			"file": "框架.html",
-			"file_size": 485,
-			"file_write_time": 130597376313797826,
+			"contents": "<html>\n<head>\n<title>简易注册登录</title>	\n</head>\n<body>\n<center>\n<script>\ndocument.write(\"<h1>Register</h1>\") \n	\n</script>\n<form>\n	<strong id=\"name\">username</strong>\n	<input type=\"text\" name=\"first name\"/>\n<br/>\n	<strong id=\"pass\">password</strong>\n	<input type=\"text\" name=\"password\"/>\n<br/>\n  	<strong id=\"email\">E-mail&nbsp;&nbsp;<strong>\n	<input type=\"text\" name=\"email\"/>\n<br/>\n	\n</form>\n\n\n\n\n\n</center>\n</body>	\n\n\n\n\n\n\n\n\n</html>\n",
+			"file": "注册.html",
+			"file_size": 474,
+			"file_write_time": 130595896414593425,
 			"settings":
 			{
-				"buffer_size": 440,
+				"buffer_size": 430,
 				"line_ending": "Windows",
 				"scratch": true
 			}
@@ -132,8 +171,10 @@
 	},
 	"file_history":
 	[
-		"/E/Strings/firstt try.html",
+		"/C/Users/Administrator/Desktop/jsppt/impress.js/js/impress.js",
+		"/C/Users/Administrator/Desktop/jsppt/impress.js/css/impress-demo.css",
 		"/E/wamp/www/注册实例.html",
+		"/E/Strings/firstt try.html",
 		"/E/wamp/www/practice.html",
 		"/E/wamp/www/黄英伦.php",
 		"/C/js/黄英伦.php",
@@ -175,7 +216,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -183,15 +224,15 @@
 					"file": "登录.html",
 					"settings":
 					{
-						"buffer_size": 678,
+						"buffer_size": 1135,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								282,
-								282
+								1109,
+								1109
 							]
 						],
 						"settings":
@@ -211,25 +252,25 @@
 				},
 				{
 					"buffer": 1,
-					"file": "注册.html",
+					"file": "框架.html",
 					"settings":
 					{
-						"buffer_size": 430,
+						"buffer_size": 631,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								162,
-								162
+								602,
+								602
 							]
 						],
 						"settings":
 						{
 							"force_encoding": "GBK",
 							"in_converting": true,
-							"origin_encoding": "UTF-8",
+							"origin_encoding": "GBK",
 							"revert_to_scratch": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -242,6 +283,32 @@
 				},
 				{
 					"buffer": 2,
+					"file": "main.html",
+					"settings":
+					{
+						"buffer_size": 91,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "/E/wamp/www/注册实例.html",
 					"settings":
 					{
@@ -252,8 +319,8 @@
 						"selection":
 						[
 							[
-								4345,
-								4345
+								140,
+								140
 							]
 						],
 						"settings":
@@ -264,13 +331,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2639.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "/E/wamp/www/E-mail验证.html",
 					"settings":
 					{
@@ -297,7 +364,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "/E/wamp/www/表单验证.html",
 					"settings":
 					{
@@ -324,26 +391,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "框架.html",
+					"buffer": 6,
+					"file": "注册.html",
 					"settings":
 					{
-						"buffer_size": 440,
+						"buffer_size": 430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								411,
-								411
+								118,
+								118
 							]
 						],
 						"settings":
 						{
 							"force_encoding": "GBK",
 							"in_converting": true,
-							"origin_encoding": "GBK",
+							"origin_encoding": "UTF-8",
 							"revert_to_scratch": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
