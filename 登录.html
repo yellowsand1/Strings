@@ -4,16 +4,26 @@
 </head>
 <body>
 <script> 
-function login(){
-	alert("您选择登录，确定吗？");
+//邮箱验证	
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+if (apos<1) 
+  {alert(alerttxt);return false}
+else {return true}
 }
-function loginup(){
-	alert("您选择注册，确定吗？")
 }
-document.getElementsById("first name");
-document.getElementsById("pass");
-	
 
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_email(username,"该邮箱不存在！")==false)
+  {username.focus();return false}
+}
+}
 </script>
 <div class= all>
 <div id="login">
@@ -21,18 +31,21 @@ document.getElementsById("pass");
 <div>
 <form>	
 <strong id="name">Username</strong>
-<input type="text" name="first name"/>
+<input type="text" name="username"/>
 <br/>	
 <strong id="password">Password</strong>
 <input type="password" name="password"/>
 <br/>
 </div>
 </form>
-<form action="username.php"onsubmit=";" method="post">
-<form action="password.php"onsubmit=";" method="post">
+<form name="username"action="username.php"onsubmit="return validate_form(this);" method="post">
+<form name="password"action="password.php" method="post">
 <div class= button>
-<button onclick="login()">submit</button>
-<button onclick="loginup()">Login up</button>
+<input type="submit" value="Submit" name="username">
+<br/>
+还没有账号？  赶快去
+<a href="注册.html">注册</a>
+一个吧！
 </div>
 </div>
 <style type="text/css">

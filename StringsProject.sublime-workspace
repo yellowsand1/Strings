@@ -68,13 +68,13 @@
 	"buffers":
 	[
 		{
-			"contents": "<html> \n<head>\n<title>login-- Strings!</title>\n</head>\n<body>\n<script> \nfunction login(){\n	alert(\"您选择登录，确定吗？\");\n}\nfunction loginup(){\n	alert(\"您选择注册，确定吗？\")\n}\ndocument.getElementsById(\"first name\");\ndocument.getElementsById(\"pass\");\n	\n\n</script>\n<div class= all>\n<div id=\"login\">\n<h1>Login</h1>\n<div>\n<form>	\n<strong id=\"name\">Username</strong>\n<input type=\"text\" name=\"first name\"/>\n<br/>	\n<strong id=\"password\">Password</strong>\n<input type=\"password\" name=\"password\"/>\n<br/>\n</div>\n</form>\n<form action=\"username.php\"onsubmit=\";\" method=\"post\">\n<form action=\"password.php\"onsubmit=\";\" method=\"post\">\n<div class= button>\n<button onclick=\"login()\">submit</button>\n<button onclick=\"loginup()\">Login up</button>\n</div>\n</div>\n<style type=\"text/css\">\n#name,#password{\n	font-family: \"Times New Roman\",Georgia,Serif;\n	font-size: large;\n	font-weight: bold;\n	text-decoration: none;}\n#login{\n	font-family: \"Times New Roman\",Georgia,Serif;\n	font-size: xx-large;\n}\n.button{\n	font-size: 10%;\n	font-family: \"Times New Roman\",Georgia,Serif;\n}\n.all{\n	border-style: groove;\n	background-color: #6495ED;	\n	text-align: center;\n}\n</style>\n</body>\n</html>\n",
+			"contents": "<html> \n<head>\n<title>login-- Strings!</title>\n</head>\n<body>\n<script> \n//邮箱验证	\nfunction validate_email(field,alerttxt)\n{\nwith (field)\n{\napos=value.indexOf(\"@\")\nif (apos<1) \n  {alert(alerttxt);return false}\nelse {return true}\n}\n}\n\nfunction validate_form(thisform)\n{\nwith (thisform)\n{\nif (validate_email(username,\"该邮箱不存在！\")==false)\n  {username.focus();return false}\n}\n}\n</script>\n<div class= all>\n<div id=\"login\">\n<h1>Login</h1>\n<div>\n<form>	\n<strong id=\"name\">Username</strong>\n<input type=\"text\" name=\"username\"/>\n<br/>	\n<strong id=\"password\">Password</strong>\n<input type=\"password\" name=\"password\"/>\n<br/>\n</div>\n</form>\n<form name=\"username\"action=\"username.php\"onsubmit=\"return validate_form(this);\" method=\"post\">\n<form name=\"password\"action=\"password.php\" method=\"post\">\n<div class= button>\n<input type=\"submit\" value=\"Submit\" name=\"username\">\n<br/>\n还没有账号？  赶快去\n<a href=\"注册.html\">注册</a>\n一个吧！\n</div>\n</div>\n<style type=\"text/css\">\n#name,#password{\n	font-family: \"Times New Roman\",Georgia,Serif;\n	font-size: large;\n	font-weight: bold;\n	text-decoration: none;}\n#login{\n	font-family: \"Times New Roman\",Georgia,Serif;\n	font-size: xx-large;\n}\n.button{\n	font-size: 10%;\n	font-family: \"Times New Roman\",Georgia,Serif;\n}\n.all{\n	border-style: groove;\n	background-color: #6495ED;	\n	text-align: center;\n}\n</style>\n</body>\n</html>\n",
 			"file": "登录.html",
-			"file_size": 1214,
-			"file_write_time": 130601973209586130,
+			"file_size": 1425,
+			"file_write_time": 130602900339533947,
 			"settings":
 			{
-				"buffer_size": 1135,
+				"buffer_size": 1325,
 				"line_ending": "Windows",
 				"scratch": true
 			}
@@ -92,14 +92,47 @@
 			}
 		},
 		{
-			"contents": "<html>\n<head>\n<title>Tell your story . --Strings</title>	\n</head>	\n<body>\n	\n</body>\n</html>",
+			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"textml\">\n<title> Strings的注册网站</title>\n</head>\n<body>\n	<script> \n\n//邮箱验证	\nfunction validate_email(field,alerttxt)\n{\nwith (field)\n{\napos=value.indexOf(\"@\")\nif (apos<1) \n  {alert(alerttxt);return false}\nelse {return true}\n}\n}\n\nfunction validate_form(thisform)\n{\nwith (thisform)\n{\nif (validate_email(username,\"该邮箱不存在！\")==false)\n  {username.focus();return false}\n}\n}\n//密码长度检查\nfunction check()\nvar a =document.theform.words.length\nif (a<6|a>16) {\n	alert (\"请重新输入！\")\n};\n</script>\n\n	<div id =\"xf\"style=\"position: fixed; width: 1348px; top: 0px; align=\"right\"\">\n		<a href =login.html >已有账号？立即登录！</a>\n	</div>\n	<div class=\"top\"></div>\n	<div class=\"main\">\n		<div id=\"register\">\n			<center>\n		<h1>\n			欢迎来到Strings！\n		</h1 >	\n			<form method=\"post\"action =\"User.php\"onsubmit\"reture validate_form(thisform)\">      \n			请输入注册名:<input id=\"username\" type=\"text\" class=\"_input\" onblur=\"check_username()\" /></br>\n			请输入邮箱名<input id =\"email\" type=\"text\" class=\"_input\" onblur=\"check_email()\"/><br/>       \n			请输入密码:<input id=\"pass\" type=\"password\" class=\"_input\" onblur=\"check_pass()\"/> <br/>    \n			请再次确认密码:<input id=\"rpass\" type=\"password\" class=\"_input\" onblur=\"check_rpass()\" /><br/>\n			\n		    </form>\n		 \n		<input type=\"submit\" value =\"确认注册\">\n	</div>	\n	</div>\n    <div class=\"foot\"></div>\n	\n	<style type=\"text/css\">\nbody{margin: 0;padding: 0;}\n#xf{height: 30px;\n	background-color: transparent;\n	 text-align:right\n	 }\n#xf a:link{\n	color:blue;\n}	 \n    a:visited{\n    	color: red;\n    }\n    a:hover{\n    	color: red;\n    }\n    \n.top{height:160px;\n	background: #E3CA98;\n }\n.main{width:500px;\n	height:300px;\n	border: #ccc;\n	margin:  0 auto;\n	background: #badbdb;\n	padding-top: 100px;\n	padding-bottom: 100px;\n	padding-left: 50px;\n	padding-right: 50px;}\n#register{height: 200px;\n	width:400px;\n	padding-left: 50px;\n	padding-right: 50px;\n	font-family: \"微软雅黑\";\n	text-align:center;\n	margin:50 ;\n	background:#FFFFFF;\n	border-left-width: 2spx;\n    border-left-color: #CCCCCC;}\n.foot{height:100px;\n	background:#E3CA98;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; }\n</style>	\n</body>\n<html>",
+			"file": "注册.html",
+			"file_size": 2363,
+			"file_write_time": 130602904086394790,
+			"settings":
+			{
+				"buffer_size": 2182,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
 			"file": "main.html",
-			"file_size": 78,
-			"file_write_time": 130601975584501344,
 			"settings":
 			{
 				"buffer_size": 91,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<title>仿支付宝注册表单效果</title>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=gb2312\">\n<style type=\"text/css\">\n	body {\n		font-family: \"Arial\", \"Helvetica\", \"sans-serif\" ;\n		font-size: 11.5px;\n	}\n	div {\n		display: block;\n		padding: 5px 0;\n		text-align: left;\n		margin: 5px 10px;\n		width: 700px;\n	}\n	input {\n		padding: 2px 8px 0px 3px;\n		border-top-width: 1px;\n		border-left-width: 1px;\n		border-right-width: 1px solid #ccc;\n		border-bottom-width: 1px solid #ccc;\n		margin-right: 5px;\n	}\n	.txtarea{\n		font-size: 11.5px;\n		width: 500px;\n		height: 300px;\n		display: none;\n		margin-left: 160px;\n		border-top-width: 1px;\n		border-left-width: 1px;\n		border-right-width: 1px solid #ccc;\n		border-bottom-width: 1px solid #ccc;\n		overflow: auto; 		\n	}\n	label { \n		float: left;\n		text-align: right;\n		display:block;\n		width:150px; \n		padding: 2px 8px 0px 3px;\n	}\n	.reg{\n		font-size: 11.5px;\n		font-weight: bold;\n		border-bottom: 1px solid #CCCCEE;\n		padding-bottom: 5px;\n		width: 700px;\n		margin: 10px;\n	}\n	.divstyle\n	{\n		border: 1px solid #CCCCEE;\n		background-color: #EEEEFF;\n		display: block;\n		padding: 5px 0;\n		text-align: left;\n		margin: 5px 10px;\n		width: 700px;\n	}\n	.subBtn{\n		border: 1px solid #ccc;\n		color: #333;\n		background-color: #EEEEFF;\n		text-align: center;\n	}\n	.eName{\n		color: #000;\n		background: #e2f5ff url(/jscss/demoimg/200905/alipay_ok.gif) no-repeat 5px 3px;\n		padding: 3px 3px 3px 25px;\n		border: 1px solid #00A8FF;\n	}\n	.wName{\n		color: #000;\n		background: #FFF2E9 url(/jscss/demoimg/200905/alipay_no.gif) no-repeat 5px 3px;\n		padding: 3px 3px 3px 25px;\n		border: 1px solid #FF6600;\n	}\n	.rName {\n		color: #000;\n		background: transparent url(/jscss/demoimg/200905/alipay_yes.gif) no-repeat 0px 0px;\n		padding: 3px 3px 3px 25px;\n	}\n	.txtR{\n		background: #FFFFFF url(/jscss/demoimg/200905/alipay_input_ok_corner.gif) no-repeat scroll right top;\n		border-top-width: 1px;\n		border-left-width: 1px;\n		border-right-width: 1px solid #ccc;\n		border-bottom-width: 1px solid #ccc;\n		padding: 2px 3px 0px 3px;\n	}\n	.txtW{\n		background: #FFFFFF url(/jscss/demoimg/200905/alipay_input_warning_corner.gif) no-repeat scroll right bottom;\n		border-top-width: 1px;\n		border-left-width: 1px;\n		border-right-width: 1px solid #ccc;\n		border-bottom-width: 1px solid #ccc;\n		padding: 2px 3px 0px 3px;\n	}	\n	.txtE{\n		background: #FFFFFF url(/jscss/demoimg/200905/alipay_input_error_corner.gif) no-repeat scroll right bottom;\n		border-top-width: 1px;\n		border-left-width: 1px;\n		border-right-width: 1px solid #ccc;\n		border-bottom-width: 1px solid #ccc;\n		padding: 2px 3px 0px 3px;\n	}			\n</style>\n\n\n\n\n\n\n\n\n\n\n<script type=\"text/javascript\" language=\"javascript\" >\n	 function $(id){return document.getElementById(id);}\n	 function $F(id){return document.getElementById(id).value;}\n	 function $N(name){return document.getElementsByTagName(name)}\n	 function isName(s)  \n	 {  \n	 var patrn=/^(\\w){6,16}$/;  \n	 if (!patrn.exec(s)) {return false;}  \n	 return true;  \n	 }\n		function checkName()\n		{\n			if($F('name')==\"\")\n			{\n				with($('nameMsg'))\n				{\n					innerHTML=\"Please enter this\";\n					className=\"eName\";	\n				}	\n				$('name').className='txtW';\n				$('name').parentNode.className=\"divstyle\";\n			}	\n			else	if($F('name')!==\"\" &&!isName($F('name')))\n			{\n				with($('nameMsg'))\n				{\n					innerHTML=\"Enter between 6 and 16 characters (A-Z, a-z, 0-9,_ ,).\";\n					className=\"wName\";\n					\n				}\n				//$('name').focus();\n				$('name').className='txtE';\n				$('name').parentNode.className=\"divstyle\";\n				return false;\n			}\n			else\n			{\n				with($('nameMsg'))\n				{\n					innerHTML=\" \";\n					className=\"rName\";\n				}\n				$('name').className='txtR';\n				$('name').parentNode.className=\"\";\n				return true;\n			}\n		}\n		function checkPwd()\n		{\n			if($F('pwd')==\"\")\n			{\n				with($('pwdMsg'))\n				{\n					innerHTML=\"Please enter this\";\n					className=\"eName\";\n				}\n				$('pwd').className='txtW';\n				$('pwd').parentNode.className=\"divstyle\";\n			}	\n			else	if($F('pwd')!==\"\" &&!isName($F('pwd')))\n			{\n				with($('pwdMsg'))\n				{\n					innerHTML=\"Enter between 6 and 16 characters (A-Z, a-z, 0-9,_ ,).\";\n					className=\"wName\";\n				}\n				//$('pwd').focus();\n				$('pwd').className='txtE';\n				$('pwd').parentNode.className=\"divstyle\";\n				return false;\n			}\n			else\n			{\n				with($('pwdMsg'))\n				{\n					innerHTML=\" \";\n					className=\"rName\";		\n				}\n				$('pwd').className='txtR';\n				$('pwd').parentNode.className=\"\";\n				return true;\n			}\n		}\n		function checkPwd2()\n		{\n			if($F('pwd2')==\"\")\n			{\n				with($('pwdMsg2'))\n				{\n					innerHTML=\"Please enter this\";\n					className=\"eName\";		\n				}\n				$('pwd2').className='txtW';\n				$('pwd2').parentNode.className=\"divstyle\";\n			}	\n			else	if($F('pwd2')!==\"\" &&!isName($F('pwd2')))\n			{\n				with($('pwdMsg2'))\n				{\n					innerHTML=\"Enter between 6 and 16 characters (A-Z, a-z, 0-9,_ ,).\";\n					className=\"wName\";\n				}\n				//$('pwd2').focus();\n				$('pwd2').className='txtE';\n				$('pwd2').parentNode.className=\"divstyle\";\n				return false;\n				\n			} else if($F('pwd2')==$F('pwd'))\n			{\n				with($('pwdMsg2'))\n				{\n					innerHTML=\" \";\n					className=\"rName\";	\n				}\n				$('pwd2').className='txtR';\n				$('pwd2').parentNode.className=\"\";\n				return true;\n			}\n			else\n			{\n				with($('pwdMsg2'))\n				{\n					innerHTML=\"Please confirm the pasword\";\n					className=\"eName\";\n				}\n				//$('pwd2').focus();\n				$('pwd2').className='txtE';\n				$('pwd2').parentNode.className=\"divstyle\";\n				return false;\n			}\n		}\n		function inputLoadOk()\n		{\n			var elm = $N('input');\n			for( i=0; i<elm.length;i++)\n			{\n				if(elm[i].type != \"button\" && elm[i].type != \"submit\" && elm[i].type != \"reset\"&&elm[i].type!=\"checkbox\")\n				{\n					elm[i].className=\"txtW\";\n					//elm[i].nextSibling.innerHTML=\"txtW\";\n					//alert(elm[i].nextSibling.innerHTML)\n				}\n			}		\n		}\n	function infoClick()\n	{\n			if($('info').checked)\n			{\n				$('btnSub').disabled   =   false;\n				$('txtinfo').style.display='block';\n				//$('info').className='txtE';\n				$('info').parentNode.className=\"divstyle\";\n				return true;\n			}\n			else\n				$('btnSub').disabled   =   true;\n				$('txtinfo').style.display='none'\n				$('info').parentNode.className=\"\";\n				return false;\n	}\n	function checkForm()\n	{\n		if(checkName()&&checkPwd()&&checkPwd2()&&infoClick())\n		{\n			alert(\"go to method\");\n		}\n	}\n</script>\n</head>\n<body onload=\"inputLoadOk()\">\n<form>\n<h2 class=\"reg\">加入：</h2>\n<div>\n	<label for=\"name\">用户名</label>\n	<input type=\"text\" id=\"name\" value=\"\" maxlength=\"16\" onblur=\"checkName()\"/><span id=\"nameMsg\"></span>\n</div>\n<div>\n	<label for=\"pwd\">密码</label>\n	<input type=\"password\" id=\"pwd\" value=\"\" maxlength=\"16\" onblur=\"checkPwd()\"/><span id=\"pwdMsg\"></span>\n</div>\n<div>\n	<label for=\"pwd2\">确认密码</label>\n	<input type=\"password\" id=\"pwd2\" value=\"\" maxlength=\"16\" onblur=\"checkPwd2()\"/><span id=\"pwdMsg2\"></span>\n</div>\n<div>\n	<label> </label>\n	<input type=\"checkbox\" id=\"info\" name=\"info\" value=\"\" onclick=\"infoClick()\"/><span>我已阅读了协议<span>\n	<span id=\"txtinfo\" class=\"txtarea\" style=\"padding-top:5px\">这里是用户注册协议的内容，请自行添加！</span>\n	<!--<label>&nbsp;</label>\n	<textarea id=\"txtinfo\" class=\"txtarea\">用户注册协议</textarea>-->\n</div>\n<div>\n	<label> </label>\n	<input type=\"button\" class=\"subBtn\" id=\"btnSub\" disabled  value=\"开始检测并登记\" onclick=\"checkForm()\">\n</div>\n</form>\n</body>\n</html>",
+			"file": "注册实例2.html",
+			"file_size": 7808,
+			"file_write_time": 130602895331544460,
+			"settings":
+			{
+				"buffer_size": 7430,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html>\n<head>\n   <title>Title</title>\n   <style>\n   \n    ul {list-style-type:none;}\n    ul li {margin-bottom:15px;}\n   \n    .front_input {width:150px;display:block;text-align:right;}\n    .front_input,ul li input {float:left;}\n    .after_input {margin-left:5px;color:#FF0000;font-size:14px;folat:left;}\n    ul input {width:200px;height:18px;}\n    .front_input {clear:both;}\n   </style>\n  \n  \n   <script type=\"text/javascript\">\n    //保存一个密码用于校验\n    var _pass;\n    /**\n    *检查用户名\n   \n    */\n    String.prototype.Trim = function() { \n    return this.replace(/(^\\s*)|(\\s*$)/g, \"\"); }\n    //---------------------------------------------------------------------------\n    function check_username(){\n     var username;\n     username = document.getElementById('username').value;\n     username = username.Trim();\n     if (username == \"\") {\n      document.getElementById('username_error').innerHTML = \"请输入用户名\";\n      } else {\n       if (/^\\w{6,20}$/.test(username)) {\n        document.getElementById('userName_error').innerHTML = \"\";\n        } else {\n        document.getElementById('userName_error').innerHTML = \"请输入6 ~ 20 字符【0-9】【a-z-A-Z】\";\n        }\n     }\n    }\n    /**\n    *检查Email\n    */\n    //---------------------------------------------------------------------------\n    function check_email(){\n     var email;\n     email = document.getElementById('email').value;\n     email = email.Trim();\n     if (email == \"\") {\n      document.getElementById('email_error').innerHTML = \"请输入Email\";\n      } else {\n       if (/^[\\w-]+[\\.]*[\\w-]+[@][\\w\\-]{1,}([.]([\\w\\-]{1,})){1,3}$/.test(email)) {\n        document.getElementById('email_error').innerHTML = \"\";\n        } else {\n        document.getElementById('email_error').innerHTML = \"请输入有效的Email地址\";\n        }      \n      }\n     }\n    /**\n    *检查密码\n    */\n    //---------------------------------------------------------------------------\n    function check_pass(){\n     var pass;\n     pass = document.getElementById('pass').value;\n     pass = pass.Trim();\n     _pass = pass;\n     if (pass == \"\") {\n      document.getElementById('pass_error').innerHTML = \"请输入密码\";\n      } else {\n       if (/^\\w{6,20}$/.test(pass)) {\n        document.getElementById('pass_error').innerHTML = \"\";\n        } else {\n        document.getElementById('pass_error').innerHTML = \"请输入6 ~ 20 字符【0-9】【a-z-A-Z】\";\n        }      \n      }\n     }\n    /**\n    *检查rpass\n    */\n    //---------------------------------------------------------------------------\n    function check_rpass(){\n     var rpass;\n     rpass = document.getElementById('rpass').value;\n     rpass = rpass.Trim();\n     if (rpass == \"\") {\n      document.getElementById('rpass_error').innerHTML = \"请输入确认密码\";\n      } \n     else if (rpass != _pass) {\n      document.getElementById('rpass_error').innerHTML = \"密码不一致\";\n      }\n     else {\n      document.getElementById('rpass_error').innerHTML = \"\"\n      }    \n     }\n    //---------------------------------------------------------------------------\n    function regist(){\n     var username_error=document.getElementById('username_error').innerHTML;\n     var pass_error=document.getElementById('pass_error').innerHTML;\n     var rpass_error=document.getElementById('rpass_error').innerHTML;\n     var email_error=document.getElementById('email_error').innerHTML;\n     var username=document.getElementById('username').value;\n     var pass=document.getElementById('pass').value;\n     var rpass=document.getElementById('rpass').value;\n     var email=document.getElementById('email').value;    \n     //判断错误信息全部为空并且文本框全部不为空\n     if ((username_error == \"\" && pass_error == \"\" && rpass_error == \"\" && email_error == \"\")&&(username != \"\" && pass != \"\" && rpass != \"\" && email != \"\")) {\n      alert (\"恭喜，注册成功!\");\n      } else {\n       alert (\"注册信息填写错误，请仔细检查更正后再提交\");\n      \n       }\n    \n    \n     }       \n   </script>\n</head>\n<body>\n   <ul>\n    <li>\n     <span class=\"front_input\">用户名:</span><input id=\"username\" type=\"text\" class=\"_input\" onblur=\"check_username()\" /><span id=\"username_error\" class=\"after_input\"></span>\n    </li>\n    <li>\n     <span class=\"front_input\">密码:</span><input id=\"pass\" type=\"password\" class=\"_input\" onblur=\"check_pass()\" /><span id=\"pass_error\" class=\"after_input\"></span>\n    </li>\n    <li>\n     <span class=\"front_input\">确认密码:</span><input id=\"rpass\" type=\"password\" class=\"_input\" onblur=\"check_rpass()\" /><span id=\"rpass_error\" class=\"after_input\"></span>\n    </li>\n    <li>\n     <span class=\"front_input\">邮箱:</span><input id=\"email\" type=\"text\" class=\"_input\" onblur=\"check_email()\" /><span id=\"email_error\" class=\"after_input\"></span>\n    </li>\n   </ul>\n   <div style=\"clear:both;margin-left:330px;margin-top:50px;\">\n   <button onclick=\"regist()\"> 注册 </button>\n   </div>\n</body>\n</html>",
+			"file": "/E/wamp/www/注册实例3.html",
+			"file_size": 5122,
+			"file_write_time": 130602894958213107,
+			"settings":
+			{
+				"buffer_size": 4850,
+				"line_ending": "Windows",
+				"scratch": true
 			}
 		},
 		{
@@ -124,18 +157,6 @@
 			{
 				"buffer_size": 584,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<html>\n<head>\n<title>简易注册登录</title>	\n</head>\n<body>\n<center>\n<script>\ndocument.write(\"<h1>Register</h1>\") \n	\n</script>\n<form>\n	<strong id=\"name\">username</strong>\n	<input type=\"text\" name=\"first name\"/>\n<br/>\n	<strong id=\"pass\">password</strong>\n	<input type=\"text\" name=\"password\"/>\n<br/>\n  	<strong id=\"email\">E-mail&nbsp;&nbsp;<strong>\n	<input type=\"text\" name=\"email\"/>\n<br/>\n	\n</form>\n\n\n\n\n\n</center>\n</body>	\n\n\n\n\n\n\n\n\n</html>\n",
-			"file": "注册.html",
-			"file_size": 474,
-			"file_write_time": 130595896414593425,
-			"settings":
-			{
-				"buffer_size": 430,
-				"line_ending": "Windows",
-				"scratch": true
 			}
 		}
 	],
@@ -171,6 +192,9 @@
 	},
 	"file_history":
 	[
+		"/E/Strings/注册.html",
+		"/E/Strings/注册实例2.xml",
+		"/E/Strings/注册实例2.html",
 		"/C/Users/Administrator/Desktop/jsppt/impress.js/js/impress.js",
 		"/C/Users/Administrator/Desktop/jsppt/impress.js/css/impress-demo.css",
 		"/E/wamp/www/注册实例.html",
@@ -224,15 +248,15 @@
 					"file": "登录.html",
 					"settings":
 					{
-						"buffer_size": 1135,
+						"buffer_size": 1325,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1109,
-								1109
+								265,
+								265
 							]
 						],
 						"settings":
@@ -262,8 +286,8 @@
 						"selection":
 						[
 							[
-								602,
-								602
+								140,
+								140
 							]
 						],
 						"settings":
@@ -283,6 +307,37 @@
 				},
 				{
 					"buffer": 2,
+					"file": "注册.html",
+					"settings":
+					{
+						"buffer_size": 2182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"force_encoding": "GBK",
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"revert_to_scratch": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "main.html",
 					"settings":
 					{
@@ -299,6 +354,7 @@
 						],
 						"settings":
 						{
+							"origin_encoding": "ASCII",
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -308,7 +364,70 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
+					"file": "注册实例2.html",
+					"settings":
+					{
+						"buffer_size": 7430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2774,
+								2774
+							]
+						],
+						"settings":
+						{
+							"force_encoding": "GBK",
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"revert_to_scratch": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1369.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/E/wamp/www/注册实例3.html",
+					"settings":
+					{
+						"buffer_size": 4850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3090,
+								3620
+							]
+						],
+						"settings":
+						{
+							"force_encoding": "GBK",
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"revert_to_scratch": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1047.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "/E/wamp/www/注册实例.html",
 					"settings":
 					{
@@ -319,8 +438,8 @@
 						"selection":
 						[
 							[
-								140,
-								140
+								5605,
+								5647
 							]
 						],
 						"settings":
@@ -337,7 +456,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
 					"file": "/E/wamp/www/E-mail验证.html",
 					"settings":
 					{
@@ -348,8 +467,8 @@
 						"selection":
 						[
 							[
-								184,
-								184
+								167,
+								167
 							]
 						],
 						"settings":
@@ -364,7 +483,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 8,
 					"file": "/E/wamp/www/表单验证.html",
 					"settings":
 					{
@@ -375,45 +494,14 @@
 						"selection":
 						[
 							[
-								575,
-								575
+								552,
+								552
 							]
 						],
 						"settings":
 						{
 							"origin_encoding": "ASCII",
 							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "注册.html",
-					"settings":
-					{
-						"buffer_size": 430,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								118,
-								118
-							]
-						],
-						"settings":
-						{
-							"force_encoding": "GBK",
-							"in_converting": true,
-							"origin_encoding": "UTF-8",
-							"revert_to_scratch": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

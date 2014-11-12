@@ -1,38 +1,107 @@
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>简易注册登录</title>	
+<meta http-equiv ="Contet-Type" content="textml">
+<title> Strings的注册网站</title>
 </head>
 <body>
-<center>
-<script>
-document.write("<h1>Register</h1>") 
-	
+	<script> 
+
+//邮箱验证	
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+if (apos<1) 
+  {alert(alerttxt);return false}
+else {return true}
+}
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_email(username,"该邮箱不存在！")==false)
+  {username.focus();return false}
+}
+}
+//密码长度检查
+function check()
+var a =document.theform.words.length
+if (a<6|a>16) {
+	alert ("请重新输入！")
+};
 </script>
-<form>
-	<strong id="name">username</strong>
-	<input type="text" name="first name"/>
-<br/>
-	<strong id="pass">password</strong>
-	<input type="text" name="password"/>
-<br/>
-  	<strong id="email">E-mail&nbsp;&nbsp;<strong>
-	<input type="text" name="email"/>
-<br/>
+
+	<div id ="xf"style="position: fixed; width: 1348px; top: 0px; align="right"">
+		<a href =login.html >已有账号？立即登录！</a>
+	</div>
+	<div class="top"></div>
+	<div class="main">
+		<div id="register">
+			<center>
+		<h1>
+			欢迎来到Strings！
+		</h1 >	
+			<form method="post"action ="User.php"onsubmit"reture validate_form(thisform)">      
+			请输入注册名:<input id="username" type="text" class="_input" onblur="check_username()" /></br>
+			请输入邮箱名<input id ="email" type="text" class="_input" onblur="check_email()"/><br/>       
+			请输入密码:<input id="pass" type="password" class="_input" onblur="check_pass()"/> <br/>    
+			请再次确认密码:<input id="rpass" type="password" class="_input" onblur="check_rpass()" /><br/>
+			
+		    </form>
+		 
+		<input type="submit" value ="确认注册">
+	</div>	
+	</div>
+    <div class="foot"></div>
 	
-</form>
-
-
-
-
-
-</center>
-</body>	
-
-
-
-
-
-
-
-
-</html>
+	<style type="text/css">
+body{margin: 0;padding: 0;}
+#xf{height: 30px;
+	background-color: transparent;
+	 text-align:right
+	 }
+#xf a:link{
+	color:blue;
+}	 
+    a:visited{
+    	color: red;
+    }
+    a:hover{
+    	color: red;
+    }
+    
+.top{height:160px;
+	background: #E3CA98;
+ }
+.main{width:500px;
+	height:300px;
+	border: #ccc;
+	margin:  0 auto;
+	background: #badbdb;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 50px;}
+#register{height: 200px;
+	width:400px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: "微软雅黑";
+	text-align:center;
+	margin:50 ;
+	background:#FFFFFF;
+	border-left-width: 2spx;
+    border-left-color: #CCCCCC;}
+.foot{height:100px;
+	background:#E3CA98;
+	margin:10px 0px 0px;
+	border-top-width: 2px;
+	border-top-style: slide;
+	border-top-color:#FFFFFF; }
+</style>	
+</body>
+<html>
