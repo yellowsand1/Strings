@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"v",
+				"var"
+			],
+			[
+				"s",
+				"span	Tag"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"输入您的",
+				"请输入您的e-mail"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"g",
+				"getElementById"
+			],
+			[
+				"ge",
+				"getElementByid"
+			],
+			[
 				"fo",
 				"font-size"
 			],
@@ -60,10 +96,6 @@
 				"input	Tag"
 			],
 			[
-				"ge",
-				"getElementsByName"
-			],
-			[
 				"bo",
 				"botton"
 			],
@@ -76,25 +108,25 @@
 	"buffers":
 	[
 		{
-			"contents": "<html> \n<head>\n<title>login-- Strings!</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n<script> \n//邮箱验证	\nfunction validate_username(field,alerttxt)\n{\nwith (field)\n{\napos=value.indexOf(\"@\")\ndotpos=value.lastIndexOf(\".\")\nif (apos>1||dotpos-apos<2) \n  {alert(alerttxt);return false}\nelse {return true}\n}\n}\n\nfunction validate_form(thisform)\n{\nwith (thisform)\n{\nif (validate_username(username,\"该邮箱不存在！\")==false)\n  {username.focus();return false}\n}\n}\n//密码验证\n\n</script>\n<div class=\"zc\">\n还没有账号？  赶快去\n<a href=\"register.html\">注册</a>\n一个吧！\n</div>\n<div class=\"top\"></div>\n<div class= all>\n<div id=\"login\">\n<h1><strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong></h1>\n<div class=\"boder\">\n	<h2 align = \"center\">\n			Welcome to Strings!\n		<h2>	\n<form>	\n<strong id=\"name\">邮箱</strong>\n<input type=\"text\" name=\"username\"/>\n<br/>	\n<strong id=\"password\">密码</strong>\n<input type=\"password\" name=\"password\"/>\n<br/>\n</div>\n</form>\n<form name=\"username\" action=\"username.php\"onsubmit=\"return validate_form(thisform);\" method=\"post\">\n<form name=\"password\" action=\"password.php\" method=\"post\">\n<div class= \"xf\">\n	<div class=\"button\">\n<input type=\"submit\" value=\"提交\">\n<br/>\n</div>\n</div>\n</div>\n<div class=\"foot\"></div>\n<style type=\"text/css\">\n.top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n }\n h1{\n 	width:500px;\n	height:200px;\n	border: #ccc;\n	margin:  0 auto;\n    font-family: \"Comic Sans MS\";\n    font-size:xx-large;\n    font-style: normal;\n    color:#4DC2CB;\n	padding-bottom: 0px;\n	padding-left: 50px;\n	padding-right: 50px;\n }\n .xf{height: 30px;\n	 text-align:right;\n   	 font-family:\"微软雅黑\";\n     opacity: 0.6\n      \n	 } \n    .all{	\n    	text-align: center;\n    	font-family: \"微软雅黑\";\n    }\n.zc a:link{\n	color:#4DC2CB;\n}	 \n    a:visited{\n    	color: red;\n    }\n    a:hover{\n    	color: red;\n    }\n.zc{\n	text-align: right;\n	background-color:#252C33;\n	opacity: 0.6;\n	color: #4DC2CB;\n}\n.button{\n  margin: 0 auto;\n  text-align:center\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; \n}\n.boder{\n	height: 300px;\n	width:600px;\n	font-family: \"微软雅黑\";\n	text-align:center;\n  opacity:0.7;\n  font-size: medium;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n  border-top: 3px #CDE6FE solid;\n  border-right: 3px #CDE6FE solid;\n  border-bottom: 3px #CDE6FE solid;\n  font-family: \"Comic Sans MS\";\n  color: #181818;\n  margin:0 auto;\n  font-size: large;\n}\n}\n</style>\n</body>\n</html>\n",
+			"contents": "<html> \n<head>\n<title>login-- Strings!</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n<script> \n//邮箱验证	\nfunction checkusername1(){\n  var mail=document.getElementById('username').value;\n  if (mail==null||mail==\"\") {\n  document.getElementById('aftermail').innerHTML=\"请输入您的e-mail\";\n }else{\n  document.getElementById('aftermail').innerHTML=\"\";\n}\n}\n\n//密码验证\nfunction checkpassword1(){\n  var password=document.getElementById('password').value;\n  if (password==\"\"||password==null) {\n    document.getElementById('afterpassword').innerHTML=\"请输入您的密码\"；\n  }else{\n    document.getElementById('afterpassword').innerHTML=\"\";\n}\n}\n\n\n</script>\n<div class=\"zc\">\n还没有账号？  赶快去\n<a href=\"register.html\">注册</a>\n一个吧！\n</div>\n<div class=\"top\"></div>\n<div class= \"all\">\n<div id=\"login\">\n<h1><strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong></h1>\n<div class=\"boder\">\n	<h2 align = \"center\">\n			Welcome to Strings!\n		<h2>	\n<form>	\n<strong id=\"name\">邮箱</strong>\n<input type=\"text\" id=\"username\" onblur=\"checkusername1()\"/>\n<span id=\"aftermail\"></span>\n<br/>	\n<strong id=\"password\">密码</strong>\n<input type=\"password\" id=\"password\" onblur=\"checkpassword1()\"/>\n<span id=\"afterpassword\"></span>\n<br/>\n</div>\n</form>\n<form id=\"username\" action=\"username.php\"onsubmit=\"return validate_form();\" method=\"post\">\n<form id=\"password\" action=\"password.php\" method=\"post\">\n<div class= \"xf\">\n	<div class=\"button\">\n<input type=\"submit\" value=\"提交\">\n<br/>\n</div>\n</div>\n</div>\n<div class=\"foot\"></div>\n<style type=\"text/css\">\n.top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n }\n h1{\n 	width:500px;\n	height:200px;\n	border: #ccc;\n	margin:  0 auto;\n    font-family: \"Comic Sans MS\";\n    font-size:xx-large;\n    font-style: normal;\n    color:#4DC2CB;\n	padding-bottom: 0px;\n	padding-left: 50px;\n	padding-right: 50px;\n }\n .xf{height: 30px;\n	 text-align:right;\n   	 font-family:\"微软雅黑\";\n     opacity: 0.6\n      \n	 } \n    .all{	\n    	text-align: center;\n    	font-family: \"微软雅黑\";\n    }\n.zc a:link{\n	color:#4DC2CB;\n}	 \n    a:visited{\n    	color: red;\n    }\n    a:hover{\n    	color: red;\n    }\n.zc{\n	text-align: right;\n	background-color:#252C33;\n	opacity: 0.6;\n	color: #4DC2CB;\n}\n.button{\n  margin: 0 auto;\n  text-align:center\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; \n}\n.boder{\n	height: 300px;\n	width:600px;\n	font-family: \"微软雅黑\";\n	text-align:center;\n  opacity:0.7;\n  font-size: medium;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n  border-top: 3px #CDE6FE solid;\n  border-right: 3px #CDE6FE solid;\n  border-bottom: 3px #CDE6FE solid;\n  font-family: \"Comic Sans MS\";\n  color: #181818;\n  margin:0 auto;\n  font-size: large;\n}\n}\n</style>\n</body>\n</html>\n",
 			"file": "登录.html",
-			"file_size": 2744,
-			"file_write_time": 130604300788152711,
+			"file_size": 3013,
+			"file_write_time": 130604593832610479,
 			"settings":
 			{
-				"buffer_size": 2556,
+				"buffer_size": 2819,
 				"line_ending": "Windows",
 				"scratch": true
 			}
 		},
 		{
-			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings的注册网站</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n	<script>\n    //保存一个密码用于校验\n    var _pass;\n    String.prototype.Trim = function() { \n    return this.replace(/(^\\s*)|(\\s*$)/g, \"\"); }\n    /**\n    *检查Email\n    */\n    //---------------------------------------------------------------------------\n    function check_email(){\n     var email;\n     email = document.getElementById('email').value;\n     email = email.Trim();\n     if (email == \"\") {\n      document.getElementById('email_error').innerHTML = \"请输入Email\";\n      } else {\n       if (/^[\\w-]+[\\.]*[\\w-]+[@][\\w\\-]{1,}([.]([\\w\\-]{1,})){1,3}$/.test(email)) {\n        document.getElementById('email_error').innerHTML = \"\";\n        } else {\n        document.getElementById('email_error').innerHTML = \"请输入有效的Email地址\";\n        }      \n      }\n     }\n    /**\n    *检查密码\n    */\n    //---------------------------------------------------------------------------\n    function check_pass(){\n     var pass;\n     pass = document.getElementById('pass').value;\n     pass = pass.Trim();\n     _pass = pass;\n     if (pass == \"\") {\n      document.getElementById('pass_error').innerHTML = \"请输入密码\";\n      } else {\n       if (/^\\w{6,20}$/.test(pass)) {\n        document.getElementById('pass_error').innerHTML = \"\";\n        } else {\n        document.getElementById('pass_error').innerHTML = \"请输入6 ~ 20 字符【0-9】【a-z-A-Z】\";\n        }      \n      }\n     }\n    /**\n    *检查rpass\n    */\n    //---------------------------------------------------------------------------\n    function check_rpass(){\n     var rpass;\n     rpass = document.getElementById('rpass').value;\n     rpass = rpass.Trim();\n     if (rpass == \"\") {\n      document.getElementById('rpass_error').innerHTML = \"请输入确认密码\";\n      } \n     else if (rpass != _pass) {\n      document.getElementById('rpass_error').innerHTML = \"密码不一致\";\n      }\n     else {\n      document.getElementById('rpass_error').innerHTML = \"\"\n      }    \n     }\n    //---------------------------------------------------------------------------\n    function regist(){\n     var pass_error=document.getElementById('pass_error').innerHTML;\n     var rpass_error=document.getElementById('rpass_error').innerHTML;\n     var email_error=document.getElementById('email_error').innerHTML;\n     var pass=document.getElementById('pass').value;\n     var rpass=document.getElementById('rpass').value;\n     var email=document.getElementById('email').value;    \n     //判断错误信息全部为空并且文本框全部不为空\n     if ((pass_error == \"\" && rpass_error == \"\" && email_error == \"\")&&(pass != \"\" && rpass != \"\" && email != \"\")) {\n      alert (\"恭喜，注册成功!\");\n      return true;\n      } else {\n       alert (\"注册信息填写错误，请仔细检查更正后再提交\");\n       return false;\n       }\n    \n    \n     }       \n   \n    </script>\n	<div id =\"xf\"style=\"position: fixed; width: 1348px; top: 0px; align=\"right\"\">\n		<a href =login.html >已有账号？立即登录！</a>\n	</div>\n	<div class=\"top\"></div>\n	<div class=\"main\">\n    <h1>\n      <strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong><h1>\n		<div id=\"register\">\n		\n    <h2 align = \"center\">\n			Welcome to Strings!\n		<h2>	\n			\n          <form method=\"post\"action =\"User.php\" onsubmit=\"return regist()\">      \n			  <ul>\n       <li>\n        <span class=\"front_input\">请输入邮箱名</span>\n		      <input id =\"email\" type=\"text\" class=\"_input\" onblur=\"check_email()\"/>\n			  <span id=\"email_error\" class=\"after_input\"></span><br/>       \n			</li>  \n      <li>\n        <span class=\"front_input\">请输入密码:</span>\n          <input id=\"pass\" type=\"password\" class=\"_input\" onblur=\"check_pass()\"/>\n			  <span id=\"pass_error\" class=\"after_input\"> <br/>    \n			</li>\n      <li>\n        <span class=\"front_input\">请再次确认密码:</span>\n			   <input id=\"rpass\" type=\"password\" class=\"_input\" onblur=\"check_rpass()\" />\n			  <span id=\"rpass_error\" class=\"after_input\"></span><br/>\n		   </li>\n      </ul>\n		     <div class =\"bottom\"><input type =\"submit\" value =\"确认注册\"></div>\n      </form>\n		 \n		 \n	</div>	\n	</div>\n    <div class=\"foot\"></div>\n	\n	<style type=\"text/css\">\nbody{margin: 0;padding: 0;}\n#xf{height: 30px;\n	background-color:#252C33;\n	 text-align:right;\n   font-family:\"微软雅黑\";\n   opacity: 0.6\n	 } \n#xf a:link{\n	color:#4DC2CB;\n}	 \n    a:visited{\n    	color: red;\n    }\n    a:hover{\n    	color: red;\n    }\n    \n.top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n }\n.main{width:500px;\n	height:300px;\n	border: #ccc;\n	margin:  0 auto;\n  font-family: \"Comic Sans MS\";\n  font-size:large;\n  font-style: normal;\n  color:#4DC2CB;\n	padding-bottom: 100px;\n	padding-left: 50px;\n	padding-right: 50px;}\n#register{height: 300px;\n	width:600px;\n	font-family: \"微软雅黑\";\n	text-align:left;\n	margin:50 ;\n  opacity:0.7;\n  font-size: medium;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n  border-top: 3px #CDE6FE solid;\n  border-right: 3px #CDE6FE solid;\n  border-bottom: 3px #CDE6FE solid;\n  font-family: \"Comic Sans MS\";\n  color: #181818;\n}\n.front_input{\n  font-family: \"微软雅黑\"；;\n  text-align: left;\n}\n.after_input{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n}\n.bottom{\n  margin: 0 auto;\n  text-align:center\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; }\n</style>	\n</body>\n</html>\n",
+			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings的注册网站</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n	<script>\n    //保存一个密码用于校验\n    var _pass;\n    String.prototype.Trim = function() { \n    return this.replace(/(^\\s*)|(\\s*$)/g, \"\"); }\n    /**\n    *检查Email\n    */\n    //---------------------------------------------------------------------------\n    function check_email(){\n     var email;\n     email = document.getElementById('email').value;\n     email = email.Trim();\n     if (email == \"\") {\n      document.getElementById('email_error').innerHTML = \"请输入Email\";\n      } else {\n       if (/^[\\w-]+[\\.]*[\\w-]+[@][\\w\\-]{1,}([.]([\\w\\-]{1,})){1,3}$/.test(email)) {\n        document.getElementById('email_error').innerHTML = \"\";\n        } else {\n        document.getElementById('email_error').innerHTML = \"请输入有效的Email地址\";\n        }      \n      }\n     }\n    /**\n    *检查密码\n    */\n    //---------------------------------------------------------------------------\n    function check_pass(){\n     var pass;\n     pass = document.getElementById('pass').value;\n     pass = pass.Trim();\n     _pass = pass;\n     if (pass == \"\") {\n      document.getElementById('pass_error').innerHTML = \"请输入密码\";\n      } else {\n       if (/^\\w{6,20}$/.test(pass)) {\n        document.getElementById('pass_error').innerHTML = \"\";\n        } else {\n        document.getElementById('pass_error').innerHTML = \"请输入6 ~ 20 字符【0-9】【a-z-A-Z】\";\n        }      \n      }\n     }\n    /**\n    *检查rpass\n    */\n    //---------------------------------------------------------------------------\n    function check_rpass(){\n     var rpass;\n     rpass = document.getElementById('rpass').value;\n     rpass = rpass.Trim();\n     if (rpass == \"\") {\n      document.getElementById('rpass_error').innerHTML = \"请输入确认密码\";\n      } \n     else if (rpass != _pass) {\n      document.getElementById('rpass_error').innerHTML = \"密码不一致\";\n      }\n     else {\n      document.getElementById('rpass_error').innerHTML = \"\"\n      }    \n     }\n    //---------------------------------------------------------------------------\n    function regist(){\n     var pass_error=document.getElementById('pass_error').innerHTML;\n     var rpass_error=document.getElementById('rpass_error').innerHTML;\n     var email_error=document.getElementById('email_error').innerHTML;\n     var pass=document.getElementById('pass').value;\n     var rpass=document.getElementById('rpass').value;\n     var email=document.getElementById('email').value;    \n     //判断错误信息全部为空并且文本框全部不为空\n     if ((pass_error == \"\" && rpass_error == \"\" && email_error == \"\")&&(pass != \"\" && rpass != \"\" && email != \"\")) {\n      alert (\"恭喜，注册成功!\");\n      return true;\n      } else {\n       alert (\"注册信息填写错误，请仔细检查更正后再提交\");\n       return false;\n       }\n    \n    \n     }       \n   \n    </script>\n	<div id =\"xf\"style=\"position: fixed; width: 13 48px; top: 0px; align=\"right\"\">\n		<a href =login.html >已有账号？立即登录！</a>\n	</div>\n	<div class=\"top\"></div>\n	<div class=\"main\">\n    <h1>\n      <strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong><h1>\n		<div id=\"register\">\n		\n    <h2 align = \"center\">\n			Welcome to Strings!\n		<h2>	\n			\n          <form method=\"post\"action =\"User.php\" onsubmit=\"return regist()\">      \n			  <ul>\n       <li>\n        <span class=\"front_input\">请输入邮箱名</span>\n		      <input id =\"email\" type=\"text\" class=\"_input\" onblur=\"check_email()\"/>\n			  <span id=\"email_error\" class=\"after_input\"></span><br/>       \n			</li>  \n      <li>\n        <span class=\"front_input\">请输入密码:</span>\n          <input id=\"pass\" type=\"password\" class=\"_input\" onblur=\"check_pass()\"/>\n			  <span id=\"pass_error\" class=\"after_input\"> </span><br/>    \n			</li>\n      <li>\n        <span class=\"front_input\">请再次确认密码:</span>\n			   <input id=\"rpass\" type=\"password\" class=\"_input\" onblur=\"check_rpass()\" />\n			  <span id=\"rpass_error\" class=\"after_input\"></span><br/>\n		   </li>\n      </ul>\n		     <div class =\"bottom\"><input type =\"submit\" value =\"确认注册\"></div>\n      </form>\n		 \n		 \n	</div>	\n	</div>\n    <div class=\"foot\"></div>\n	\n	<style type=\"text/css\">\nbody{margin: 0;padding: 0;}\n#xf{height: 30px;\n	background-color:#252C33;\n	 text-align:right;\n   font-family:\"微软雅黑\";\n   opacity: 0.6\n	 } \n#xf a:link{\n	color:#4DC2CB;\n}	 \n    a:visited{\n    	color: red;\n    }\n    a:hover{\n    	color: red;\n    }\n    \n.top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n }\n.main{width:500px;\n	height:300px;\n	border: #ccc;\n	margin:  0 auto;\n  font-family: \"Comic Sans MS\";\n  font-size:large;\n  font-style: normal;\n  color:#4DC2CB;\n	padding-bottom: 100px;\n	padding-left: 50px;\n	padding-right: 50px;}\n#register{height: 300px;\n	width:600px;\n	font-family: \"微软雅黑\";\n	text-align:left;\n	margin:50 ;\n  opacity:0.7;\n  font-size: medium;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n  border-top: 3px #CDE6FE solid;\n  border-right: 3px #CDE6FE solid;\n  border-bottom: 3px #CDE6FE solid;\n  font-family: \"Comic Sans MS\";\n  color: #181818;\n}\n.front_input{\n  font-family: \"微软雅黑\"；;\n  text-align: left;\n}\n.after_input{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n}\n.bottom{\n  margin: 0 auto;\n  text-align:center\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; }\n</style>	\n</body>\n</html>\n",
 			"file": "register.html",
-			"file_size": 5736,
-			"file_write_time": 130604289136729165,
+			"file_size": 5744,
+			"file_write_time": 130604508529364861,
 			"settings":
 			{
-				"buffer_size": 5380,
+				"buffer_size": 5388,
 				"line_ending": "Windows",
 				"scratch": true
 			}
@@ -212,6 +244,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Administrator/Desktop/请打开.html",
 		"/E/Strings/register.html",
 		"/E/Strings/登录.html",
 		"/E/Strings/注册.html",
@@ -270,45 +303,15 @@
 					"file": "登录.html",
 					"settings":
 					{
-						"buffer_size": 2556,
+						"buffer_size": 2819,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2063,
-								2063
-							]
-						],
-						"settings":
-						{
-							"in_converting": true,
-							"origin_encoding": "GBK",
-							"revert_to_scratch": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "register.html",
-					"settings":
-					{
-						"buffer_size": 5380,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4257,
-								4257
+								624,
+								624
 							]
 						],
 						"settings":
@@ -321,7 +324,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1306.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "register.html",
+					"settings":
+					{
+						"buffer_size": 5388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1093,
+								1093
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"revert_to_scratch": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -427,8 +461,8 @@
 						"selection":
 						[
 							[
-								350,
-								350
+								4070,
+								4070
 							]
 						],
 						"settings":
@@ -441,7 +475,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2688.0,
+						"translation.y": 1665.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -458,8 +492,8 @@
 						"selection":
 						[
 							[
-								2119,
-								2124
+								1913,
+								1913
 							]
 						],
 						"settings":
@@ -473,7 +507,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 305.0,
+						"translation.y": 575.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -490,8 +524,8 @@
 						"selection":
 						[
 							[
-								5605,
-								5647
+								2053,
+								2053
 							]
 						],
 						"settings":
@@ -502,7 +536,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -546,8 +580,8 @@
 						"selection":
 						[
 							[
-								192,
-								192
+								115,
+								120
 							]
 						],
 						"settings":

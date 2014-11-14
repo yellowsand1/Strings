@@ -5,27 +5,25 @@
 <body background ="backgroundimage.jpg">
 <script> 
 //邮箱验证	
-function validate_username(field,alerttxt)
-{
-with (field)
-{
-apos=value.indexOf("@")
-dotpos=value.lastIndexOf(".")
-if (apos>1||dotpos-apos<2) 
-  {alert(alerttxt);return false}
-else {return true}
+function checkusername1(){
+  var mail=document.getElementById('username').value;
+  if (mail==null||mail=="") {
+  document.getElementById('aftermail').innerHTML="请输入您的e-mail";
+ }else{
+  document.getElementById('aftermail').innerHTML="";
 }
 }
 
-function validate_form(thisform)
-{
-with (thisform)
-{
-if (validate_username(username,"该邮箱不存在！")==false)
-  {username.focus();return false}
-}
-}
 //密码验证
+function checkpassword1(){
+  var password=document.getElementById('password').value;
+  if (password==""||password==null) {
+    document.getElementById('afterpassword').innerHTML="请输入您的密码"；
+  }else{
+    document.getElementById('afterpassword').innerHTML="";
+}
+}
+
 
 </script>
 <div class="zc">
@@ -34,7 +32,7 @@ if (validate_username(username,"该邮箱不存在！")==false)
 一个吧！
 </div>
 <div class="top"></div>
-<div class= all>
+<div class= "all">
 <div id="login">
 <h1><strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong></h1>
 <div class="boder">
@@ -43,15 +41,17 @@ if (validate_username(username,"该邮箱不存在！")==false)
 		<h2>	
 <form>	
 <strong id="name">邮箱</strong>
-<input type="text" name="username"/>
+<input type="text" id="username" onblur="checkusername1()"/>
+<span id="aftermail"></span>
 <br/>	
 <strong id="password">密码</strong>
-<input type="password" name="password"/>
+<input type="password" id="password" onblur="checkpassword1()"/>
+<span id="afterpassword"></span>
 <br/>
 </div>
 </form>
-<form name="username" action="username.php"onsubmit="return validate_form(thisform);" method="post">
-<form name="password" action="password.php" method="post">
+<form id="username" action="username.php"onsubmit="return validate_form();" method="post">
+<form id="password" action="password.php" method="post">
 <div class= "xf">
 	<div class="button">
 <input type="submit" value="提交">
