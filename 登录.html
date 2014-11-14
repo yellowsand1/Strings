@@ -2,15 +2,16 @@
 <head>
 <title>login-- Strings!</title>
 </head>
-<body>
+<body background ="backgroundimage.jpg">
 <script> 
 //邮箱验证	
-function validate_email(field,alerttxt)
+function validate_username(field,alerttxt)
 {
 with (field)
 {
 apos=value.indexOf("@")
-if (apos<1) 
+dotpos=value.lastIndexOf(".")
+if (apos>1||dotpos-apos<2) 
   {alert(alerttxt);return false}
 else {return true}
 }
@@ -20,52 +21,119 @@ function validate_form(thisform)
 {
 with (thisform)
 {
-if (validate_email(username,"该邮箱不存在！")==false)
+if (validate_username(username,"该邮箱不存在！")==false)
   {username.focus();return false}
 }
 }
+//密码验证
+
 </script>
+<div class="zc">
+还没有账号？  赶快去
+<a href="register.html">注册</a>
+一个吧！
+</div>
+<div class="top"></div>
 <div class= all>
 <div id="login">
-<h1>Login</h1>
-<div>
+<h1><strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong></h1>
+<div class="boder">
+	<h2 align = "center">
+			Welcome to Strings!
+		<h2>	
 <form>	
-<strong id="name">Username</strong>
+<strong id="name">邮箱</strong>
 <input type="text" name="username"/>
 <br/>	
-<strong id="password">Password</strong>
+<strong id="password">密码</strong>
 <input type="password" name="password"/>
 <br/>
 </div>
 </form>
-<form name="username"action="username.php"onsubmit="return validate_form(this);" method="post">
-<form name="password"action="password.php" method="post">
-<div class= button>
-<input type="submit" value="Submit" name="username">
+<form name="username" action="username.php"onsubmit="return validate_form(thisform);" method="post">
+<form name="password" action="password.php" method="post">
+<div class= "xf">
+	<div class="button">
+<input type="submit" value="提交">
 <br/>
-还没有账号？  赶快去
-<a href="注册.html">注册</a>
-一个吧！
 </div>
 </div>
+</div>
+<div class="foot"></div>
 <style type="text/css">
-#name,#password{
-	font-family: "Times New Roman",Georgia,Serif;
-	font-size: large;
-	font-weight: bold;
-	text-decoration: none;}
-#login{
-	font-family: "Times New Roman",Georgia,Serif;
-	font-size: xx-large;
+.top{
+  background-image:url('logo.png');
+  background-repeat:no-repeat;
+  background-position: left;
+  height:160px;
+ }
+ h1{
+ 	width:500px;
+	height:200px;
+	border: #ccc;
+	margin:  0 auto;
+    font-family: "Comic Sans MS";
+    font-size:xx-large;
+    font-style: normal;
+    color:#4DC2CB;
+	padding-bottom: 0px;
+	padding-left: 50px;
+	padding-right: 50px;
+ }
+ .xf{height: 30px;
+	 text-align:right;
+   	 font-family:"微软雅黑";
+     opacity: 0.6
+      
+	 } 
+    .all{	
+    	text-align: center;
+    	font-family: "微软雅黑";
+    }
+.zc a:link{
+	color:#4DC2CB;
+}	 
+    a:visited{
+    	color: red;
+    }
+    a:hover{
+    	color: red;
+    }
+.zc{
+	text-align: right;
+	background-color:#252C33;
+	opacity: 0.6;
+	color: #4DC2CB;
 }
 .button{
-	font-size: 10%;
-	font-family: "Times New Roman",Georgia,Serif;
+  margin: 0 auto;
+  text-align:center
 }
-.all{
-	border-style: groove;
-	background-color: #6495ED;	
-	text-align: center;
+.foot{
+	height:100px;
+	background:transparent;
+	margin:10px 0px 0px;
+	border-top-width: 2px;
+	border-top-style: slide;
+	border-top-color:#FFFFFF; 
+}
+.boder{
+	height: 300px;
+	width:600px;
+	font-family: "微软雅黑";
+	text-align:center;
+  opacity:0.7;
+  font-size: medium;
+	background:#E3EED0;
+	border-left: 3px #CDE6FE solid;
+  border-top: 3px #CDE6FE solid;
+  border-right: 3px #CDE6FE solid;
+  border-bottom: 3px #CDE6FE solid;
+  font-family: "Comic Sans MS";
+  color: #181818;
+  margin:0 auto;
+  font-size: large;
+}
 }
 </style>
 </body>
