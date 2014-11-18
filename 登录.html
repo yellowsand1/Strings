@@ -18,7 +18,7 @@ function checkusername1(){
 function checkpassword1(){
   var password=document.getElementById('User_Signin_Password').value;
   if (password=="") {
-    document.getElementById('afterpassword').innerHTML="ÇëÊäÈëÄúµÄÃÜÂë"£»
+    document.getElementById('afterpassword').innerHTML="ÇëÊäÈëÄúµÄÃÜÂë";
   }else{
     document.getElementById('afterpassword').innerHTML="";
 }
@@ -50,8 +50,8 @@ function checkpassword1(){
 <br/>
 </div>
 </form>
-<form id="User_Signin_Email" action="Login_Front.php" method="post">
-<form id="User_Signin_Password" action="Login_Front.php" method="post">
+<form name="User_Signin_Email" action="Login_Front.php" method="post">
+<form name="User_Signin_Password" action="Login_Front.php" method="post">
 <div class= "xf">
 	<div class="button">
 <input type="submit" value="Ìá½»">
@@ -116,6 +116,18 @@ function checkpassword1(){
 	border-top-width: 2px;
 	border-top-style: slide;
 	border-top-color:#FFFFFF; 
+}
+#aftermail{
+  font-family: "Î¢ÈíÑÅºÚ";
+  color: #DD1A00;
+  font-size: 12px;
+  text-align: left;
+}
+#afterpassword{
+  font-family: "Î¢ÈíÑÅºÚ";
+  color: #DD1A00;
+  font-size: 12px;
+  text-align: left;
 }
 .boder{
 	height: 300px;
