@@ -112,13 +112,13 @@
 	"buffers":
 	[
 		{
-			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings--Talk to me .</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n<div class=\"top\"></div>\n<frameset cols=\"15%,75%\">\n<frame id=\"leftframe\">\n<h2 id=\"personal\">\n  Your own space !\n</h2>\n<li>\n  <a href=\"news.html\">消息通知</a>\n</li>\n<li>\n  <a href=\"history.html\">历史记录</a>\n</li>\n</frame>\n</frameset>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div class=\"foot\"></div>\n\n<style type=\"text/css\">\n  #leftframe{\n    text-align: left;\n\n  }\n  .top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n\n  .foot{\n  height:100px;\n  background:transparent;\n  margin:10px 0px 0px;\n  border-top-width: 2px;\n  border-top-style: slide;\n  border-top-color:#FFFFFF; }\n</style>\n  </body>\n  </html>",
+			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings--Talk to me .</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n<div class=\"top\"></div>\n<h2 id=\"personal\">\n  Your own space !\n</h2>\n<div class=\"personallink\">\n<li>\n  <a href=\"news.html\">消息通知</a>\n</li>\n<li>\n  <a href=\"history.html\">历史记录</a>\n</li>\n</div>\n<div class=\"kk\" style=\"width:100%\">\n  <ul id=\"flowbox\">\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li> \n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n</ul>\n</div>\n\n<div class=\"foot\"></div>\n\n<style type=\"text/css\">\n  #personal{\n    text-align: left;\n  \n  }\n  .kk li{\n    width:100px; \n    border:2px pink solid; \n    list-style:none;\n    position:relative;\n  }\n  #flowbox{\n    margin:10px auto 0 auto; \n    padding:0; \n    position:relative\n  } \n\n  .top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n\n  .foot{\n  height:100px;\n  background:transparent;\n  margin:10px 0px 0px;\n  border-top-width: 2px;\n  border-top-style: slide;\n  border-top-color:#FFFFFF; }\n</style>\n  </body>\n  </html>",
 			"file": "main.html",
-			"file_size": 872,
-			"file_write_time": 130607924347415689,
+			"file_size": 1545,
+			"file_write_time": 130608043909128947,
 			"settings":
 			{
-				"buffer_size": 806,
+				"buffer_size": 1465,
 				"line_ending": "Windows",
 				"scratch": true
 			}
@@ -250,7 +250,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -258,15 +258,15 @@
 					"file": "main.html",
 					"settings":
 					{
-						"buffer_size": 806,
+						"buffer_size": 1465,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								382
+								1159,
+								1159
 							]
 						],
 						"settings":
@@ -280,7 +280,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 72.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -311,7 +311,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 72.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -342,7 +342,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 2556.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -359,8 +359,8 @@
 						"selection":
 						[
 							[
-								3991,
-								3991
+								1021,
+								1021
 							]
 						],
 						"settings":
@@ -374,7 +374,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1823.0,
+						"translation.y": 2430.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
