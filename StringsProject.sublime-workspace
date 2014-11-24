@@ -112,6 +112,7 @@
 	"buffers":
 	[
 		{
+<<<<<<< HEAD
 			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings--Talk to me .</title>\n</head>\n<body bgcolor=\"#343C45\">\n<div class=\"top\"></div>\n<h2 id=\"personal\">\n  Your own space !\n</h2>\n<div class=\"personallink\">\n<li>\n  <a href=\"news.html\">消息通知</a>\n</li>\n<li>\n  <a href=\"history.html\">历史记录</a>\n</li>\n</div>\n<div class=\"kk\" style=\"width:100%\">\n  <ul id=\"flowbox\">\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li> \n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n</ul>\n</div>\n\n<div class=\"foot\"></div>\n\n<style type=\"text/css\">\n  #personal{\n    text-align: left;\n  \n  }\n  .kk li{\n    width:100px; \n    border:2px pink solid; \n    list-style:none;\n    position:relative;\n  }\n  #flowbox{\n    margin:10px auto 0 auto; \n    padding:0; \n    position:relative\n  } \n\n  .top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n  }\n\n  .foot{\n  height:100px;\n  background:transparent;\n  margin:10px 0px 0px;\n  border-top-width: 2px;\n  border-top-style: slide;\n  border-top-color:#FFFFFF; \n  }\n\n  .personallink a:link{\n    font-family: \"微软雅黑\";\n    text-align: left;\n    font-size: large;\n\n\n  }\n\n  h2{\n    text-align: left;\n    font-size: x-large;\n    font-family: \"微软雅黑\";\n    \n  }\n</style>\n  </body>\n  </html>",
 			"file": "main.html",
 			"file_size": 1748,
@@ -119,6 +120,15 @@
 			"settings":
 			{
 				"buffer_size": 1643,
+=======
+			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings--Talk to me .</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n<div class=\"top\"></div>\n<frameset cols=\"15%,75%\">\n<frame id=\"leftframe\">\n<h2 id=\"personal\">\n  Your own space !\n</h2>\n<li>\n  <a href=\"news.html\">消息通知</a>\n</li>\n<li>\n  <a href=\"history.html\">历史记录</a>\n</li>\n</frame>\n</frameset>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div class=\"foot\"></div>\n\n<style type=\"text/css\">\n  #leftframe{\n    text-align: left;\n\n  }\n  .top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n\n  .foot{\n  height:100px;\n  background:transparent;\n  margin:10px 0px 0px;\n  border-top-width: 2px;\n  border-top-style: slide;\n  border-top-color:#FFFFFF; }\n</style>\n  </body>\n  </html>",
+			"file": "main.html",
+			"file_size": 872,
+			"file_write_time": 130607924347415689,
+			"settings":
+			{
+				"buffer_size": 806,
+>>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 				"line_ending": "Windows",
 				"scratch": true
 			}
@@ -291,15 +301,24 @@
 					"file": "main.html",
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 1643,
+=======
+						"buffer_size": 806,
+>>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								1319,
 								1319
+=======
+								382,
+								382
+>>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 							]
 						],
 						"settings":
@@ -312,7 +331,11 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 648.0,
+=======
+						"translation.y": 54.0,
+>>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -343,7 +366,11 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 378.0,
+=======
+						"translation.y": 270.0,
+>>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -459,7 +486,11 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 612.0,
+=======
+						"translation.y": 270.0,
+>>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -476,8 +507,13 @@
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								331,
 								331
+=======
+								3991,
+								3991
+>>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 							]
 						],
 						"settings":
@@ -491,7 +527,11 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 0.0,
+=======
+						"translation.y": 1823.0,
+>>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 						"zoom_level": 1.0
 					},
 					"type": "text"
