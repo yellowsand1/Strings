@@ -4,16 +4,20 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
 				"left",
 				"leftframe"
 			],
 			[
 				"v",
 				"var"
-			],
-			[
-				"s",
-				"span	Tag"
 			],
 			[
 				"al",
@@ -42,10 +46,6 @@
 			[
 				"ge",
 				"getElementByid"
-			],
-			[
-				"fo",
-				"font-size"
 			],
 			[
 				"tex",
@@ -112,27 +112,51 @@
 	"buffers":
 	[
 		{
-			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings--Talk to me .</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n<div class=\"top\"></div>\n<h2 id=\"personal\">\n  Your own space !\n</h2>\n<div class=\"personallink\">\n<li>\n  <a href=\"news.html\">消息通知</a>\n</li>\n<li>\n  <a href=\"history.html\">历史记录</a>\n</li>\n</div>\n<div class=\"kk\" style=\"width:100%\">\n  <ul id=\"flowbox\">\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li> \n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n</ul>\n</div>\n\n<div class=\"foot\"></div>\n\n<style type=\"text/css\">\n  #personal{\n    text-align: left;\n  \n  }\n  .kk li{\n    width:100px; \n    border:2px pink solid; \n    list-style:none;\n    position:relative;\n  }\n  #flowbox{\n    margin:10px auto 0 auto; \n    padding:0; \n    position:relative\n  } \n\n  .top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n\n  .foot{\n  height:100px;\n  background:transparent;\n  margin:10px 0px 0px;\n  border-top-width: 2px;\n  border-top-style: slide;\n  border-top-color:#FFFFFF; }\n</style>\n  </body>\n  </html>",
+			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings--Talk to me .</title>\n</head>\n<body bgcolor=\"#343C45\">\n<div class=\"top\"></div>\n<h2 id=\"personal\">\n  Your own space !\n</h2>\n<div class=\"personallink\">\n<li>\n  <a href=\"news.html\">消息通知</a>\n</li>\n<li>\n  <a href=\"history.html\">历史记录</a>\n</li>\n</div>\n<div class=\"kk\" style=\"width:100%\">\n  <ul id=\"flowbox\">\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li> \n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n</ul>\n</div>\n\n<div class=\"foot\"></div>\n\n<style type=\"text/css\">\n  #personal{\n    text-align: left;\n  \n  }\n  .kk li{\n    width:100px; \n    border:2px pink solid; \n    list-style:none;\n    position:relative;\n  }\n  #flowbox{\n    margin:10px auto 0 auto; \n    padding:0; \n    position:relative\n  } \n\n  .top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n  }\n\n  .foot{\n  height:100px;\n  background:transparent;\n  margin:10px 0px 0px;\n  border-top-width: 2px;\n  border-top-style: slide;\n  border-top-color:#FFFFFF; \n  }\n\n  .personallink a:link{\n    font-family: \"微软雅黑\";\n    text-align: left;\n    font-size: large;\n\n\n  }\n\n  h2{\n    text-align: left;\n    font-size: x-large;\n    font-family: \"微软雅黑\";\n    \n  }\n</style>\n  </body>\n  </html>",
 			"file": "main.html",
-			"file_size": 1545,
-			"file_write_time": 130608043909128947,
+			"file_size": 1748,
+			"file_write_time": 130611472056093135,
 			"settings":
 			{
-				"buffer_size": 1465,
+				"buffer_size": 1643,
 				"line_ending": "Windows",
 				"scratch": true
 			}
 		},
 		{
-			"contents": "<html> \n<head>\n<title>login-- Strings!</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n<script> \n//邮箱验证	\nfunction checkusername1(){\n  var mail=document.getElementById('User_Signin_Email').value;\n  if (mail==\"\") {\n  document.getElementById('aftermail').innerHTML=\"请输入您的e-mail\";\n }else{\n  document.getElementById('aftermail').innerHTML=\"\";\n}\n}\n\n//密码验证\nfunction checkpassword1(){\n  var password=document.getElementById('User_Signin_Password').value;\n  if (password==\"\") {\n    document.getElementById('afterpassword').innerHTML=\"请输入您的密码\";\n  }else{\n    document.getElementById('afterpassword').innerHTML=\"\";\n}\n}\n\n\n</script>\n<div class=\"zc\">\n还没有账号？  赶快去\n<a href=\"register.html\">注册</a>\n一个吧！\n</div>\n<div class=\"top\"></div>\n<div class= \"all\">\n<div id=\"login\">\n<h1><strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong></h1>\n<div class=\"boder\">\n	<h2 align = \"center\">\n			Welcome to Strings!\n		<h2>	\n<form>	\n<strong id=\"name\">邮箱</strong>\n<input type=\"text\" id=\"User_Signin_Email\" onblur=\"checkusername1()\"/>\n<span id=\"aftermail\"></span>\n<br/>	\n<strong id=\"password\">密码</strong>\n<input type=\"password\" id=\"User_Signin_Password\" onblur=\"checkpassword1()\"/>\n<span id=\"afterpassword\"></span>\n<br/>\n</div>\n</form>\n<form name=\"User_Signin_Email\" action=\"Login_Front.php\" method=\"post\">\n<form name=\"User_Signin_Password\" action=\"Login_Front.php\" method=\"post\">\n<div class= \"xf\">\n	<div class=\"button\">\n<input type=\"submit\" value=\"提交\">\n<br/>\n</div>\n</div>\n</div>\n<div class=\"foot\"></div>\n<style type=\"text/css\">\n.top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n }\n h1{\n 	width:500px;\n	height:200px;\n	border: #ccc;\n	margin:  0 auto;\n    font-family: \"Comic Sans MS\";\n    font-size:xx-large;\n    font-style: normal;\n    color:#4DC2CB;\n	padding-bottom: 0px;\n	padding-left: 50px;\n	padding-right: 50px;\n }\n .xf{height: 30px;\n	 text-align:right;\n   	 font-family:\"微软雅黑\";\n     opacity: 0.6\n      \n	 } \n    .all{	\n    	text-align: center;\n    	font-family: \"微软雅黑\";\n    }\n.zc a:link{\n	color:#4DC2CB;\n}	 \n    a:visited{\n    	color: red;\n    }\n    a:hover{\n    	color: red;\n    }\n.zc{\n	text-align: right;\n	background-color:#252C33;\n	opacity: 0.6;\n	color: #4DC2CB;\n}\n.button{\n  margin: 0 auto;\n  text-align:center\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; \n}\n#aftermail{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n  text-align: left;\n}\n#afterpassword{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n  text-align: left;\n}\n.boder{\n	height: 300px;\n	width:600px;\n	font-family: \"微软雅黑\";\n	text-align:center;\n  opacity:0.7;\n  font-size: medium;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n  border-top: 3px #CDE6FE solid;\n  border-right: 3px #CDE6FE solid;\n  border-bottom: 3px #CDE6FE solid;\n  font-family: \"Comic Sans MS\";\n  color: #181818;\n  margin:0 auto;\n  font-size: large;\n}\n}\n</style>\n</body>\n</html>\n",
+			"contents": "  <html> \n<head>\n<title>login-- Strings!</title>\n<link rel=\"stylesheet\" href=\"animate.min.css\">\n</head>\n<body background =\"backgroundimage.jpg\">\n<script> \n//邮箱验证	\nfunction checkusername1(){\n  var mail=document.getElementById('User_Signin_Email').value;\n  if (mail==\"\") {\n  document.getElementById('aftermail').innerHTML=\"请输入您的e-mail\";\n }else{\n  document.getElementById('aftermail').innerHTML=\"\";\n}\n}\n\n//密码验证\nfunction checkpassword1(){\n  var password=document.getElementById('User_Signin_Password').value;\n  if (password==\"\") {\n    document.getElementById('afterpassword').innerHTML=\"请输入您的密码\";\n  }else{\n    document.getElementById('afterpassword').innerHTML=\"\";\n}\n}\n\n\n\n</script>\n\n<script type=\"text/javascript\">\n  $('#all').addclass('animated bounceOutLeft');\n</script>\n<div class=\"zc\">\n还没有账号？  赶快去\n<a href=\"register.html\">注册</a>\n一个吧！\n</div>\n<div class=\"top\"></div>\n<div class= \"all\">\n<div id=\"login\">\n<h1><strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong></h1>\n<div class=\"boder\">\n	<h2 align = \"center\">\n			Welcome to Strings!\n		<h2>	\n<form>	\n<strong id=\"name\">邮箱</strong>\n<input type=\"text\" id=\"User_Signin_Email\" name=\"User_Signin_Email\" onblur=\"checkusername1()\"/>\n<span id=\"aftermail\"></span>\n<br/>	\n<strong id=\"password\">密码</strong>\n<input type=\"password\" id=\"User_Signin_Password\" name=\"User_Signin_Password\" onblur=\"checkpassword1()\"/>\n<span id=\"afterpassword\"></span>\n<br/>\n</div>\n</form>\n<form name=\"User_Signin_Email\" action=\"Login_Front.php\" method=\"post\">\n<form name=\"User_Signin_Password\" action=\"Login_Front.php\" method=\"post\">\n<div class= \"xf\">\n	<div class=\"button\">\n<input type=\"submit\" value=\"提交\" onClick=\".addclass\">\n<br/>\n</div>\n</div>\n</div>\n<div class=\"foot\"></div>\n<style type=\"text/css\">\n.top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n }\n h1{\n 	width:500px;\n	height:200px;\n	border: #ccc;\n	margin:  0 auto;\n    font-family: \"Comic Sans MS\";\n    font-size:xx-large;\n    font-style: normal;\n    color:#4DC2CB;\n	padding-bottom: 0px;\n	padding-left: 50px;\n	padding-right: 50px;\n }\n .xf{height: 30px;\n	 text-align:right;\n   	 font-family:\"微软雅黑\";\n     opacity: 0.6\n      \n	 } \n    .all{	\n    	text-align: center;\n    	font-family: \"微软雅黑\";\n    }\n.zc a:link{\n	color:#4DC2CB;\n}	 \n    a:visited{\n    	color: red;\n    }\n    a:hover{\n    	color: red;\n    }\n.zc{\n	text-align: right;\n	background-color:#252C33;\n	opacity: 0.6;\n	color: #4DC2CB;\n}\n.button{\n  margin: 0 auto;\n  text-align:center\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; \n}\n#aftermail{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n  text-align: left;\n}\n#afterpassword{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n  text-align: left;\n}\n.boder{\n	height: 300px;\n	width:600px;\n	font-family: \"微软雅黑\";\n	text-align:center;\n  opacity:0.7;\n  font-size: medium;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n  border-top: 3px #CDE6FE solid;\n  border-right: 3px #CDE6FE solid;\n  border-bottom: 3px #CDE6FE solid;\n  font-family: \"Comic Sans MS\";\n  color: #181818;\n  margin:0 auto;\n  font-size: large;\n}\n}\n</style>\n</body>\n</html>\n",
 			"file": "登录.html",
-			"file_size": 3235,
-			"file_write_time": 130607908398520358,
+			"file_size": 3455,
+			"file_write_time": 130612894901806970,
 			"settings":
 			{
-				"buffer_size": 3022,
+				"buffer_size": 3236,
 				"line_ending": "Windows",
 				"scratch": true
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Desktop/css/style.css",
+			"settings":
+			{
+				"buffer_size": 3719,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Desktop/ajax.js",
+			"settings":
+			{
+				"buffer_size": 609,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Desktop/index.html",
+			"settings":
+			{
+				"buffer_size": 424,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -192,6 +216,15 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Administrator/Desktop/css/google-font.css",
+		"/C/Users/Administrator/Desktop/css/animate.min.css",
+		"/C/Users/Administrator/Desktop/bg/assets/css/supersized.css",
+		"/C/Users/Administrator/Desktop/bg/assets/js/supersized-init.js",
+		"/C/Users/Administrator/Desktop/bg/assets/js/supersized.3.2.7.min.js",
+		"/C/Users/Administrator/Desktop/bg/assets/js/jquery-1.8.2.min.js",
+		"/C/Users/Administrator/Desktop/bg/assets/js/scripts.js",
+		"/C/Users/Administrator/Desktop/bg/index.html",
+		"/E/Strings/main.html",
 		"/E/Strings/注册.html",
 		"/E/wamp/www/表单验证.html",
 		"/E/wamp/www/E-mail验证.html",
@@ -250,7 +283,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -258,20 +291,19 @@
 					"file": "main.html",
 					"settings":
 					{
-						"buffer_size": 1465,
+						"buffer_size": 1643,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1159,
-								1159
+								1319,
+								1319
 							]
 						],
 						"settings":
 						{
-							"force_encoding": "GBK",
 							"in_converting": true,
 							"origin_encoding": "GBK",
 							"revert_to_scratch": true,
@@ -280,7 +312,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 72.0,
+						"translation.y": 648.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -290,15 +322,15 @@
 					"file": "登录.html",
 					"settings":
 					{
-						"buffer_size": 3022,
+						"buffer_size": 3236,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								350,
-								350
+								1614,
+								1614
 							]
 						],
 						"settings":
@@ -311,13 +343,98 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 72.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "/C/Users/Administrator/Desktop/css/style.css",
+					"settings":
+					{
+						"buffer_size": 3719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								298,
+								298
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Administrator/Desktop/ajax.js",
+					"settings":
+					{
+						"buffer_size": 609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Administrator/Desktop/index.html",
+					"settings":
+					{
+						"buffer_size": 424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "register.html",
 					"settings":
 					{
@@ -342,13 +459,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2556.0,
+						"translation.y": 612.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 6,
 					"file": "瀑布1.html",
 					"settings":
 					{
@@ -359,8 +476,8 @@
 						"selection":
 						[
 							[
-								1021,
-								1021
+								331,
+								331
 							]
 						],
 						"settings":
@@ -374,7 +491,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2430.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

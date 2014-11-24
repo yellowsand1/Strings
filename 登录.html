@@ -1,6 +1,7 @@
-<html> 
+  <html> 
 <head>
 <title>login-- Strings!</title>
+<link rel="stylesheet" href="animate.min.css">
 </head>
 <body background ="backgroundimage.jpg">
 <script> 
@@ -25,6 +26,11 @@ function checkpassword1(){
 }
 
 
+
+</script>
+
+<script type="text/javascript">
+  $('#all').addclass('animated bounceOutLeft');
 </script>
 <div class="zc">
 还没有账号？  赶快去
@@ -41,11 +47,11 @@ function checkpassword1(){
 		<h2>	
 <form>	
 <strong id="name">邮箱</strong>
-<input type="text" id="User_Signin_Email" onblur="checkusername1()"/>
+<input type="text" id="User_Signin_Email" name="User_Signin_Email" onblur="checkusername1()"/>
 <span id="aftermail"></span>
 <br/>	
 <strong id="password">密码</strong>
-<input type="password" id="User_Signin_Password" onblur="checkpassword1()"/>
+<input type="password" id="User_Signin_Password" name="User_Signin_Password" onblur="checkpassword1()"/>
 <span id="afterpassword"></span>
 <br/>
 </div>
@@ -54,7 +60,7 @@ function checkpassword1(){
 <form name="User_Signin_Password" action="Login_Front.php" method="post">
 <div class= "xf">
 	<div class="button">
-<input type="submit" value="提交">
+<input type="submit" value="提交" onClick=".addclass">
 <br/>
 </div>
 </div>
