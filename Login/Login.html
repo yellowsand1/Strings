@@ -1,0 +1,158 @@
+  <html> 
+<head>
+<title>login-- Strings!</title>
+<link rel="stylesheet" href="animate.min.css">
+</head>
+<body background ="backgroundimage.jpg">
+<script> 
+//” œ‰—È÷§	
+function checkusername1(){
+  var mail=document.getElementById('User_Signin_Email').value;
+  if (mail=="") {
+  document.getElementById('aftermail').innerHTML="«Î ‰»Îƒ˙µƒe-mail";
+ }else{
+  document.getElementById('aftermail').innerHTML="";
+}
+}
+
+//√‹¬Î—È÷§
+function checkpassword1(){
+  var password=document.getElementById('User_Signin_Password').value;
+  if (password=="") {
+    document.getElementById('afterpassword').innerHTML="«Î ‰»Îƒ˙µƒ√‹¬Î";
+  }else{
+    document.getElementById('afterpassword').innerHTML="";
+}
+}
+
+
+
+</script>
+
+<script type="text/javascript">
+  $('#all').addclass('animated bounceOutLeft');
+</script>
+<div class="zc">
+ªπ√ª”–’À∫≈£ø  ∏œøÏ»•
+<a href="register.html">◊¢≤·</a>
+“ª∏ˆ∞…£°
+</div>
+<div class="top"></div>
+<div class= "all">
+<div id="login">
+<h1><strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong></h1>
+<div class="boder">
+	<h2 align = "center">
+			Welcome to Strings!
+		<h2>	
+<form>	
+<strong id="name">” œ‰</strong>
+<input type="text" id="User_Signin_Email" name="User_Signin_Email" onblur="checkusername1()"/>
+<span id="aftermail"></span>
+<br/>	
+<strong id="password">√‹¬Î</strong>
+<input type="password" id="User_Signin_Password" name="User_Signin_Password" onblur="checkpassword1()"/>
+<span id="afterpassword"></span>
+<br/>
+</div>
+</form>
+<form name="User_Signin_Email" action="Login_Front.php" method="post">
+<form name="User_Signin_Password" action="Login_Front.php" method="post">
+<div class= "xf">
+	<div class="button">
+<input type="submit" value="Ã·Ωª" onClick=".addclass">
+<br/>
+</div>
+</div>
+</div>
+<div class="foot"></div>
+<style type="text/css">
+.top{
+  background-image:url('logo.png');
+  background-repeat:no-repeat;
+  background-position: left;
+  height:160px;
+ }
+ h1{
+ 	width:500px;
+	height:200px;
+	border: #ccc;
+	margin:  0 auto;
+    font-family: "Comic Sans MS";
+    font-size:xx-large;
+    font-style: normal;
+    color:#4DC2CB;
+	padding-bottom: 0px;
+	padding-left: 50px;
+	padding-right: 50px;
+ }
+ .xf{height: 30px;
+	 text-align:right;
+   	 font-family:"Œ¢»Ì—≈∫⁄";
+     opacity: 0.6
+      
+	 } 
+    .all{	
+    	text-align: center;
+    	font-family: "Œ¢»Ì—≈∫⁄";
+    }
+.zc a:link{
+	color:#4DC2CB;
+}	 
+    a:visited{
+    	color: red;
+    }
+    a:hover{
+    	color: red;
+    }
+.zc{
+	text-align: right;
+	background-color:#252C33;
+	opacity: 0.6;
+	color: #4DC2CB;
+}
+.button{
+  margin: 0 auto;
+  text-align:center
+}
+.foot{
+	height:100px;
+	background:transparent;
+	margin:10px 0px 0px;
+	border-top-width: 2px;
+	border-top-style: slide;
+	border-top-color:#FFFFFF; 
+}
+#aftermail{
+  font-family: "Œ¢»Ì—≈∫⁄";
+  color: #DD1A00;
+  font-size: 12px;
+  text-align: left;
+}
+#afterpassword{
+  font-family: "Œ¢»Ì—≈∫⁄";
+  color: #DD1A00;
+  font-size: 12px;
+  text-align: left;
+}
+.boder{
+	height: 300px;
+	width:600px;
+	font-family: "Œ¢»Ì—≈∫⁄";
+	text-align:center;
+  opacity:0.7;
+  font-size: medium;
+	background:#E3EED0;
+	border-left: 3px #CDE6FE solid;
+  border-top: 3px #CDE6FE solid;
+  border-right: 3px #CDE6FE solid;
+  border-bottom: 3px #CDE6FE solid;
+  font-family: "Comic Sans MS";
+  color: #181818;
+  margin:0 auto;
+  font-size: large;
+}
+}
+</style>
+</body>
+</html>
