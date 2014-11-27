@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv ="Contet-Type" content="text/html"charset="GBK" />
+
+<link rel="shortcut icon" href=" /StringsICON.ico" /> 
+<title> Strings--Talk to me .</title>
+<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+    //第一个参数 数据的传递方式 get/post
+    //第二个参数 url
+    //第三个参数 表单数据
+    //第四个参数 回调函数 function 里面的 data 就是后台给你的数据 自己用innerHTML插进去就行
+    ajax('get','action.php','usr=lk&pwd=123',function (data){
+      alert(data);
+    });
+  }
+</script>
+</head>
+<body id ="background">
+<div id ="EnterInformation">
+  <form method="post" action ="">
+    <table>
+    <td><input class ="input" type ="text" ></td>
+    <td><input type ="submit" class="button blue"value ="submit"></td>
+    </table>
+  </form>
+</div>
+<div class="top"></div>
+<h1 id="personal">
+  <q>Your own space !</q>
+</h1>
+<div class="kk">
+  <div id="icon">
+    <a href ="../PersonalPage/PersonalPage.html">
+      <img src="meow.png">
+    </a>
+  </div>
+  <div class="personallink">
+  <a href="../PersonalPage/PersonalPage.html">消息通知</a></br>
+  <a href="../PersonalPage/PersonalPage.html">历史记录</a>
+</div>
+</div>
+<div class="mainbody"></div>
+<style type="text/css">
+ body{
+  margin-left:50px;
+  margin-right:50px; 
+  padding: 0;
+ }
+ #EnterInformation{
+  position: fixed;
+  right:0;
+ }
+ .blue {
+    color: #D9EEF7;
+    border: 1px solid #0076A3;
+    background: -moz-linear-gradient(center top , #00ADEE, #0078A5) repeat scroll 0% 0% transparent;
+}
+.button {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0px 2px;
+    outline: medium none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial,Helvetica,sans-serif;
+    padding: 0.5em 2em 0.55em;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+ #background{
+  background-color:#343C45;
+
+ }
+  #personal{
+    text-align: left;
+    font-family: "Arial";
+    color: #FFFFFF;
+    font-size:30px; 
+    margin-bottom: 20px
+  }
+  #icon{
+    height: 100px;
+  }
+  .kk {
+    width: 15%;
+    float: left;
+    border-right:1px solid #AAAAAA;
+    height: 600px;
+    padding-top: 5px;
+    background-color:#FFFFFF;
+    border-radius: 5px;
+  }
+  .mainbody{
+    width:80%;
+    height:600px;
+    margin-left: 20px;
+    float: left;
+    background-color:#FFFFFF;
+    border-radius: 5px;
+  }
+ .top{
+  background-image:url('logo.png');
+  background-repeat:no-repeat;
+  background-position: left;
+  height:100px;
+  }
+
+  .personallink a:link{
+    font-family: "微软雅黑";
+    text-align: left;
+    font-size: large;
+    color:#4DC2CB;
+    padding-left: 10px
+  }
+  .personallink  a:visited{
+      color:#FF0000
+    }
+  .personallink  a:hover{
+      color:#FF0000
+    }
+
+
+  h1{
+    text-align: left;
+    font-size: x-large;
+    font-family: "Arial";
+    
+  }
+</style>
+  </body>
+  </html>
