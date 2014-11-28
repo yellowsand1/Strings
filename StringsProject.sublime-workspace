@@ -112,45 +112,19 @@
 	"buffers":
 	[
 		{
-<<<<<<< HEAD
-			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings--Talk to me .</title>\n</head>\n<body bgcolor=\"#343C45\">\n<div class=\"top\"></div>\n<h2 id=\"personal\">\n  Your own space !\n</h2>\n<div class=\"personallink\">\n<li>\n  <a href=\"news.html\">消息通知</a>\n</li>\n<li>\n  <a href=\"history.html\">历史记录</a>\n</li>\n</div>\n<div class=\"kk\" style=\"width:100%\">\n  <ul id=\"flowbox\">\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li> \n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n  <li style=\"height:80px\"></li>\n</ul>\n</div>\n\n<div class=\"foot\"></div>\n\n<style type=\"text/css\">\n  #personal{\n    text-align: left;\n  \n  }\n  .kk li{\n    width:100px; \n    border:2px pink solid; \n    list-style:none;\n    position:relative;\n  }\n  #flowbox{\n    margin:10px auto 0 auto; \n    padding:0; \n    position:relative\n  } \n\n  .top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n  }\n\n  .foot{\n  height:100px;\n  background:transparent;\n  margin:10px 0px 0px;\n  border-top-width: 2px;\n  border-top-style: slide;\n  border-top-color:#FFFFFF; \n  }\n\n  .personallink a:link{\n    font-family: \"微软雅黑\";\n    text-align: left;\n    font-size: large;\n\n\n  }\n\n  h2{\n    text-align: left;\n    font-size: x-large;\n    font-family: \"微软雅黑\";\n    \n  }\n</style>\n  </body>\n  </html>",
-			"file": "main.html",
-			"file_size": 1748,
-			"file_write_time": 130611472056093135,
+			"file": "/C/Users/Administrator/Desktop/ajax/lesson1/3.ajax.html",
 			"settings":
 			{
-				"buffer_size": 1643,
-=======
-			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings--Talk to me .</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n<div class=\"top\"></div>\n<frameset cols=\"15%,75%\">\n<frame id=\"leftframe\">\n<h2 id=\"personal\">\n  Your own space !\n</h2>\n<li>\n  <a href=\"news.html\">消息通知</a>\n</li>\n<li>\n  <a href=\"history.html\">历史记录</a>\n</li>\n</frame>\n</frameset>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div class=\"foot\"></div>\n\n<style type=\"text/css\">\n  #leftframe{\n    text-align: left;\n\n  }\n  .top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n\n  .foot{\n  height:100px;\n  background:transparent;\n  margin:10px 0px 0px;\n  border-top-width: 2px;\n  border-top-style: slide;\n  border-top-color:#FFFFFF; }\n</style>\n  </body>\n  </html>",
-			"file": "main.html",
-			"file_size": 872,
-			"file_write_time": 130607924347415689,
-			"settings":
-			{
-				"buffer_size": 806,
->>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
-				"line_ending": "Windows",
-				"scratch": true
+				"buffer_size": 581,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "  <html> \n<head>\n<title>login-- Strings!</title>\n<link rel=\"stylesheet\" href=\"animate.min.css\">\n</head>\n<body background =\"backgroundimage.jpg\">\n<script> \n//邮箱验证	\nfunction checkusername1(){\n  var mail=document.getElementById('User_Signin_Email').value;\n  if (mail==\"\") {\n  document.getElementById('aftermail').innerHTML=\"请输入您的e-mail\";\n }else{\n  document.getElementById('aftermail').innerHTML=\"\";\n}\n}\n\n//密码验证\nfunction checkpassword1(){\n  var password=document.getElementById('User_Signin_Password').value;\n  if (password==\"\") {\n    document.getElementById('afterpassword').innerHTML=\"请输入您的密码\";\n  }else{\n    document.getElementById('afterpassword').innerHTML=\"\";\n}\n}\n\n\n\n</script>\n\n<script type=\"text/javascript\">\n  $('#all').addclass('animated bounceOutLeft');\n</script>\n<div class=\"zc\">\n还没有账号？  赶快去\n<a href=\"register.html\">注册</a>\n一个吧！\n</div>\n<div class=\"top\"></div>\n<div class= \"all\">\n<div id=\"login\">\n<h1><strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong></h1>\n<div class=\"boder\">\n	<h2 align = \"center\">\n			Welcome to Strings!\n		<h2>	\n<form>	\n<strong id=\"name\">邮箱</strong>\n<input type=\"text\" id=\"User_Signin_Email\" name=\"User_Signin_Email\" onblur=\"checkusername1()\"/>\n<span id=\"aftermail\"></span>\n<br/>	\n<strong id=\"password\">密码</strong>\n<input type=\"password\" id=\"User_Signin_Password\" name=\"User_Signin_Password\" onblur=\"checkpassword1()\"/>\n<span id=\"afterpassword\"></span>\n<br/>\n</div>\n</form>\n<form name=\"User_Signin_Email\" action=\"Login_Front.php\" method=\"post\">\n<form name=\"User_Signin_Password\" action=\"Login_Front.php\" method=\"post\">\n<div class= \"xf\">\n	<div class=\"button\">\n<input type=\"submit\" value=\"提交\" onClick=\".addclass\">\n<br/>\n</div>\n</div>\n</div>\n<div class=\"foot\"></div>\n<style type=\"text/css\">\n.top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n }\n h1{\n 	width:500px;\n	height:200px;\n	border: #ccc;\n	margin:  0 auto;\n    font-family: \"Comic Sans MS\";\n    font-size:xx-large;\n    font-style: normal;\n    color:#4DC2CB;\n	padding-bottom: 0px;\n	padding-left: 50px;\n	padding-right: 50px;\n }\n .xf{height: 30px;\n	 text-align:right;\n   	 font-family:\"微软雅黑\";\n     opacity: 0.6\n      \n	 } \n    .all{	\n    	text-align: center;\n    	font-family: \"微软雅黑\";\n    }\n.zc a:link{\n	color:#4DC2CB;\n}	 \n    a:visited{\n    	color: red;\n    }\n    a:hover{\n    	color: red;\n    }\n.zc{\n	text-align: right;\n	background-color:#252C33;\n	opacity: 0.6;\n	color: #4DC2CB;\n}\n.button{\n  margin: 0 auto;\n  text-align:center\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; \n}\n#aftermail{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n  text-align: left;\n}\n#afterpassword{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n  text-align: left;\n}\n.boder{\n	height: 300px;\n	width:600px;\n	font-family: \"微软雅黑\";\n	text-align:center;\n  opacity:0.7;\n  font-size: medium;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n  border-top: 3px #CDE6FE solid;\n  border-right: 3px #CDE6FE solid;\n  border-bottom: 3px #CDE6FE solid;\n  font-family: \"Comic Sans MS\";\n  color: #181818;\n  margin:0 auto;\n  font-size: large;\n}\n}\n</style>\n</body>\n</html>\n",
-			"file": "登录.html",
-			"file_size": 3455,
-			"file_write_time": 130612894901806970,
+			"file": "/C/Users/Administrator/Desktop/ajax/lesson1/13.ajax.html",
 			"settings":
 			{
-				"buffer_size": 3236,
-				"line_ending": "Windows",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/C/Users/Administrator/Desktop/css/style.css",
-			"settings":
-			{
-				"buffer_size": 3719,
-				"line_ending": "Unix"
+				"buffer_size": 1181,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -167,18 +141,6 @@
 			{
 				"buffer_size": 424,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings的注册网站</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n	<script>\n		//保存一个密码用于校验\n		var _pass;\n		String.prototype.Trim = function() { \n		return this.replace(/(^\\s*)|(\\s*$)/g, \"\"); }\n		/**\n		*检查Email\n		*/\n		//---------------------------------------------------------------------------\n		function check_email(){\n		 var email;\n		 email = document.getElementById('email').value;\n		 email = email.Trim();\n		 if (email == \"\") {\n			document.getElementById('email_error').innerHTML = \"请输入Email\";\n			} else {\n			 if (/^[\\w-]+[\\.]*[\\w-]+[@][\\w\\-]{1,}([.]([\\w\\-]{1,})){1,3}$/.test(email)) {\n				document.getElementById('email_error').innerHTML = \"\";\n				} else {\n				document.getElementById('email_error').innerHTML = \"请输入有效的Email地址\";\n				}      \n			}\n		 }\n		/**\n		*检查密码\n		*/\n		//---------------------------------------------------------------------------\n		function check_pass(){\n		 var pass;\n		 pass = document.getElementById('pass').value;\n		 pass = pass.Trim();\n		 _pass = pass;\n		 if (pass == \"\") {\n			document.getElementById('pass_error').innerHTML = \"请输入密码\";\n			} else {\n			 if (/^\\w{6,20}$/.test(pass)) {\n				document.getElementById('pass_error').innerHTML = \"\";\n				} else {\n				document.getElementById('pass_error').innerHTML = \"请输入6 ~ 20 字符【0-9】【a-z-A-Z】\";\n				}      \n			}\n		 }\n		/**\n		*检查rpass\n		*/\n		//---------------------------------------------------------------------------\n		function check_rpass(){\n		 var rpass;\n		 rpass = document.getElementById('rpass').value;\n		 rpass = rpass.Trim();\n		 if (rpass == \"\") {\n			document.getElementById('rpass_error').innerHTML = \"请输入确认密码\";\n			} \n		 else if (rpass != _pass) {\n			document.getElementById('rpass_error').innerHTML = \"密码不一致\";\n			}\n		 else {\n			document.getElementById('rpass_error').innerHTML = \"\"\n			}    \n		 }\n		//---------------------------------------------------------------------------\n		function regist(){\n		 var pass_error=document.getElementById('pass_error').innerHTML;\n		 var rpass_error=document.getElementById('rpass_error').innerHTML;\n		 var email_error=document.getElementById('email_error').innerHTML;\n		 var pass=document.getElementById('pass').value;\n		 var rpass=document.getElementById('rpass').value;\n		 var email=document.getElementById('email').value;    \n		 //判断错误信息全部为空并且文本框全部不为空\n		 if ((pass_error == \"\" && rpass_error == \"\" && email_error == \"\")&&(pass != \"\" && rpass != \"\" && email != \"\")) {\n			alert (\"恭喜，注册成功!\");\n			return true;\n			} else {\n			 alert (\"注册信息填写错误，请仔细检查更正后再提交\");\n			 return false;\n			 }\n		\n		\n		 }       \n	 \n		</script>\n	<div id =\"xf\"style=\"position: fixed; width: 13 48px; top: 0px; align=\"right\"\">\n		<a href =login.html >已有账号？立即登录！</a>\n	</div>\n	<div class=\"top\"></div>\n	<div class=\"main\">\n		<h1>\n			<strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong><h1>\n		<div id=\"register\">\n		\n		<h2 align = \"center\">\n			Welcome to Strings!\n		<h2>	\n			\n					<form method=\"post\"action =\"User.php\" onsubmit=\"return regist()\">      \n				<ul>\n			 <li>\n				<span class=\"front_input\">请输入邮箱名</span>\n					<input id =\"email\" type=\"text\" class=\"_input\" onblur=\"check_email()\"/>\n				<span id=\"email_error\" class=\"after_input\"></span><br/>       \n			</li>  \n			<li>\n				<span class=\"front_input\">请输入密码:</span>\n					<input id=\"pass\" type=\"password\" class=\"_input\" onblur=\"check_pass()\"/>\n				<span id=\"pass_error\" class=\"after_input\"> </span><br/>    \n			</li>\n			<li>\n				<span class=\"front_input\">请再次确认密码:</span>\n				 <input id=\"rpass\" type=\"password\" class=\"_input\" onblur=\"check_rpass()\" />\n				<span id=\"rpass_error\" class=\"after_input\"></span><br/>\n			 </li>\n			</ul>\n				 <div class =\"bottom\"><input type =\"submit\" value =\"确认注册\"></div>\n			</form>\n		 \n		 \n	</div>	\n	</div>\n		<div class=\"foot\"></div>\n	\n	<style type=\"text/css\">\nbody{margin: 0;padding: 0;}\n#xf{height: 30px;\n	background-color:#252C33;\n	 text-align:right;\n	 font-family:\"微软雅黑\";\n	 opacity: 0.6\n	 } \n#xf a:link{\n	color:#4DC2CB;\n}	 \n		a:visited{\n			color: red;\n		}\n		a:hover{\n			color: red;\n		}\n		\n.top{\n	background-image:url('logo.png');\n	background-repeat:no-repeat;\n	background-position: left;\n	height:160px;\n }\n.main{width:500px;\n	height:300px;\n	border: #ccc;\n	margin:  0 auto;\n	font-family: \"Comic Sans MS\";\n	font-size:large;\n	font-style: normal;\n	color:#4DC2CB;\n	padding-bottom: 100px;\n	padding-left: 50px;\n	padding-right: 50px;}\n#register{height: 300px;\n	width:600px;\n	font-family: \"微软雅黑\";\n	text-align:left;\n	margin:50 ;\n	opacity:0.7;\n	font-size: medium;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n	border-top: 3px #CDE6FE solid;\n	border-right: 3px #CDE6FE solid;\n	border-bottom: 3px #CDE6FE solid;\n	font-family: \"Comic Sans MS\";\n	color: #181818;\n}\n.front_input{\n	font-family: \"微软雅黑\"；;\n	text-align: left;\n}\n.after_input{\n	font-family: \"微软雅黑\";\n	color: #DD1A00;\n	font-size: 12px;\n}\n.bottom{\n	margin: 0 auto;\n	text-align:center\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; }\n</style>	\n</body>\n</html>\n",
-			"file": "register.html",
-			"file_size": 5454,
-			"file_write_time": 130607897927522276,
-			"settings":
-			{
-				"buffer_size": 5098,
-				"line_ending": "Windows",
-				"scratch": true
 			}
 		},
 		{
@@ -226,6 +188,15 @@
 	},
 	"file_history":
 	[
+		"/E/Strings/register.html",
+		"/C/Users/Administrator/Desktop/css/style.css",
+		"/E/Strings/登录.html",
+		"/E/Strings/main.html",
+		"/C/Users/Administrator/Desktop/SNS-master/Register/register.html",
+		"/C/Users/Administrator/Desktop/ajax/lesson1/2.ajax.html",
+		"/C/Users/Administrator/Desktop/ajax/lesson1/1.ajax.html",
+		"/C/Users/Administrator/Desktop/ajax/lesson1/1.post.php",
+		"/C/Users/Administrator/Desktop/ajax/lesson1/1.get.php",
 		"/C/Users/Administrator/Desktop/css/google-font.css",
 		"/C/Users/Administrator/Desktop/css/animate.min.css",
 		"/C/Users/Administrator/Desktop/bg/assets/css/supersized.css",
@@ -234,7 +205,6 @@
 		"/C/Users/Administrator/Desktop/bg/assets/js/jquery-1.8.2.min.js",
 		"/C/Users/Administrator/Desktop/bg/assets/js/scripts.js",
 		"/C/Users/Administrator/Desktop/bg/index.html",
-		"/E/Strings/main.html",
 		"/E/Strings/注册.html",
 		"/E/wamp/www/表单验证.html",
 		"/E/wamp/www/E-mail验证.html",
@@ -245,8 +215,6 @@
 		"/E/Strings/框架.html",
 		"/C/Users/Administrator/Desktop/example1.html",
 		"/C/Users/Administrator/Desktop/请打开.html",
-		"/E/Strings/register.html",
-		"/E/Strings/登录.html",
 		"/E/Strings/注册实例2.xml",
 		"/C/Users/Administrator/Desktop/jsppt/impress.js/js/impress.js",
 		"/C/Users/Administrator/Desktop/jsppt/impress.js/css/impress-demo.css",
@@ -293,110 +261,30 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "main.html",
+					"file": "/C/Users/Administrator/Desktop/ajax/lesson1/3.ajax.html",
 					"settings":
 					{
-<<<<<<< HEAD
-						"buffer_size": 1643,
-=======
-						"buffer_size": 806,
->>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
+						"buffer_size": 581,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
-								1319,
-								1319
-=======
-								382,
-								382
->>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"in_converting": true,
-							"origin_encoding": "GBK",
-							"revert_to_scratch": true,
+							"origin_encoding": "UTF-8",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-<<<<<<< HEAD
-						"translation.y": 648.0,
-=======
-						"translation.y": 54.0,
->>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "登录.html",
-					"settings":
-					{
-						"buffer_size": 3236,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1614,
-								1614
-							]
-						],
-						"settings":
-						{
-							"in_converting": true,
-							"origin_encoding": "GBK",
-							"revert_to_scratch": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-<<<<<<< HEAD
-						"translation.y": 378.0,
-=======
-						"translation.y": 270.0,
->>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Administrator/Desktop/css/style.css",
-					"settings":
-					{
-						"buffer_size": 3719,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								298,
-								298
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -405,7 +293,35 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
+					"file": "/C/Users/Administrator/Desktop/ajax/lesson1/13.ajax.html",
+					"settings":
+					{
+						"buffer_size": 1181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								256,
+								256
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "/C/Users/Administrator/Desktop/ajax.js",
 					"settings":
 					{
@@ -433,7 +349,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "/C/Users/Administrator/Desktop/index.html",
 					"settings":
 					{
@@ -444,8 +360,8 @@
 						"selection":
 						[
 							[
-								158,
-								158
+								15,
+								15
 							]
 						],
 						"settings":
@@ -461,42 +377,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "register.html",
-					"settings":
-					{
-						"buffer_size": 5098,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								849,
-								849
-							]
-						],
-						"settings":
-						{
-							"in_converting": true,
-							"origin_encoding": "GBK",
-							"revert_to_scratch": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-<<<<<<< HEAD
-						"translation.y": 612.0,
-=======
-						"translation.y": 270.0,
->>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 4,
 					"file": "瀑布1.html",
 					"settings":
 					{
@@ -507,13 +388,8 @@
 						"selection":
 						[
 							[
-<<<<<<< HEAD
 								331,
 								331
-=======
-								3991,
-								3991
->>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 							]
 						],
 						"settings":
@@ -527,11 +403,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-<<<<<<< HEAD
 						"translation.y": 0.0,
-=======
-						"translation.y": 1823.0,
->>>>>>> parent of 8f34d50... Signed-off-by: yellow <503375725@qq.com>
 						"zoom_level": 1.0
 					},
 					"type": "text"
