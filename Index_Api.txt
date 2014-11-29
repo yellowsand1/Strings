@@ -1,0 +1,36 @@
+1：
+Api 动态提交：
+前端返回:
+User_Email //邮箱
+User_NewContent  //内容
+
+
+2：
+Api 主页内容显示
+后端返回：
+Content_Cnt // 动态数量 最多不超过50条
+Content_Email[] //动态邮箱 数组
+Content_Txt[] // 动态内容 数组
+
+3：
+Api 个人页面返回
+前端返回：
+User_Email //请求的邮箱 
+
+后端返回：
+User_Cnt //个人数据量 最多不超过50条
+User_Txt[] // 返回个人动态 数组
+
+4：
+Api 注册页面
+前端返回 
+User_Email 
+User_Password 
+
+5：
+Api 登陆页面
+前端返回
+User_Signin_Email
+User_Signin_Password
+
+

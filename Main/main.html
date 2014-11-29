@@ -5,16 +5,37 @@
 
 <link rel="shortcut icon" href=" /StringsICON.ico" /> 
 <title> Strings--Talk to me .</title>
-<script type="text/javascript" src="ajax.js"></script>
 <script type="text/javascript">
-window.onload=function(){
-    //第一个参数 数据的传递方式 get/post
-    //第二个参数 url
-    //第三个参数 表单数据
-    //第四个参数 回调函数 function 里面的 data 就是后台给你的数据 自己用innerHTML插进去就行
-    ajax('get','action.php','usr=lk&pwd=123',function (data){
-      alert(data);
-    });
+  window.onload = function() {
+    var xhr = null;
+    try {
+      xhr = new XMLHttpRequest();
+    } catch (e) {
+      xhr = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    
+    xhr.open('get','getNews.php',true);
+    xhr.send();
+    
+    xhr.onreadystatechange = function() {
+      
+      if ( xhr.readyState == 4 ) {
+        if ( xhr.status == 200 ) {
+          var data = JSON.parse( xhr.responseText );
+          
+          var oUl = document.getElementById('flow-box');
+          var html = '';
+          for (var i=0; i<data.length; i++) {
+            html += '<li style="height:180px;">'+data[i].title+'[<span>'+data[i].date+'</span>]</li>';
+          }
+          oUl.innerHTML = html;
+        } else {
+          alert('出错了,Err：' + xhr.status);
+        }
+      }
+      
+    }
+    
   }
 </script>
 </head>
@@ -42,7 +63,26 @@ window.onload=function(){
   <a href="../PersonalPage/PersonalPage.html">历史记录</a>
 </div>
 </div>
-<div class="mainbody"></div>
+
+
+<!--列表-->
+<div class="mainbody">
+  <div class="wrap" style="width:100%">
+    <ul id="flow-box">
+          
+      
+    </ul>
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
 <style type="text/css">
  body{
   margin-left:50px;
@@ -97,7 +137,7 @@ window.onload=function(){
   }
   .mainbody{
     width:80%;
-    height:600px;
+    height:6000px;
     margin-left: 20px;
     float: left;
     background-color:#FFFFFF;
@@ -131,6 +171,19 @@ window.onload=function(){
     font-family: "Arial";
     
   }
+  .wrap li{
+    width:80%; 
+    border:0px; 
+    list-style:none;
+  }
+
+  #flow-box{
+    font-family: "Arial";
+    font-size: small;
+    
+  }
+
 </style>
+
   </body>
   </html>

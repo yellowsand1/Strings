@@ -1,7 +1,7 @@
-  <html> 
+<!DOCTYPE HTML>
+<html> 
 <head>
 <title>login-- Strings!</title>
-<link rel="stylesheet" href="animate.min.css">
 </head>
 <body background ="backgroundimage.jpg">
 <script> 
@@ -24,14 +24,22 @@ function checkpassword1(){
     document.getElementById('afterpassword').innerHTML="";
 }
 }
+function finalcheck(){
+  var fmail=document.getElementById('aftermail').innerHTML;
+  var fpass=document.getElementById('afterpassword').innerHTML;
+  if (fmail==""&& fpass=="") {
+    alert("登陆成功");
+    return true;
+  }else{
+    alert("信息有误，请检查后提交");
+    return false;
+  }
+}
 
 
 
 </script>
 
-<script type="text/javascript">
-  $('#all').addclass('animated bounceOutLeft');
-</script>
 <div class="zc">
 还没有账号？  赶快去
 <a href="register.html">注册</a>
@@ -45,7 +53,8 @@ function checkpassword1(){
 	<h2 align = "center">
 			Welcome to Strings!
 		<h2>	
-<form>	
+
+<form action="Login_Front.php" method="get" onsubmit="return finalcheck()">
 <strong id="name">邮箱</strong>
 <input type="text" id="User_Signin_Email" name="User_Signin_Email" onblur="checkusername1()"/>
 <span id="aftermail"></span>
@@ -54,14 +63,13 @@ function checkpassword1(){
 <input type="password" id="User_Signin_Password" name="User_Signin_Password" onblur="checkpassword1()"/>
 <span id="afterpassword"></span>
 <br/>
+<div class= "xf">
+  <div class="button">
+<input type="submit" value="登录">
+</div>
 </div>
 </form>
-<form name="User_Signin_Email" action="Login_Front.php" method="post">
-<form name="User_Signin_Password" action="Login_Front.php" method="post">
-<div class= "xf">
-	<div class="button">
-<input type="submit" value="提交" onClick=".addclass">
-<br/>
+
 </div>
 </div>
 </div>

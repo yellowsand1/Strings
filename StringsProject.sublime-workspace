@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
+				"a",
+				"Arial"
+			],
+			[
+				"fl",
+				"flow-box"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
 				"s",
 				"script	Tag"
 			],
@@ -56,10 +76,6 @@
 				"boder"
 			],
 			[
-				"fl",
-				"float"
-			],
-			[
 				"te",
 				"text-align"
 			],
@@ -80,10 +96,6 @@
 				"font-family"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"pass",
 				"password"
 			],
@@ -94,10 +106,6 @@
 			[
 				"flo",
 				"float_right"
-			],
-			[
-				"in",
-				"input	Tag"
 			],
 			[
 				"bo",
@@ -112,11 +120,55 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Administrator/Desktop/ajax/lesson1/3.ajax.html",
+			"file": "Main/main.html",
 			"settings":
 			{
-				"buffer_size": 581,
+				"buffer_size": 3660,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE HTML>\n<html> \n<head>\n<title>login-- Strings!</title>\n</head>\n<body background =\"backgroundimage.jpg\">\n<script> \n//邮箱验证	\nfunction checkusername1(){\n  var mail=document.getElementById('User_Signin_Email').value;\n  if (mail==\"\") {\n  document.getElementById('aftermail').innerHTML=\"请输入您的e-mail\";\n }else{\n  document.getElementById('aftermail').innerHTML=\"\";\n}\n}\n\n//密码验证\nfunction checkpassword1(){\n  var password=document.getElementById('User_Signin_Password').value;\n  if (password==\"\") {\n    document.getElementById('afterpassword').innerHTML=\"请输入您的密码\";\n  }else{\n    document.getElementById('afterpassword').innerHTML=\"\";\n}\n}\nfunction finalcheck(){\n  var fmail=document.getElementById('aftermail').innerHTML;\n  var fpass=document.getElementById('afterpassword').innerHTML;\n  if (fmail==\"\"&& fpass==\"\") {\n    alert(\"登陆成功\");\n    return true;\n  }else{\n    alert(\"信息有误，请检查后提交\");\n    return false;\n  }\n}\n\n\n\n</script>\n\n<div class=\"zc\">\n还没有账号？  赶快去\n<a href=\"register.html\">注册</a>\n一个吧！\n</div>\n<div class=\"top\"></div>\n<div class= \"all\">\n<div id=\"login\">\n<h1><strong>Strings ,an easy way to chat with strangers!Let's get started now!</strong></h1>\n<div class=\"boder\">\n	<h2 align = \"center\">\n			Welcome to Strings!\n		<h2>	\n\n<form action=\"Login_Front.php\" method=\"get\" onsubmit=\"return finalcheck()\">\n<strong id=\"name\">邮箱</strong>\n<input type=\"text\" id=\"User_Signin_Email\" name=\"User_Signin_Email\" onblur=\"checkusername1()\"/>\n<span id=\"aftermail\"></span>\n<br/>	\n<strong id=\"password\">密码</strong>\n<input type=\"password\" id=\"User_Signin_Password\" name=\"User_Signin_Password\" onblur=\"checkpassword1()\"/>\n<span id=\"afterpassword\"></span>\n<br/>\n<div class= \"xf\">\n  <div class=\"button\">\n<input type=\"submit\" value=\"登录\">\n</div>\n</div>\n</form>\n\n</div>\n</div>\n</div>\n<div class=\"foot\"></div>\n<style type=\"text/css\">\n.top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n }\n h1{\n 	width:500px;\n	height:200px;\n	border: #ccc;\n	margin:  0 auto;\n    font-family: \"Comic Sans MS\";\n    font-size:xx-large;\n    font-style: normal;\n    color:#4DC2CB;\n	padding-bottom: 0px;\n	padding-left: 50px;\n	padding-right: 50px;\n }\n .xf{height: 30px;\n	 text-align:right;\n   	 font-family:\"微软雅黑\";\n     opacity: 0.6\n      \n	 } \n    .all{	\n    	text-align: center;\n    	font-family: \"微软雅黑\";\n    }\n.zc a:link{\n	color:#4DC2CB;\n}	 \n    a:visited{\n    	color: red;\n    }\n    a:hover{\n    	color: red;\n    }\n.zc{\n	text-align: right;\n	background-color:#252C33;\n	opacity: 0.6;\n	color: #4DC2CB;\n}\n.button{\n  margin: 0 auto;\n  text-align:center\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n	border-top-width: 2px;\n	border-top-style: slide;\n	border-top-color:#FFFFFF; \n}\n#aftermail{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n  text-align: left;\n}\n#afterpassword{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n  text-align: left;\n}\n.boder{\n	height: 300px;\n	width:600px;\n	font-family: \"微软雅黑\";\n	text-align:center;\n  opacity:0.7;\n  font-size: medium;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n  border-top: 3px #CDE6FE solid;\n  border-right: 3px #CDE6FE solid;\n  border-bottom: 3px #CDE6FE solid;\n  font-family: \"Comic Sans MS\";\n  color: #181818;\n  margin:0 auto;\n  font-size: large;\n}\n}\n</style>\n</body>\n</html>\n",
+			"file": "Login/Login.html",
+			"file_size": 3535,
+			"file_write_time": 130616670468255734,
+			"settings":
+			{
+				"buffer_size": 3293,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Welcome/welcome.html",
+			"settings":
+			{
+				"buffer_size": 1971,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings的注册网站</title>\n<link rel=\"shortcut icon\" href=\" /StringsICON.ico\" /> \n</head>\n<body class=\"body\">\n	<script>\n    //保存一个密码用于校验\n    var _pass;\n    String.prototype.Trim = function() { \n    return this.replace(/(^\\s*)|(\\s*$)/g, \"\"); }\n    /**\n    *检查Email\n    */\n    //---------------------------------------------------------------------------\n    function check_email(){\n     var User_Email;\n     User_Email = document.getElementById('User_Email').value;\n     User_Email = User_Email.Trim();\n     if (User_Email == \"\") {\n      document.getElementById('email_error').innerHTML = \"请输入Email\";\n      } else {\n       if (/^[\\w-]+[\\.]*[\\w-]+[@][\\w\\-]{1,}([.]([\\w\\-]{1,})){1,3}$/.test()) {\n        document.getElementById('email_error').innerHTML = \"\";\n        } else {\n        document.getElementById('email_error').innerHTML = \"请输入有效的Email地址\";\n        }      \n      }\n     }\n    /**\n    *检查密码\n    */\n    //---------------------------------------------------------------------------\n    function check_pass(){\n     var User_Password;\n     User_Password = document.getElementById('User_Password').value;\n     User_Password = User_Password.Trim();\n     _pass = User_Password;\n     if (User_Password == \"\") {\n      document.getElementById('pass_error').innerHTML = \"请输入密码\";\n      } else {\n       if (/^\\w{6,20}$/.test(User_Password)) {\n        document.getElementById('pass_error').innerHTML = \"\";\n        } else {\n        document.getElementById('pass_error').innerHTML = \"请输入6 ~ 20 字符【0-9】【a-z-A-Z】\";\n        }      \n      }\n     }\n    /**\n    *检查rpass\n    */\n    //---------------------------------------------------------------------------\n    function check_rpass(){\n     var rpass;\n     rpass = document.getElementById('rpass').value;\n     rpass = rpass.Trim();\n     if (rpass == \"\") {\n      document.getElementById('rpass_error').innerHTML = \"请输入确认密码\";\n      } \n     else if (rpass != _pass) {\n      document.getElementById('rpass_error').innerHTML = \"密码不一致\";\n      }\n     else {\n      document.getElementById('rpass_error').innerHTML = \"\"\n      }    \n     }\n    //---------------------------------------------------------------------------\n    function regist(){\n     var pass_error=document.getElementById('pass_error').innerHTML;\n     var rpass_error=document.getElementById('rpass_error').innerHTML;\n     var email_error=document.getElementById('email_error').innerHTML;\n     var User_Password=document.getElementById('User_Password').value;\n     var rpass=document.getElementById('rpass').value;\n     var User_Email=document.getElementById('User_Email').value;    \n     //判断错误信息全部为空并且文本框全部不为空\n     if ((pass_error == \"\" && rpass_error == \"\" && email_error == \"\")&&(User_Password != \"\" && rpass != \"\" && User_Email != \"\")) {\n      alert (\"恭喜，注册成功!\");\n      return true;\n      } else {\n       alert (\"注册信息填写错误，请仔细检查更正后再提交\");\n       return false;\n       }\n    \n    \n     }       \n   \n    </script>\n	<div id =\"xf\"  align:\"right\">\n		<a href =\"login.html\" >已有账号？立即登录！</a>\n	</div>\n	<div class=\"top\"></div>\n	<div class=\"main\">\n    <h1>\n      Strings ,an easy way to chat with strangers!Let's get started now!</h1>\n		<div id=\"register\">\n         <form method=\"post\"action =\"Register_Front.php\" onsubmit=\"return regist()\">  \n		       <table>\n           <tr>\n           <td><span class =\"front_input\">请输入邮箱:</span></td>\n           <td><input id =\"User_Email\" class =\"input\"type=\"text\" vertical-align=\"middle\"class=\"_input\" onblur=\"check_email()\"/></td>\n           <td><span id=\"email_error\" class=\"after_input\"></span></td> </tr>       \n           <tr>\n          <td><span class=\"front_input\">请输入密码:</span></td>\n          <td><input id=\"User_Password\"class =\"input\" type=\"password\" vertical-align=\"middle\"class=\"_input\" onblur=\"check_pass()\"/> </td>\n			     <td><span id=\"pass_error\" class=\"after_input\"> </span></td></tr>\n          <tr>\n            <td><span class=\"front_input\">请再次确认密码:</span></td>\n			   <td><input id=\"rpass\" type=\"password\"class =\"input\"vertical-align=\"middle\" class=\"_input\" onblur=\"check_rpass()\" /></td>\n			  <td><span id=\"rpass_error\" class=\"after_input\"></span></td></tr>\n		     </table>\n         <div class =\"bottom\"><input type =\"submit\"class=\"button blue\" value =\"确认注册\"></div>\n		 </form>\n		 \n	</div>	\n	</div>\n    <div class=\"foot\"></div>\n	\n	<style type=\"text/css\">\n  .body{\n    background-image:url(backgroundimage.jpg);\n    margin-right: 0;\n    margin-left: 0;\n    margin-bottom: 0;\n    margin-top: 0\n  }\n#xf{\n  position: fixed;\n  width: 100%;\n  top: 0px; \n  height: 30px;\n	background-color:#252C33;\n	text-align:right;\n  font-family:\"微软雅黑\";\n  opacity: 0.6\n	 }\n#xf a:link{\n	color:#4DC2CB;\n}	 \n#xf a:visited{\n    	color:#FF0000\n    }\n#xf  a:hover{\n    	color:#FF0000\n    }\n    \n.top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:160px;\n }\n.main{width:500px;\n	height:200px;\n	border: #ccc;\n	margin:  0 auto;\n  font-family: \"Comic Sans MS\";\n  font-size:large;\n  font-style: normal;\n  color:#33FFFF;\n	padding-bottom: 100px;\n	padding-left: 50px;\n	padding-right: 50px;}\n#register{height: 300px;\n	width:600px;\n	text-align:left;\n	margin:0 auto;\n  padding-top: 100px;\n  opacity:0.7;\n	background:#E3EED0;\n	border-left: 3px #CDE6FE solid;\n  border-top: 3px #CDE6FE solid;\n  border-right: 3px #CDE6FE solid;\n  border-bottom: 3px #CDE6FE solid;\n  font-family: \"Comic Sans MS\";\n}\n#User_Email{\n  border-radius: 20px\n}\ntable{\n  margin: 0 auto;\n  margin-bottom: 30px;\n  line-height: 3em\n}\ntd{\n  padding-right: 3em;\n}\n.front_input{\n  font-family: \"微软雅黑\";\n  text-align: left;\n  font-size:20px;\n  color: #181818;\n  text-align: center;\n}\n.after_input{\n  font-family: \"微软雅黑\";\n  color: #DD1A00;\n  font-size: 12px;\n}\n.input{\n  margin: 0 auto;\n}\n.bottom{\n  margin: 0 auto;\n  text-align:center\n}\n.blue {\n    color: #D9EEF7;\n    border: 1px solid #0076A3;\n    background: -moz-linear-gradient(center top , #00ADEE, #0078A5) repeat scroll 0% 0% transparent;\n}\n.button {\n    display: inline-block;\n    vertical-align: baseline;\n    margin: 0px 2px;\n    outline: medium none;\n    cursor: pointer;\n    text-align: center;\n    text-decoration: none;\n    font: 14px/100% Arial,Helvetica,sans-serif;\n    padding: 0.5em 2em 0.55em;\n    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);\n    border-radius: 0.5em;\n    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n}\n.foot{\n	height:100px;\n	background:transparent;\n	margin:10px 0px 0px;\n   }\n</style>	\n</body>\n</html>\n",
+			"file": "Register/register.html",
+			"file_size": 6881,
+			"file_write_time": 130615801782413635,
+			"settings":
+			{
+				"buffer_size": 6497,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv =\"Contet-Type\" content=\"text/html\">\n<title> Strings--Talk to me .</title>\n<link rel=\"shortcut icon\" href=\" /StringsICON.ico\" /> \n</head>\n<body id =\"background\">\n  <div id =\"EnterInformation\">\n  <form method=\"post\" action =\"\">\n    <table>\n    <td><input class =\"input\" type =\"text\" ></td>\n    <td><input type =\"submit\" value =\"submit\"></td>\n    </table>\n  </form>\n</div>\n<div class=\"top\"></div>\n<h1 id=\"personal\">\n  <q>Your own space !</q>\n</h1>\n<div class =\"all\">\n<div class=\"lkk\">\n  <div id=\"icon\">\n    <a href =\"\">\n      <img src=\"meow.png\"></a>\n    </div>\n  </div>\n  <div class=\"ckk\">历史消息</div>\n  <div class =\"zkk\">评论</div>\n</div>\n<style type=\"text/css\">\n body{\n  margin-left :50px;\n  margin-right: 50px;\n  padding:0;\n }\n #background{\n  background-color:#343C45;\n\n }\n  #personal{\n    text-align: left;\n    font-family: \"Arial\";\n    color: #FFFFFF;\n    font-size:30px; \n    margin-bottom: 20px;\n  }\n  #EnterInformation{\n  position: fixed;\n  right:0;\n }\n  #icon{\n    height: 100px;\n  }\n  .all{\n    height:600px;\n\n  }\n  .lkk {\n    width: 15%;\n    float: left;\n    border-right:1px solid #AAAAAA;\n    height: 600px;\n    padding-top: 5px;\n    background-color:#FFFFFF;\n    border-radius: 5px;\n    margin-right: 30px;\n  }\n  .ckk{\n    width: 45%;\n    height:600px;\n    border-right: 1px solid #AAAAAA;\n    font-family: \"微软雅黑\";\n    font-size: 24px;\n    text-align: center;\n    color: #4DC2CB;\n    float: left;\n    background-color:#FFFFFF;\n    border-radius: 5px;\n  }\n  .zkk{\n    width: 35%;\n    font-family: \"微软雅黑\";\n    font-size: 24px;\n    text-align: center;\n    color: #4DC2CB;\n    float: right;\n    height:600px;\n    background-color: #FFFFFF;\n    border-radius: 5px;\n  }\n  #flowbox{\n    margin:10px auto 0 auto; \n    padding:0; \n    position:relative\n  } \n\n  .top{\n  background-image:url('logo.png');\n  background-repeat:no-repeat;\n  background-position: left;\n  height:100px;\n  }\n  h1{\n    text-align: left;\n    font-size: x-large;\n    font-family: \"Arial\";\n    \n  }\n</style>\n  </body>\n  </html>",
+			"file": "PersonalPage/PersonalPage.html",
+			"file_size": 2169,
+			"file_write_time": 130615801782463637,
+			"settings":
+			{
+				"buffer_size": 2044,
+				"line_ending": "Windows",
+				"scratch": true
 			}
 		},
 		{
@@ -128,29 +180,21 @@
 			}
 		},
 		{
-			"file": "/C/Users/Administrator/Desktop/ajax.js",
-			"settings":
-			{
-				"buffer_size": 609,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "/C/Users/Administrator/Desktop/index.html",
 			"settings":
 			{
-				"buffer_size": 424,
+				"buffer_size": 955,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<!doctype html>\n<html>\n<head>\n<meta charset=\"GBK\">\n<title>瀑布流</title>\n<style type=\"text/css\">\n/* CSS reset Start */\nhtml,body,h1,h2,h3,h4,h5,div,p,ul,ol,li{padding:0; margin:0;}\nhtml{font-size:10px;}\nbody{font-size:1.4em; color:#333; font-family:\"微软雅黑\";}\nh1,h2,h3,h4,h5{font-size:1.2em; font-weight:normal;}\nul,ol{list-style:none;}\ntable {border-collapse: collapse; border-spacing: 0;}\nstrong,em{font-weight:normal; font-style:normal;}\nimg{border:none;}\na{text-decoration:none; color:#333;}\na:hover{text-decoration:underline;}\ninput,textarea,:focus{outline:none;}\n/* CSS reset End */\n#flow-box{margin:10px auto 0 auto; padding:0; position:relative} \n#flow-box li{opacity:0;\nwidth:100px; position:absolute; padding:10px; border:solid 1px pink; list-style:none; \n-moz-opacity:0;\nfilter:alpha(opacity=0);\n-webkit-transition:opacity 500ms ease-in-out;\n-moz-transition:opacity 500ms ease-in-out;\n-o-transition:opaicty 500ms ease-in-out;\ntransition:opaicty 500ms ease-in-out;}\n.wrap li{width:100px; border:2px pink solid; list-style:none;}\n.loadwrap{position:absolute; left:0; width:100%; text-align:center;} \n</style>\n<script type=\"text/javascript\" src=\"js/jquery-1.8.0.min.js\">\n</script>\n<script type=\"text/javascript\">\nvar oArr = [];\nvar itest = 1;\nfunction flow(mh, mv) {//参数mh和mv是定义数据块之间的间距，mh是水平距离，mv是垂直距离\n	var scrollTest = 0;\n	var w = document.documentElement.offsetWidth;//计算页面宽度\n	var ul = document.getElementById(\"flow-box\");\n	var li = ul.getElementsByTagName(\"li\");\n	var iw = li[0].offsetWidth + mh;//计算数据块的宽度\n	var c = Math.floor(w / iw);//计算列数 \n	ul.style.width = iw * c - mh + \"px\";//设置ul的宽度至适合便可以利用css定义的margin把所有内容居中\n	var liLen = li.length;\n	var lenArr = [];\n	var x;\n	for (var i = 0; i < liLen; i++) {//遍历每一个数据块将高度记入数组\n		lenArr.push(li[i].offsetHeight);\n	} \n	for (var i = 0; i < c; i++) {//把第一行排放好，并将每一列的高度记入数据oArr\n		li[i].style.top = \"0\";\n		li[i].style.left = iw * i + \"px\";\n		li[i].style.opacity = \"1\";\n		li[i].style[\"-moz-opacity\"] = \"1\";\n		li[i].style[\"filter\"] = \"alpha(opacity=100)\";\n		oArr.push(lenArr[i]);\n	}\n	for (var i = c; i < 35; i++) {//将其他数据块定位到最短的一列后面，然后再更新该列的高度\n		x = _getMinKey(oArr);//获取最短的一列的索引值\n		li[i].style.top = oArr[x] + mv + \"px\";\n		li[i].style.left = iw * x + \"px\";\n		li[i].style.opacity = \"1\";\n		li[i].style[\"-moz-opacity\"] = \"1\";\n		li[i].style[\"filter\"] = \"alpha(opacity=100)\";\n		oArr[x] = lenArr[i] + oArr[x] + mv;//更新该列的高度\n	}\n	document.getElementById(\"loadimg\").style.top = _getMaxValue(oArr) + 50 + \"px\";//将loading移到下面\n	window.onscroll = function(){\n		update(mh, mv);\n	};\n}\nfunction update(mh, mv){\n	var w = document.documentElement.offsetWidth;//计算页面宽度\n	var a = getScrollTop();\n	var b = getClientHeight();\n	var c = getScrollHeight();\n	var ul = document.getElementById(\"flow-box\");\n	var li = ul.getElementsByTagName(\"li\");\n	var iw = li[0].offsetWidth + mh;//计算数据块的宽\n	var c2 = Math.floor(w / iw);//计算列数度\n	var liLen = li.length;\n	var lenArr = [];\n	for (var i = 0; i < liLen; i++) {//遍历每一个数据块将高度记入数组\n		lenArr.push(li[i].offsetHeight);\n	}\n	if(a+b>=c-8){\n		var liLen2 = 35+(itest*25);\n		var liLen3 =(itest-1)*25+35;\n		if(liLen2<=li.length){\n			for (var i = liLen3; i < liLen2; i++) {//将其他数据块定位到最短的一列后面，然后再更新该列的高度\n				x = _getMinKey(oArr);//获取最短的一列的索引值\n				li[i].style.top = oArr[x] + mv + \"px\";\n				li[i].style.left = iw * x + \"px\";\n				li[i].style.opacity = \"1\";\n				li[i].style[\"-moz-opacity\"] = \"1\";\n				li[i].style[\"filter\"] = \"alpha(opacity=100)\";\n				oArr[x] = lenArr[i] + oArr[x] + mv;//更新该列的高度\n			}\n			itest++;\n		}\n	}\n	document.getElementById(\"loadimg\").style.top = _getMaxValue(oArr) + 50 + \"px\";//将loading移到下面\n}\n//获取数字数组最小值的索引\nfunction _getMinKey(arr) {\n	var a = arr[0];\n	var b = 0;\n	for (var k in arr) {\n		if (arr[k] < a) {\n			a = arr[k];\n			b = k;\n		}\n	}\nreturn b;\n} \n//图片加载完成后执行\nwindow.onload = function() {flow(10, 10)}; \n//获取数字数组的最大值\nfunction _getMaxValue(arr) {\n	var a = arr[0];\n		for (var k in arr) {\n			if (arr[k] > a) {\n				a = arr[k];\n		}\n	}\n	return a;\n}\n/********************\n *js获取滚动条离顶部距离\n ******************/\nfunction getScrollTop() {\n    var scrollPos;  \n	if (window.pageYOffset) {  \n		scrollPos = window.pageYOffset;\n	}  \n	else if (document.compatMode && document.compatMode != 'BackCompat')  \n	{\n		scrollPos = document.documentElement.scrollTop; \n	}  \n	else if (document.body) {\n		scrollPos = document.body.scrollTop; \n	}   \n	return scrollPos;   \n}\n\n/********************\n * 取窗口可视范围的高度 \n *******************/\nfunction getClientHeight()\n{\n    var clientHeight=0;\n    if(document.body.clientHeight&&document.documentElement.clientHeight)\n    {\n        var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;        \n    }\n    else\n    {\n        var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;    \n    }\n    return clientHeight;\n}\n\n/********************\n * 取文档内容实际高度 \n *******************/\nfunction getScrollHeight()\n{\n    return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);\n}\n</script>\n</head>\n\n<body>\n	<div class=\"wrap\" style=\"width:100%;\">\n    	<ul id=\"flow-box\">\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        </ul>\n    </div>\n    <div id=\"loadimg\" class=\"loadwrap\"><img src=\"images/loading.gif\" /></div> \n</body>\n</html>\n",
+			"contents": "<!doctype html>\n<html>\n<head>\n<meta charset=\"GBK\">\n<title>瀑布流</title>\n<style type=\"text/css\">\n/* CSS reset Start */\nhtml,body,h1,h2,h3,h4,h5,div,p,ul,ol,li{padding:0; margin:0;}\nhtml{font-size:10px;}\nbody{font-size:1.4em; color:#333; font-family:\"微软雅黑\";}\nh1,h2,h3,h4,h5{font-size:1.2em; font-weight:normal;}\nul,ol{list-style:none;}\ntable {border-collapse: collapse; border-spacing: 0;}\nstrong,em{font-weight:normal; font-style:normal;}\nimg{border:none;}\na{text-decoration:none; color:#333;}\na:hover{text-decoration:underline;}\ninput,textarea,:focus{outline:none;}\n/* CSS reset End */\n#flow-box{margin:10px auto 0 auto; padding:0; position:relative} \n#flow-box li{opacity:0;\nwidth:100px; position:absolute; padding:10px; border:solid 1px pink; list-style:none; \n-moz-opacity:0;\nfilter:alpha(opacity=0);\n-webkit-transition:opacity 500ms ease-in-out;\n-moz-transition:opacity 500ms ease-in-out;\n-o-transition:opaicty 500ms ease-in-out;\ntransition:opaicty 500ms ease-in-out;}\n.wrap li{width:100px; border:2px pink solid; list-style:none;}\n.loadwrap{position:absolute; left:0; width:100%; text-align:center;} \n</style>\n\n\n\n<script type=\"text/javascript\" src=\"js/jquery-1.8.0.min.js\">\n</script>\n<script type=\"text/javascript\">\nvar oArr = [];\nvar itest = 1;\nfunction flow(mh, mv) {//参数mh和mv是定义数据块之间的间距，mh是水平距离，mv是垂直距离\n	var scrollTest = 0;\n	var w = document.documentElement.offsetWidth;//计算页面宽度\n	var ul = document.getElementById(\"flow-box\");\n	var li = ul.getElementsByTagName(\"li\");\n	var iw = li[0].offsetWidth + mh;//计算数据块的宽度\n	var c = Math.floor(w / iw);//计算列数 \n	ul.style.width = iw * c - mh + \"px\";//设置ul的宽度至适合便可以利用css定义的margin把所有内容居中\n	var liLen = li.length;\n	var lenArr = [];\n	var x;\n	for (var i = 0; i < liLen; i++) {//遍历每一个数据块将高度记入数组\n		lenArr.push(li[i].offsetHeight);\n	} \n	for (var i = 0; i < c; i++) {//把第一行排放好，并将每一列的高度记入数据oArr\n		li[i].style.top = \"0\";\n		li[i].style.left = iw * i + \"px\";\n		li[i].style.opacity = \"1\";\n		li[i].style[\"-moz-opacity\"] = \"1\";\n		li[i].style[\"filter\"] = \"alpha(opacity=100)\";\n		oArr.push(lenArr[i]);\n	}\n	for (var i = c; i < 35; i++) {//将其他数据块定位到最短的一列后面，然后再更新该列的高度\n		x = _getMinKey(oArr);//获取最短的一列的索引值\n		li[i].style.top = oArr[x] + mv + \"px\";\n		li[i].style.left = iw * x + \"px\";\n		li[i].style.opacity = \"1\";\n		li[i].style[\"-moz-opacity\"] = \"1\";\n		li[i].style[\"filter\"] = \"alpha(opacity=100)\";\n		oArr[x] = lenArr[i] + oArr[x] + mv;//更新该列的高度\n	}\n	document.getElementById(\"loadimg\").style.top = _getMaxValue(oArr) + 50 + \"px\";//将loading移到下面\n	window.onscroll = function(){\n		update(mh, mv);\n	};\n}\nfunction update(mh, mv){\n	var w = document.documentElement.offsetWidth;//计算页面宽度\n	var a = getScrollTop();\n	var b = getClientHeight();\n	var c = getScrollHeight();\n	var ul = document.getElementById(\"flow-box\");\n	var li = ul.getElementsByTagName(\"li\");\n	var iw = li[0].offsetWidth + mh;//计算数据块的宽\n	var c2 = Math.floor(w / iw);//计算列数度\n	var liLen = li.length;\n	var lenArr = [];\n	for (var i = 0; i < liLen; i++) {//遍历每一个数据块将高度记入数组\n		lenArr.push(li[i].offsetHeight);\n	}\n	if(a+b>=c-8){\n		var liLen2 = 35+(itest*25);\n		var liLen3 =(itest-1)*25+35;\n		if(liLen2<=li.length){\n			for (var i = liLen3; i < liLen2; i++) {//将其他数据块定位到最短的一列后面，然后再更新该列的高度\n				x = _getMinKey(oArr);//获取最短的一列的索引值\n				li[i].style.top = oArr[x] + mv + \"px\";\n				li[i].style.left = iw * x + \"px\";\n				li[i].style.opacity = \"1\";\n				li[i].style[\"-moz-opacity\"] = \"1\";\n				li[i].style[\"filter\"] = \"alpha(opacity=100)\";\n				oArr[x] = lenArr[i] + oArr[x] + mv;//更新该列的高度\n			}\n			itest++;\n		}\n	}\n	document.getElementById(\"loadimg\").style.top = _getMaxValue(oArr) + 50 + \"px\";//将loading移到下面\n}\n//获取数字数组最小值的索引\nfunction _getMinKey(arr) {\n	var a = arr[0];\n	var b = 0;\n	for (var k in arr) {\n		if (arr[k] < a) {\n			a = arr[k];\n			b = k;\n		}\n	}\nreturn b;\n} \n//图片加载完成后执行\nwindow.onload = function() {flow(10, 10)}; \n//获取数字数组的最大值\nfunction _getMaxValue(arr) {\n	var a = arr[0];\n		for (var k in arr) {\n			if (arr[k] > a) {\n				a = arr[k];\n		}\n	}\n	return a;\n}\n/********************\n *js获取滚动条离顶部距离\n ******************/\nfunction getScrollTop() {\n    var scrollPos;  \n	if (window.pageYOffset) {  \n		scrollPos = window.pageYOffset;\n	}  \n	else if (document.compatMode && document.compatMode != 'BackCompat')  \n	{\n		scrollPos = document.documentElement.scrollTop; \n	}  \n	else if (document.body) {\n		scrollPos = document.body.scrollTop; \n	}   \n	return scrollPos;   \n}\n\n/********************\n * 取窗口可视范围的高度 \n *******************/\nfunction getClientHeight()\n{\n    var clientHeight=0;\n    if(document.body.clientHeight&&document.documentElement.clientHeight)\n    {\n        var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;        \n    }\n    else\n    {\n        var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;    \n    }\n    return clientHeight;\n}\n\n/********************\n * 取文档内容实际高度 \n *******************/\nfunction getScrollHeight()\n{\n    return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);\n}\n</script>\n</head>\n\n<body>\n	<div class=\"wrap\" style=\"width:100%\">\n    	<ul id=\"flow-box\">\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        	<li style=\"height:80px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:60px;\"></li>\n        	<li style=\"height:76px;\"></li>\n        	<li style=\"height:96px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:135px;\"></li>\n        	<li style=\"height:55px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:170px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:175px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:126px;\"></li>\n        	<li style=\"height:199px;\"></li>\n        	<li style=\"height:210px;\"></li>\n        	<li style=\"height:88px;\"></li>\n        	<li style=\"height:79px;\"></li>\n        	<li style=\"height:99px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:130px;\"></li>\n        	<li style=\"height:66px;\"></li>\n        	<li style=\"height:180px;\"></li>\n        	<li style=\"height:140px;\"></li>\n        	<li style=\"height:150px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:90px;\"></li>\n        	<li style=\"height:120px;\"></li>\n        	<li style=\"height:30px;\"></li>\n        	<li style=\"height:189px;\"></li>\n        	<li style=\"height:34px;\"></li>\n        	<li style=\"height:89px;\"></li>\n        	<li style=\"height:220px;\"></li>\n        	<li style=\"height:100px;\"></li>\n        	<li style=\"height:26px;\"></li>\n        	<li style=\"height:40px;\"></li>\n        	<li style=\"height:87px;\"></li>\n        	<li style=\"height:85px;\"></li>\n        	<li style=\"height:200px;\"></li>\n        </ul>\n    </div>\n    <div id=\"loadimg\" class=\"loadwrap\"><img src=\"images/loading.gif\" /></div> \n</body>\n</html>\n",
 			"file": "瀑布1.html",
-			"file_size": 13853,
-			"file_write_time": 130607892574098209,
+			"file_size": 13858,
+			"file_write_time": 130616714969807305,
 			"settings":
 			{
-				"buffer_size": 13175,
+				"buffer_size": 13177,
 				"line_ending": "Windows",
 				"scratch": true
 			}
@@ -188,13 +232,18 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Administrator/Desktop/ajax.js",
+		"/C/Users/Administrator/Desktop/ajax/lesson1/3.ajax.html",
+		"/C/Users/Administrator/Desktop/index.html",
+		"/C/Users/Administrator/Desktop/ajax/lesson1/4.ajax.html",
+		"/C/Users/Administrator/Desktop/ajax/lesson1/13.ajax.html",
+		"/C/Users/Administrator/Desktop/ajax/lesson1/1.ajax.html",
 		"/E/Strings/register.html",
 		"/C/Users/Administrator/Desktop/css/style.css",
 		"/E/Strings/登录.html",
 		"/E/Strings/main.html",
 		"/C/Users/Administrator/Desktop/SNS-master/Register/register.html",
 		"/C/Users/Administrator/Desktop/ajax/lesson1/2.ajax.html",
-		"/C/Users/Administrator/Desktop/ajax/lesson1/1.ajax.html",
 		"/C/Users/Administrator/Desktop/ajax/lesson1/1.post.php",
 		"/C/Users/Administrator/Desktop/ajax/lesson1/1.get.php",
 		"/C/Users/Administrator/Desktop/css/google-font.css",
@@ -261,30 +310,66 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Administrator/Desktop/ajax/lesson1/3.ajax.html",
+					"file": "Main/main.html",
 					"settings":
 					{
-						"buffer_size": 581,
+						"buffer_size": 3660,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								874,
+								874
 							]
 						],
 						"settings":
 						{
-							"origin_encoding": "UTF-8",
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"prevent_detect": true,
+							"revert_to_scratch": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 329.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Login/Login.html",
+					"settings":
+					{
+						"buffer_size": 3293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"force_encoding": "GBK",
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"revert_to_scratch": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -293,7 +378,96 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
+					"file": "Welcome/welcome.html",
+					"settings":
+					{
+						"buffer_size": 1971,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1414,
+								1414
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 5,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Register/register.html",
+					"settings":
+					{
+						"buffer_size": 6497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								144
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "PersonalPage/PersonalPage.html",
+					"settings":
+					{
+						"buffer_size": 2044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "/C/Users/Administrator/Desktop/ajax/lesson1/13.ajax.html",
 					"settings":
 					{
@@ -304,8 +478,8 @@
 						"selection":
 						[
 							[
-								256,
-								256
+								920,
+								920
 							]
 						],
 						"settings":
@@ -315,53 +489,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/C/Users/Administrator/Desktop/ajax.js",
-					"settings":
-					{
-						"buffer_size": 609,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								185,
-								185
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
+					"buffer": 6,
 					"file": "/C/Users/Administrator/Desktop/index.html",
 					"settings":
 					{
-						"buffer_size": 424,
+						"buffer_size": 955,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								253,
+								253
 							]
 						],
 						"settings":
@@ -371,25 +517,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
 					"file": "瀑布1.html",
 					"settings":
 					{
-						"buffer_size": 13175,
+						"buffer_size": 13177,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								331,
-								331
+								931,
+								931
 							]
 						],
 						"settings":
