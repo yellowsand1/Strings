@@ -1,26 +1,26 @@
 <!DOCTYPE HTML>
 <html> 
 <head>
-<meta http-equiv ="Contet-Type" content="text/html"charset="GBK" />
+<meta http-equiv ="Contet-Type" content="text/html"charset="utf-8" />
 <title>login-- Strings!</title>
 </head>
 <body background ="backgroundimage.jpg">
 <script> 
-//ÓÊÏäÑéÖ¤	
+//é‚®ç®±éªŒè¯	
 function checkusername1(){
   var mail=document.getElementById('User_Signin_Email').value;
   if (mail=="") {
-  document.getElementById('aftermail').innerHTML="ÇëÊäÈëÄúµÄe-mail";
+  document.getElementById('aftermail').innerHTML="è¯·è¾“å…¥æ‚¨çš„e-mail";
  }else{
   document.getElementById('aftermail').innerHTML="";
 }
 }
 
-//ÃÜÂëÑéÖ¤
+//å¯†ç éªŒè¯
 function checkpassword1(){
   var password=document.getElementById('User_Signin_Password').value;
   if (password=="") {
-    document.getElementById('afterpassword').innerHTML="ÇëÊäÈëÄúµÄÃÜÂë";
+    document.getElementById('afterpassword').innerHTML="è¯·è¾“å…¥æ‚¨çš„å¯†ç ";
   }else{
     document.getElementById('afterpassword').innerHTML="";
 }
@@ -29,7 +29,7 @@ function finalcheck(){
   var fmail=document.getElementById('User_Signin_Email').value;
   var fpass=document.getElementById('User_Signin_Password').value;
   if (fmail==""|| fpass=="") {
-    alert("ÇëÊäÈëÄÚÈİ");
+    alert("è¯·è¾“å…¥å†…å®¹");
     return false;
   }else{
     return true;
@@ -41,9 +41,9 @@ function finalcheck(){
 </script>
 
 <div class="zc">
-»¹Ã»ÓĞÕËºÅ£¿  ¸Ï¿ìÈ¥
-<a href="Register_Front.html">×¢²á</a>
-Ò»¸ö°É£¡
+è¿˜æ²¡æœ‰è´¦å·ï¼Ÿ  èµ¶å¿«å»
+<a href="Register_Front.html">æ³¨å†Œ</a>
+ä¸€ä¸ªå§ï¼
 </div>
 <div class="top"></div>
 <div class= "all">
@@ -55,17 +55,17 @@ function finalcheck(){
 		<h2>	
 
 <form action="Login_Front.php" method="get" onsubmit="return finalcheck()">
-<strong id="name">ÓÊÏä</strong>
+<strong id="name">é‚®ç®±</strong>
 <input type="text" id="User_Signin_Email" name="User_Signin_Email" onblur="checkusername1()"/>
 <span id="aftermail"></span>
 <br/>	
-<strong id="password">ÃÜÂë</strong>
+<strong id="password">å¯†ç </strong>
 <input type="password" id="User_Signin_Password" name="User_Signin_Password" onblur="checkpassword1()"/>
 <span id="afterpassword"></span>
 <br/>
 <div class= "xf">
   <div class="button">
-<input type="submit" value="µÇÂ¼">
+<input type="submit" value="ç™»å½•">
 </div>
 </div>
 </form>
@@ -96,13 +96,13 @@ function finalcheck(){
  }
  .xf{height: 30px;
 	 text-align:right;
-   	 font-family:"Î¢ÈíÑÅºÚ";
+   	 font-family:"å¾®è½¯é›…é»‘";
      opacity: 0.6
       
 	 } 
     .all{	
     	text-align: center;
-    	font-family: "Î¢ÈíÑÅºÚ";
+    	font-family: "å¾®è½¯é›…é»‘";
     }
 .zc a:link{
 	color:#4DC2CB;
@@ -132,13 +132,13 @@ function finalcheck(){
 	border-top-color:#FFFFFF; 
 }
 #aftermail{
-  font-family: "Î¢ÈíÑÅºÚ";
+  font-family: "å¾®è½¯é›…é»‘";
   color: #DD1A00;
   font-size: 12px;
   text-align: left;
 }
 #afterpassword{
-  font-family: "Î¢ÈíÑÅºÚ";
+  font-family: "å¾®è½¯é›…é»‘";
   color: #DD1A00;
   font-size: 12px;
   text-align: left;
@@ -146,7 +146,7 @@ function finalcheck(){
 .boder{
 	height: 300px;
 	width:600px;
-	font-family: "Î¢ÈíÑÅºÚ";
+	font-family: "å¾®è½¯é›…é»‘";
 	text-align:center;
   opacity:0.7;
   font-size: medium;

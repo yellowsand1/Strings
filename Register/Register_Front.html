@@ -1,18 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv ="Contet-Type" content="text/html"charset="GBK" />
-<title> StringsµÄ×¢²áÍøÕ¾</title>
+<meta http-equiv ="Contet-Type" content="text/html"charset="utf-8" />
+<title> Stringsçš„æ³¨å†Œç½‘ç«™</title>
 <link rel="shortcut icon" href=" /StringsICON.ico" /> 
 </head>
 <body class="body">
 	<script>
-    //±£´æÒ»¸öÃÜÂëÓÃÓÚĞ£Ñé
+    //ä¿å­˜ä¸€ä¸ªå¯†ç ç”¨äºæ ¡éªŒ
     var _pass;
     String.prototype.Trim = function() { 
     return this.replace(/(^\s*)|(\s*$)/g, ""); }
     /**
-    *¼ì²éEmail
+    *æ£€æŸ¥Email
     */
     //---------------------------------------------------------------------------
     function check_email(){
@@ -20,17 +20,17 @@
      User_Email = document.getElementById('User_Email').value;
      User_Email = User_Email.Trim();
      if (User_Email == "") {
-      document.getElementById('email_error').innerHTML = "ÇëÊäÈëEmail";
+      document.getElementById('email_error').innerHTML = "è¯·è¾“å…¥Email";
       } else {
        if (/^[\w-]+[\.]*[\w-]+[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test()) {
         document.getElementById('email_error').innerHTML = "";
         } else {
-        document.getElementById('email_error').innerHTML = "ÇëÊäÈëÓĞĞ§µÄEmailµØÖ·";
+        document.getElementById('email_error').innerHTML = "è¯·è¾“å…¥æœ‰æ•ˆçš„Emailåœ°å€";
         }      
       }
      }
     /**
-    *¼ì²éÃÜÂë
+    *æ£€æŸ¥å¯†ç 
     */
     //---------------------------------------------------------------------------
     function check_pass(){
@@ -39,17 +39,17 @@
      User_Password = User_Password.Trim();
      _pass = User_Password;
      if (User_Password == "") {
-      document.getElementById('pass_error').innerHTML = "ÇëÊäÈëÃÜÂë";
+      document.getElementById('pass_error').innerHTML = "è¯·è¾“å…¥å¯†ç ";
       } else {
        if (/^\w{6,20}$/.test(User_Password)) {
         document.getElementById('pass_error').innerHTML = "";
         } else {
-        document.getElementById('pass_error').innerHTML = "ÇëÊäÈë6 ~ 20 ×Ö·û¡¾0-9¡¿¡¾a-z-A-Z¡¿";
+        document.getElementById('pass_error').innerHTML = "è¯·è¾“å…¥6 ~ 20 å­—ç¬¦ã€0-9ã€‘ã€a-z-A-Zã€‘";
         }      
       }
      }
     /**
-    *¼ì²érpass
+    *æ£€æŸ¥rpass
     */
     //---------------------------------------------------------------------------
     function check_rpass(){
@@ -57,10 +57,10 @@
      rpass = document.getElementById('rpass').value;
      rpass = rpass.Trim();
      if (rpass == "") {
-      document.getElementById('rpass_error').innerHTML = "ÇëÊäÈëÈ·ÈÏÃÜÂë";
+      document.getElementById('rpass_error').innerHTML = "è¯·è¾“å…¥ç¡®è®¤å¯†ç ";
       } 
      else if (rpass != _pass) {
-      document.getElementById('rpass_error').innerHTML = "ÃÜÂë²»Ò»ÖÂ";
+      document.getElementById('rpass_error').innerHTML = "å¯†ç ä¸ä¸€è‡´";
       }
      else {
       document.getElementById('rpass_error').innerHTML = ""
@@ -74,12 +74,12 @@
      var User_Password=document.getElementById('User_Password').value;
      var rpass=document.getElementById('rpass').value;
      var User_Email=document.getElementById('User_Email').value;    
-     //ÅĞ¶Ï´íÎóĞÅÏ¢È«²¿Îª¿Õ²¢ÇÒÎÄ±¾¿òÈ«²¿²»Îª¿Õ
+     //åˆ¤æ–­é”™è¯¯ä¿¡æ¯å…¨éƒ¨ä¸ºç©ºå¹¶ä¸”æ–‡æœ¬æ¡†å…¨éƒ¨ä¸ä¸ºç©º
      if ((pass_error == "" && rpass_error == "" && email_error == "")&&(User_Password != "" && rpass != "" && User_Email != "")) {
-      alert ("¹§Ï²£¬×¢²á³É¹¦!");
+      alert ("æ­å–œï¼Œæ³¨å†ŒæˆåŠŸ!");
       return true;
       } else {
-       alert ("×¢²áĞÅÏ¢ÌîĞ´´íÎó£¬Çë×ĞÏ¸¼ì²é¸üÕıºóÔÙÌá½»");
+       alert ("æ³¨å†Œä¿¡æ¯å¡«å†™é”™è¯¯ï¼Œè¯·ä»”ç»†æ£€æŸ¥æ›´æ­£åå†æäº¤");
        return false;
        }
     
@@ -88,7 +88,7 @@
    
     </script>
 	<div id ="xf"  align:"right">
-		<a href ="Login_front.html" >ÒÑÓĞÕËºÅ£¿Á¢¼´µÇÂ¼£¡</a>
+		<a href ="Login_front.html" >å·²æœ‰è´¦å·ï¼Ÿç«‹å³ç™»å½•ï¼</a>
 	</div>
 	<div class="top"></div>
 	<div class="main">
@@ -98,19 +98,19 @@
          <form method="post"action ="Register_Front.php" onsubmit="return regist()">  
 		       <table>
            <tr>
-           <td><span class ="front_input">ÇëÊäÈëÓÊÏä:</span></td>
+           <td><span class ="front_input">è¯·è¾“å…¥é‚®ç®±:</span></td>
            <td><input id ="User_Email" class ="input"type="text" vertical-align="middle"class="_input" onblur="check_email()"/></td>
            <td><span id="email_error" class="after_input"></span></td> </tr>       
            <tr>
-          <td><span class="front_input">ÇëÊäÈëÃÜÂë:</span></td>
+          <td><span class="front_input">è¯·è¾“å…¥å¯†ç :</span></td>
           <td><input id="User_Password"class ="input" type="password" vertical-align="middle"class="_input" onblur="check_pass()"/> </td>
 			     <td><span id="pass_error" class="after_input"> </span></td></tr>
           <tr>
-            <td><span class="front_input">ÇëÔÙ´ÎÈ·ÈÏÃÜÂë:</span></td>
+            <td><span class="front_input">è¯·å†æ¬¡ç¡®è®¤å¯†ç :</span></td>
 			   <td><input id="rpass" type="password"class ="input"vertical-align="middle" class="_input" onblur="check_rpass()" /></td>
 			  <td><span id="rpass_error" class="after_input"></span></td></tr>
 		     </table>
-         <div class ="bottom"><input type ="submit"class="button blue" value ="È·ÈÏ×¢²á"></div>
+         <div class ="bottom"><input type ="submit"class="button blue" value ="ç¡®è®¤æ³¨å†Œ"></div>
 		 </form>
 		 
 	</div>	
@@ -132,7 +132,7 @@
   height: 30px;
 	background-color:#252C33;
 	text-align:right;
-  font-family:"Î¢ÈíÑÅºÚ";
+  font-family:"å¾®è½¯é›…é»‘";
   opacity: 0.6
 	 }
 #xf a:link{
@@ -187,14 +187,14 @@ td{
   padding-right: 3em;
 }
 .front_input{
-  font-family: "Î¢ÈíÑÅºÚ";
+  font-family: "å¾®è½¯é›…é»‘";
   text-align: left;
   font-size:20px;
   color: #181818;
   text-align: center;
 }
 .after_input{
-  font-family: "Î¢ÈíÑÅºÚ";
+  font-family: "å¾®è½¯é›…é»‘";
   color: #DD1A00;
   font-size: 12px;
 }

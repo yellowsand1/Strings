@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv ="Contet-Type" content="text/html"charset="GBK" />
+<meta http-equiv ="Contet-Type" content="text/html"charset="utf-8" />
 
 <link rel="shortcut icon" href=" /StringsICON.ico" /> 
 <title> Strings--Talk to me .</title>
@@ -26,24 +26,25 @@
           var oUl = document.getElementById('flow-box');
           var html = '';
           for (var i=0; i<Content.length; i++) {
-            html += '<li style="height:180px;">'+Content[i]'</li>';
+            html += '<li>'+Content[i]+'</li>';
           }
           oUl.innerHTML = html;
         } else {
-          alert('出错了,Err：' + xhr.status);
+          alert('鍑洪敊浜�,Err锛�' + xhr.status);
         }
       }
       
     }
-    
   }
+
+  
 </script>
 </head>
 <body id ="background">
 <div id ="EnterInformation">
   <form method="post" action ="Index_Back_1.php">
     <table>
-    <td><input class ="input" type ="text" ></td>
+    <td><input class ="input" name ="User_NewContent" type ="text" ></td>
     <td><input type ="submit" class="button blue"value ="submit"></td>
     </table>
   </form>
@@ -54,17 +55,20 @@
 </h1>
 <div class="kk">
   <div id="icon">
-    <a href ="../PersonalPage/User_Front.html">
+    <a href ="User_Front.html">
       <img src="meow.png">
     </a>
   </div>
   <div class="personallink">
-  <a href="../PersonalPage/User_Front.html">历史记录</a>
+  <a href="User_Front.html">鍘嗗彶璁板綍</a>
+</div>
+<div>
+  <input type="button" value="鍒锋柊" id="sx">
 </div>
 </div>
 
 
-<!--列表-->
+<!--鍒楄〃-->
 <div class="mainbody">
   <div class="wrap" style="width:100%">
     <ul id="flow-box">
@@ -150,7 +154,7 @@
   }
 
   .personallink a:link{
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     text-align: left;
     font-size: large;
     color:#4DC2CB;
