@@ -14,19 +14,19 @@
       xhr = new ActiveXObject('Microsoft.XMLHTTP');
     }
     
-    xhr.open('get','getNews.php',true);
+    xhr.open('get','Index_Back_2.php',true);
     xhr.send();
     
     xhr.onreadystatechange = function() {
       
       if ( xhr.readyState == 4 ) {
         if ( xhr.status == 200 ) {
-          var data = JSON.parse( xhr.responseText );
+          var Content = JSON.parse( xhr.responseText );
           
           var oUl = document.getElementById('flow-box');
           var html = '';
-          for (var i=0; i<data.length; i++) {
-            html += '<li style="height:180px;">'+data[i].title+'[<span>'+data[i].date+'</span>]</li>';
+          for (var i=0; i<Content.length; i++) {
+            html += '<li style="height:180px;">'+Content[i]'</li>';
           }
           oUl.innerHTML = html;
         } else {
@@ -41,7 +41,7 @@
 </head>
 <body id ="background">
 <div id ="EnterInformation">
-  <form method="post" action ="">
+  <form method="post" action ="Index_Back_1.php">
     <table>
     <td><input class ="input" type ="text" ></td>
     <td><input type ="submit" class="button blue"value ="submit"></td>
@@ -54,13 +54,12 @@
 </h1>
 <div class="kk">
   <div id="icon">
-    <a href ="../PersonalPage/PersonalPage.html">
+    <a href ="../PersonalPage/User_Front.html">
       <img src="meow.png">
     </a>
   </div>
   <div class="personallink">
-  <a href="../PersonalPage/PersonalPage.html">消息通知</a></br>
-  <a href="../PersonalPage/PersonalPage.html">历史记录</a>
+  <a href="../PersonalPage/User_Front.html">历史记录</a>
 </div>
 </div>
 
@@ -173,7 +172,7 @@
   }
   .wrap li{
     width:80%; 
-    border:0px; 
+    border:1px solid; 
     list-style:none;
   }
 

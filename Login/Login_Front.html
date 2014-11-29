@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html> 
 <head>
+<meta http-equiv ="Contet-Type" content="text/html"charset="GBK" />
 <title>login-- Strings!</title>
 </head>
 <body background ="backgroundimage.jpg">
@@ -25,14 +26,13 @@ function checkpassword1(){
 }
 }
 function finalcheck(){
-  var fmail=document.getElementById('aftermail').innerHTML;
-  var fpass=document.getElementById('afterpassword').innerHTML;
-  if (fmail==""&& fpass=="") {
-    alert("登陆成功");
-    return true;
-  }else{
-    alert("信息有误，请检查后提交");
+  var fmail=document.getElementById('User_Signin_Email').value;
+  var fpass=document.getElementById('User_Signin_Password').value;
+  if (fmail==""|| fpass=="") {
+    alert("请输入内容");
     return false;
+  }else{
+    return true;
   }
 }
 
@@ -42,7 +42,7 @@ function finalcheck(){
 
 <div class="zc">
 还没有账号？  赶快去
-<a href="register.html">注册</a>
+<a href="Register_Front.html">注册</a>
 一个吧！
 </div>
 <div class="top"></div>
