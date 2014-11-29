@@ -1,37 +1,75 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv ="Contet-Type" content="text/html"charset="utf-8" />
+<meta http-equiv ="Contet-Type" content="text/html"charset="utf-8"/>
 <title> Strings--Talk to me .</title>
-<link rel="shortcut icon" href=" /StringsICON.ico" /> 
+<link rel="shortcut icon" href=" StringsICON.ico" /> 
+<script type="text/javascript">
+ /*window.onload = function() {
+    var xhr = null;
+    try {
+      xhr = new XMLHttpRequest();
+    } catch (e) {
+      xhr = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    
+    xhr.open('get','User_Back.php',true);
+    xhr.send();
+    
+    xhr.onreadystatechange = function() {
+      
+      if ( xhr.readyState == 4 ) {
+        if ( xhr.status == 200 ) {
+          var Content = JSON.parse( xhr.responseText );
+          
+          var oUl = document.getElementById('history');
+          var html = '';
+          for (var i=0; i<Content.length; i++) {
+            html += '<li>'+Content[i]+'</li>';
+          }
+          oUl.innerHTML = html;
+        } else {
+          alert('出错了,Err：' + xhr.status);
+        }
+      }
+      
+    }
+  }*/
+</script>
 </head>
 <body id ="background">
-  <div id ="EnterInformation">
-  <form method="post" action ="">
-    <table>
-    <td><input class ="input" type ="text" ></td>
-    <td><input type ="submit" value ="submit"></td>
-    </table>
-  </form>
-</div>
+  
 <div class="top"></div>
 <h1 id="personal">
   <q>Your own space !</q>
 </h1>
-<div class ="all">
-<div class="lkk">
+<div class="kk">
   <div id="icon">
-    <a href ="">
-      <img src="meow.png"></a>
-    </div>
-  </div>
-  <div class="ckk">历史消息</div>
-  <div class ="zkk">评论</div>
+    <a href ="../Main/Index_Front.html">
+      <img src="meow.png">
+    </a>
+  
+  
+<form action="User_Front.html" method="post" target="back">
+  请在此输入您的邮箱么么哒
+  <input type="text" name="User_Email"></input></br>
+  <input type="submit" class="button blue" value="submit">
+   
+ </form>
+ <div class="personallink">
+  <a href="../Main/Index_Front.html" class = "btn1">
+   主页面 </a>
 </div>
+</div>
+</div>
+ 
+  <div class="ckk"> 历史记录 </div>
+      <div id = "history" name="back"></div>
+   
 <style type="text/css">
  body{
-  margin-left :50px;
-  margin-right: 50px;
+  margin-left :100px;
+  margin-right: 100px;
   padding:0;
  }
  #background{
@@ -45,10 +83,12 @@
     font-size:30px; 
     margin-bottom: 20px;
   }
-  #EnterInformation{
+ #EnterInformation{
   position: fixed;
   right:0;
+  padding-right: 100px
  }
+
   #icon{
     height: 100px;
   }
@@ -59,15 +99,17 @@
   .lkk {
     width: 15%;
     float: left;
-    border-right:1px solid #AAAAAA;
+    margin-right: 0px;
     height: 600px;
     padding-top: 5px;
-    background-color:#FFFFFF;
+    padding-left: 50px;
+    background-color:transparent;
     border-radius: 5px;
-    margin-right: 30px;
+    margin-right: 0px;
   }
+  
   .ckk{
-    width: 45%;
+    width: 70%;
     height:600px;
     border-right: 1px solid #AAAAAA;
     font-family: "微软雅黑";
@@ -77,17 +119,7 @@
     float: left;
     background-color:#FFFFFF;
     border-radius: 5px;
-  }
-  .zkk{
-    width: 35%;
-    font-family: "微软雅黑";
-    font-size: 24px;
-    text-align: center;
-    color: #4DC2CB;
-    float: right;
-    height:600px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
+    margin-right: 10px
   }
   #flowbox{
     margin:10px auto 0 auto; 
@@ -101,12 +133,101 @@
   background-position: left;
   height:100px;
   }
+  .history{
+    font-family: "微软雅黑";
+    font-size:12px;
+    color: #CCC
+  }
   h1{
     text-align: left;
     font-size: x-large;
     font-family: "Arial";
     
   }
+   #personal{
+    text-align: left;
+    font-family: "Arial";
+    color: #FFFFFF;
+    font-size:30px; 
+    margin-bottom: 20px
+  }
+ #icon{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 30px
+  }
+ .personallink{
+    height: 100px;
+    width: 100px;
+    text-align: left;
+    float: left;
+    padding-top: 20px
+  }
+  .personallink a:link{
+      font-family: "微软雅黑";
+    text-align: left;
+    font-size: large;
+    color:#4DC2CB;
+  }
+  .blue {
+    color: #FFFFFF;
+    border: none;
+    background:#1ABC9C ;
+}
+.button {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0px 2px;
+    outline: medium none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px "微软雅黑";
+    padding: 0.5em 2em 0.55em;
+}
+.button:hover{
+      border: 1px solid #0076A3;
+      transition :0.2s ease-out;
+      -moz-transition:0.2s ease-out;
+      -o-transition:0.2s ease-out;
+      -wiki-transition:0.2s ease-out;
+       
+    }
+  .btn1{
+    display: inline-block;
+    line-height: 50px;
+    border:2px solid ;
+    height: 50px;
+    width: 100px;
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: #1ABC9C;
+    border: 2px solid #1ABC9C ;
+    padding-left: 35px;
+    border-radius:5px;
+
+  }
+  .btn1:hover{
+    border: 2px solid #CCC;
+    color:  #DD1A00;
+    transition :0.2s ease-out;
+    -moz-transition:0.2s ease-out;
+    -o-transition:0.2s ease-out;
+    -wiki-transition:0.2s ease-out;
+       
+  }
+
+  .kk {
+    width: 15%;
+    float: left;
+    height:600px;
+    padding-top:5px;
+    padding-left: 20px;
+    background-color:transparent;
+  }
 </style>
+
+
   </body>
   </html>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv ="Contet-Type" content="text/html"charset="utf-8" />
 
-<link rel="shortcut icon" href=" /StringsICON.ico" /> 
+<link rel="shortcut icon" href=" StringsICON.ico" /> 
 <title> Strings--Talk to me .</title>
 <script type="text/javascript">
   window.onload = function() {
@@ -23,7 +23,7 @@
         if ( xhr.status == 200 ) {
           var Content = JSON.parse( xhr.responseText );
           
-          var oUl = document.getElementById('flow-box');
+          var oUl = document.getElementById('news');
           var html = '';
           for (var i=0; i<Content.length; i++) {
             html += '<li>'+Content[i]+'</li>';
@@ -36,70 +36,113 @@
       
     }
   }
+</script>
 
+
+
+
+
+<script type="text/javascript">
+
+  /*function ajax(method, url, data, success) {
+  var xhr = null;
+  try {
+    xhr = new XMLHttpRequest();
+  } catch (e) {
+    xhr = new ActiveXObject('Microsoft.XMLHTTP');
+  }
   
+  
+  xhr.open(method,url,true);
+  if (method == 'get') {
+    xhr.send();
+  } else {
+    xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+    xhr.send(data);
+  }
+  
+  xhr.onreadystatechange = function() {
+    
+    if ( xhr.readyState == 4 ) {
+      if ( xhr.status == 200 ) {
+        success && success(xhr.responseText);
+      } else {
+        alert('出错了,Err：' + xhr.status);
+      }
+    }
+    
+  }
+}
+  window.onload=function(){
+    //第一个参数 数据的传递方式 get/post
+    //第二个参数 url
+    //第三个参数 表单数据
+    //第四个参数 回调函数 function 里面的 data 就是后台给你的数据 自己用innerHTML插进去就行
+    var User_Email = document.getElementById('input1')
+    ajax('post','User_Back_1.php',User_Email,function (data){
+      var User_NemContent = JSON.parse( xhr.responseText );
+          
+          var oUl = document.getElementById('mainbody');
+          var html = '';
+          for (var i=0; i<User_NemContent.length; i++) {
+            html += '<li>'+User_NemContent[i]+'</li>';
+          }
+          oUl.innerHTML = html;
+        }*/
+
+
+
+
 </script>
 </head>
 <body id ="background">
-<div id ="EnterInformation">
-  <form method="post" action ="Index_Back_1.php">
-    <table>
-    <td><input class ="input" name ="User_NewContent" type ="text" ></td>
-    <td><input type ="submit" class="button blue"value ="submit"></td>
-    </table>
-  </form>
-</div>
 <div class="top"></div>
 <h1 id="personal">
   <q>Your own space !</q>
 </h1>
 <div class="kk">
   <div id="icon">
-    <a href ="User_Front.html">
+    <a href="../login/Login_front.html">
       <img src="meow.png">
-    </a>
-  </div>
+  </a>
   <div class="personallink">
-  <a href="User_Front.html">历史记录</a>
+    <form method = "post" action ="User_Back_1.php">
+      <input type = "submit" value ="历史消息" id = "btn2" class = "button back">
+    </form>
 </div>
-<div>
-  <input type="button" value="刷新" id="sx">
 </div>
 </div>
-
-
-<!--列表-->
 <div class="mainbody">
-  <div class="wrap" style="width:100%">
-    <ul id="flow-box">
-          
-      
-    </ul>
-    
-  </div>
-  
+  <div id="news"></div>
 </div>
-
-
-
-
-
-
-
+<div id ="EnterInformation">
+  <form method="post" action ="Index_Back_1.php">
+   <textarea id="input"  name="User_NemContent"    onKeyDown="textdown(event)"onKeyUp="textup()" onfocus="if(value=='随便写点什么吧~'){value=''}"onblur="if (value ==''){value='随便写点什么吧~'}" style="color:#999999" >随便写点什么吧~</textarea></br> 
+   <input type = "text" id ="input1" neme="User_Email" value = "请输入邮箱么么哒~" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999" ></input></br>   
+   <input type ="submit" class="button blue"value ="submit">
+  </form>
+</div>
 <style type="text/css">
  body{
-  margin-left:50px;
-  margin-right:50px; 
+  margin-left:100px;
+  margin-right:100px; 
   padding: 0;
  }
  #EnterInformation{
   position: fixed;
   right:0;
+  padding-right: 100px
  }
  .blue {
-    color: #D9EEF7;
-    border: 1px solid #0076A3;
-    background: -moz-linear-gradient(center top , #00ADEE, #0078A5) repeat scroll 0% 0% transparent;
+    color: #FFFFFF;
+    border: none;
+    background-color: #1ABC9C  ;
+}
+.back{
+    color:#1ABC9C ;
+    background-color: transparent; 
+    border: 2px solid #1ABC9C ;
+    font-family: "微软雅黑"
 }
 .button {
     display: inline-block;
@@ -109,12 +152,49 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    font: 14px/100% Arial,Helvetica,sans-serif;
+    font: 15px/100% Verdana;
     padding: 0.5em 2em 0.55em;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 0.5em;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: bolder;
 }
+.button:hover{
+      border:2px solid #0076A3;
+    transition :0.2s ease-out;
+      -moz-transition:0.2s ease-out;
+      -o-transition:0.2s ease-out;
+      -wiki-transition:0.2s ease-out;
+       
+    }
+#input{
+  height:100px;
+  width:200px;
+  margin-bottom: 20px;
+  border: none;
+  border:  1px solid #CCCCCC;
+  border-radius: 5px;
+}
+#input:hover{
+  border: 1px solid #31AAE1 
+}
+#input:focus{
+  border: 1px solid #31AAE1
+}
+#input1{
+  height:20px;
+  width:200px;
+  margin-bottom: 20px;
+  border: none;
+  border:  1px solid #CCCCCC;
+  border-radius: 5px;
+}
+#input1:hover{
+  border: 1px solid #31AAE1 
+}
+#input1:focus{
+  border: 1px solid #31AAE1
+}
+  #icon{
+    height: 100px;
+  }
  #background{
   background-color:#343C45;
 
@@ -128,20 +208,21 @@
   }
   #icon{
     height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 30px
   }
   .kk {
     width: 15%;
     float: left;
-    border-right:1px solid #AAAAAA;
-    height: 600px;
-    padding-top: 5px;
-    background-color:#FFFFFF;
-    border-radius: 5px;
+    height:600px;
+    padding-top:5px;
+    padding-left: 20px;
+    background-color:transparent;
   }
   .mainbody{
-    width:80%;
-    height:6000px;
-    margin-left: 20px;
+    width:60%;
+    height:3000px;
     float: left;
     background-color:#FFFFFF;
     border-radius: 5px;
@@ -153,40 +234,59 @@
   height:100px;
   }
 
+  .personallink{
+    height: 100px;
+    width: 100px;
+    text-align: left;
+    float: left;
+    padding-top: 20px
+  }
   .personallink a:link{
-    font-family: "微软雅黑";
+      font-family: "微软雅黑";
     text-align: left;
     font-size: large;
     color:#4DC2CB;
-    padding-left: 10px
   }
-  .personallink  a:visited{
-      color:#FF0000
-    }
-  .personallink  a:hover{
-      color:#FF0000
-    }
+  .btn1{
+    display: inline-block;
+    line-height: 50px;
+    border:2px solid ;
+    height: 50px;
+    width: 100px;
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: #1ABC9C;
+    border: 2px solid #1ABC9C ;
+    padding-left: 35px;
+    border-radius:5px;
 
-
+  }
+  .btn1:hover{
+    border: 2px solid #CCC;
+    color:  #DD1A00;
+    transition :0.2s ease-out;
+    -moz-transition:0.2s ease-out;
+    -o-transition:0.2s ease-out;
+    -wiki-transition:0.2s ease-out;
+       
+  }
   h1{
     text-align: left;
     font-size: x-large;
     font-family: "Arial";
     
   }
-  .wrap li{
-    width:80%; 
-    border:1px solid; 
-    list-style:none;
-  }
 
-  #flow-box{
-    font-family: "Arial";
-    font-size: small;
-    
+  #news li{
+    text-decoration: none;
+    font-family: Arial;
+    border: 1px solid #A9A9A9 ;
+    font-size: large;
+    height: 100px;
+    word-wrap: break-word;
+    display:block;
+    word-break: break-all;
   }
-
 </style>
-
   </body>
   </html>

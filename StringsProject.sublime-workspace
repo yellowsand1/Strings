@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"h",
+				"height"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"f",
+				"frame	Tag"
+			],
+			[
+				"boder",
+				"border"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"new",
+				"news"
+			],
+			[
+				"get",
+				"get	Get Elements"
+			],
+			[
+				"va",
+				"var"
+			],
+			[
 				"in",
 				"input	Tag"
 			],
@@ -32,20 +64,12 @@
 				"script	Tag"
 			],
 			[
-				"fo",
-				"font-family"
-			],
-			[
 				"left",
 				"leftframe"
 			],
 			[
 				"al",
 				"alert"
-			],
-			[
-				"va",
-				"value"
 			],
 			[
 				"fu",
@@ -56,20 +80,12 @@
 				"请输入您的e-mail"
 			],
 			[
-				"get",
-				"getElementById"
-			],
-			[
 				"g",
 				"getElementById"
 			],
 			[
 				"ge",
 				"getElementByid"
-			],
-			[
-				"tex",
-				"text-align"
 			],
 			[
 				"bod",
@@ -82,10 +98,6 @@
 			[
 				"co",
 				"color"
-			],
-			[
-				"f",
-				"frame"
 			],
 			[
 				"bac",
@@ -123,7 +135,7 @@
 			"file": "Login/Login_Front.html",
 			"settings":
 			{
-				"buffer_size": 3351,
+				"buffer_size": 3416,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,7 +143,7 @@
 			"file": "Main/Index_Front.html",
 			"settings":
 			{
-				"buffer_size": 3622,
+				"buffer_size": 6349,
 				"line_ending": "Windows"
 			}
 		},
@@ -139,7 +151,7 @@
 			"file": "Register/Register_Front.html",
 			"settings":
 			{
-				"buffer_size": 6520,
+				"buffer_size": 6839,
 				"line_ending": "Windows"
 			}
 		},
@@ -147,7 +159,7 @@
 			"file": "PersonalPage/User_Front.html",
 			"settings":
 			{
-				"buffer_size": 2061,
+				"buffer_size": 4505,
 				"line_ending": "Windows"
 			}
 		},
@@ -155,7 +167,7 @@
 			"file": "Welcome/welcome.html",
 			"settings":
 			{
-				"buffer_size": 1991,
+				"buffer_size": 2002,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,7 +183,7 @@
 			"file": "/C/Users/Administrator/Desktop/index.html",
 			"settings":
 			{
-				"buffer_size": 955,
+				"buffer_size": 899,
 				"line_ending": "Windows"
 			}
 		},
@@ -220,6 +232,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Administrator/Desktop/Main/Index_Front.html",
 		"/E/Strings/Main/Index_Front.html",
 		"/E/Strings/PersonalPage/PersonalPage.html",
 		"/E/Strings/Register/register.html",
@@ -304,7 +317,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -312,15 +325,15 @@
 					"file": "Login/Login_Front.html",
 					"settings":
 					{
-						"buffer_size": 3351,
+						"buffer_size": 3416,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1765,
-								1765
+								132,
+								132
 							]
 						],
 						"settings":
@@ -333,7 +346,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -343,15 +356,15 @@
 					"file": "Main/Index_Front.html",
 					"settings":
 					{
-						"buffer_size": 3622,
+						"buffer_size": 6349,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1547,
-								1547
+								337,
+								337
 							]
 						],
 						"settings":
@@ -362,7 +375,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -372,15 +385,15 @@
 					"file": "Register/Register_Front.html",
 					"settings":
 					{
-						"buffer_size": 6520,
+						"buffer_size": 6839,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								95,
-								95
+								6161,
+								6680
 							]
 						],
 						"settings":
@@ -393,7 +406,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3731.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -403,15 +416,15 @@
 					"file": "PersonalPage/User_Front.html",
 					"settings":
 					{
-						"buffer_size": 2061,
+						"buffer_size": 4505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								474,
-								477
+								3026,
+								3026
 							]
 						],
 						"settings":
@@ -425,7 +438,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 702.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -435,15 +448,15 @@
 					"file": "Welcome/welcome.html",
 					"settings":
 					{
-						"buffer_size": 1991,
+						"buffer_size": 2002,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								366,
-								366
+								179,
+								179
 							]
 						],
 						"settings":
@@ -472,8 +485,36 @@
 						"selection":
 						[
 							[
-								345,
-								345
+								728,
+								728
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/Administrator/Desktop/index.html",
+					"settings":
+					{
+						"buffer_size": 899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								464,
+								464
 							]
 						],
 						"settings":
@@ -484,34 +525,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Users/Administrator/Desktop/index.html",
-					"settings":
-					{
-						"buffer_size": 955,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								253,
-								253
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -528,8 +541,8 @@
 						"selection":
 						[
 							[
-								931,
-								931
+								226,
+								226
 							]
 						],
 						"settings":
@@ -543,7 +556,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 162.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

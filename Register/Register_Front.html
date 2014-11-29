@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv ="Contet-Type" content="text/html"charset="utf-8" />
-<title> Strings的注册网站</title>
-<link rel="shortcut icon" href=" /StringsICON.ico" /> 
+<meta http-equiv ="Contet-Type" content="text/html"charset="utf-8">
+<title> Regiter--Strings!</title>
+<link rel="shortcut icon" href=" StringsICON.ico" /> 
 </head>
 <body class="body">
 	<script>
@@ -25,7 +25,7 @@
        if (/^[\w-]+[\.]*[\w-]+[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test()) {
         document.getElementById('email_error').innerHTML = "";
         } else {
-        document.getElementById('email_error').innerHTML = "请输入有效的Email地址";
+        //document.getElementById('email_error').innerHTML = "请输入有效的Email地址";
         }      
       }
      }
@@ -76,7 +76,6 @@
      var User_Email=document.getElementById('User_Email').value;    
      //判断错误信息全部为空并且文本框全部不为空
      if ((pass_error == "" && rpass_error == "" && email_error == "")&&(User_Password != "" && rpass != "" && User_Email != "")) {
-      alert ("恭喜，注册成功!");
       return true;
       } else {
        alert ("注册信息填写错误，请仔细检查更正后再提交");
@@ -87,23 +86,26 @@
      }       
    
     </script>
-	<div id ="xf"  align:"right">
-		<a href ="Login_front.html" >已有账号？立即登录！</a>
+	<div id ="xf" >
+		已有账号？立即<a href ="Login_Front.html" >登录</a>吧！
 	</div>
 	<div class="top"></div>
 	<div class="main">
     <h1>
-      Strings ,an easy way to chat with strangers!Let's get started now!</h1>
+      Strings ,an easy way to chat with strangers!</br>Let's get started now!</h1>  </div>
 		<div id="register">
-         <form method="post"action ="Register_Front.php" onsubmit="return regist()">  
+      <h2 align = "center">
+      Welcome to Strings!
+    <h2>  
+         <form method="post" action ="Register_Back.php" onsubmit="return regist()">  
 		       <table>
            <tr>
            <td><span class ="front_input">请输入邮箱:</span></td>
-           <td><input id ="User_Email" class ="input"type="text" vertical-align="middle"class="_input" onblur="check_email()"/></td>
+           <td><input id ="User_Email" name="User_Email" class ="input"type="text" vertical-align="middle"class="_input" onblur="check_email()"/></td>
            <td><span id="email_error" class="after_input"></span></td> </tr>       
            <tr>
           <td><span class="front_input">请输入密码:</span></td>
-          <td><input id="User_Password"class ="input" type="password" vertical-align="middle"class="_input" onblur="check_pass()"/> </td>
+          <td><input id="User_Password" name="User_Password" class ="input" type="password" vertical-align="middle"class="_input" onblur="check_pass()"/> </td>
 			     <td><span id="pass_error" class="after_input"> </span></td></tr>
           <tr>
             <td><span class="front_input">请再次确认密码:</span></td>
@@ -112,10 +114,9 @@
 		     </table>
          <div class ="bottom"><input type ="submit"class="button blue" value ="确认注册"></div>
 		 </form>
-		 
-	</div>	
+		
 	</div>
-    <div class="foot"></div>
+    <div class="foot">Designed by Strings Group</div>
 	
 	<style type="text/css">
   .body{
@@ -133,7 +134,9 @@
 	background-color:#252C33;
 	text-align:right;
   font-family:"微软雅黑";
-  opacity: 0.6
+  opacity: 0.6;
+    color:#4DC2CB;   
+
 	 }
 #xf a:link{
 	color:#4DC2CB;
@@ -151,40 +154,37 @@
   background-position: left;
   height:160px;
  }
-.main{width:500px;
+.main{width:600px;
 	height:200px;
 	border: #ccc;
 	margin:  0 auto;
   font-family: "Comic Sans MS";
   font-size:large;
   font-style: normal;
-  color:#33FFFF;
-	padding-bottom: 100px;
-	padding-left: 50px;
-	padding-right: 50px;}
-#register{height: 300px;
+  color:#E52C39;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;}
+#register{height: 400px;
 	width:600px;
 	text-align:left;
 	margin:0 auto;
-  padding-top: 100px;
+  padding-top: 50px;
   opacity:0.7;
 	background:#E3EED0;
-	border-left: 3px #CDE6FE solid;
-  border-top: 3px #CDE6FE solid;
-  border-right: 3px #CDE6FE solid;
-  border-bottom: 3px #CDE6FE solid;
+	border-left: 1px #31AAE1 solid;
+  border-top: 1px #31AAE1 solid;
+  border-right: 1px #31AAE1 solid;
+  border-bottom: 1px #31AAE1 solid;
   font-family: "Comic Sans MS";
-}
-#User_Email{
-  border-radius: 20px
 }
 table{
   margin: 0 auto;
   margin-bottom: 30px;
-  line-height: 3em
+  line-height: 2em
 }
 td{
-  padding-right: 3em;
+  padding-right: 2em;
 }
 .front_input{
   font-family: "微软雅黑";
@@ -199,16 +199,28 @@ td{
   font-size: 12px;
 }
 .input{
+  display: inline-block;
+  border: none;
+  border:  1px solid #CCCCCC;
+  border-radius: 0.2;
   margin: 0 auto;
+  height: 20px;
+  width: 150px
+}
+.input:hover{
+  border: 1px solid #31AAE1 
+}
+.input:focus{
+  border: 1px solid #31AAE1
 }
 .bottom{
   margin: 0 auto;
   text-align:center
 }
 .blue {
-    color: #D9EEF7;
-    border: 1px solid #0076A3;
-    background: -moz-linear-gradient(center top , #00ADEE, #0078A5) repeat scroll 0% 0% transparent;
+    color: #FFFFFF;
+    border: none;
+    background:#1ABC9C ;
 }
 .button {
     display: inline-block;
@@ -218,16 +230,24 @@ td{
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    font: 14px/100% Arial,Helvetica,sans-serif;
+    font: 14px "微软雅黑";
     padding: 0.5em 2em 0.55em;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 0.5em;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
+.button:hover{
+      border: 1px solid #0076A3;
+      transition :0.2s ease-out;
+      -moz-transition:0.2s ease-out;
+      -o-transition:0.2s ease-out;
+      -wiki-transition:0.2s ease-out;
+       
+    }
 .foot{
-	height:100px;
-	background:transparent;
-	margin:10px 0px 0px;
+	height:10px;
+  margin-top: 100px;
+  font-family:Arial;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bolder;
    }
 </style>	
 </body>
